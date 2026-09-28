@@ -1,0 +1,413 @@
+========================================================================================
+  STAGE-3 GENE-LEVEL SUMMARY (results-only)  —  BIP vs migraine
+  Source : /content/089Av2_results
+  Diseases detected : bip, migraine
+========================================================================================
+
+  INPUT FILES (rows loaded):
+    all_genes_all_genesets.csv                  : 4107
+    multi_geneset_enrichment_summary.csv        : 714
+
+  Disease-1 column : Z_bip
+  Disease-2 column : Z_migraine
+
+  THRESHOLDS:
+    |Z| clear     : 1.96    strong : 3.0
+    repeater      : gene in >= 3 sets
+    Layer A       : opposite-sign in >= 2 set-rows
+    gated top-N   : 25
+
+========================================================================================
+  [1] UNIQUE-GENE COLLAPSE
+========================================================================================
+  1966 unique genes (from 3059 gene x set rows).
+    both_weak                   : 909
+    bip_private                 : 436
+    migraine_private            : 296
+    missing                     : 87
+    concordant_neg              : 70
+    concordant_pos              : 62
+    opp_bipneg_migrainepos      : 58
+    opp_bippos_migraineneg      : 48
+  Repeaters (>= 3 sets): 260
+
+========================================================================================
+  [2] LAYER A — RECURRENT OPPOSITE-SIGN GENES (the only gene-level contrast)
+========================================================================================
+  30 genes: opposite sign, both |Z|>=1.96, in >= 2 set-rows.
+
+    • TNFRSF1A     bipZ=-3.32 migraineZ=+5.33 Δ=-8.65 n_sets=5 opp_rows=5 [opp_bipneg_migrainepos] prio=172.5
+    • BAD          bipZ=+7.47 migraineZ=-2.21 Δ=+9.68 n_sets=5 opp_rows=5 [opp_bippos_migraineneg] prio=128.7
+    • STX1A        bipZ=+3.29 migraineZ=-4.45 Δ=+7.74 n_sets=4 opp_rows=4 [opp_bippos_migraineneg] prio=127.3
+    • NDUFAB1      bipZ=-4.35 migraineZ=+3.52 Δ=-7.87 n_sets=3 opp_rows=3 [opp_bipneg_migrainepos] prio=110.8
+    • RETSAT       bipZ=+4.73 migraineZ=-4.06 Δ=+8.79 n_sets=2 opp_rows=2 [opp_bippos_migraineneg] prio=107.2
+    • FDX1         bipZ=-3.65 migraineZ=+3.63 Δ=-7.29 n_sets=3 opp_rows=3 [opp_bipneg_migrainepos] prio=105.9
+    • BCL2L1       bipZ=-3.21 migraineZ=+2.57 Δ=-5.78 n_sets=6 opp_rows=6 [opp_bipneg_migrainepos] prio=103.9
+    • OLR1         bipZ=-5.32 migraineZ=+3.68 Δ=-9.01 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=99.5
+    • BNIP3L       bipZ=+4.54 migraineZ=-3.05 Δ=+7.59 n_sets=3 opp_rows=3 [opp_bippos_migraineneg] prio=92.6
+    • GPX4         bipZ=+2.89 migraineZ=-3.49 Δ=+6.38 n_sets=4 opp_rows=4 [opp_bippos_migraineneg] prio=92.1
+    • ACADS        bipZ=-3.70 migraineZ=+3.62 Δ=-7.32 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=79.6
+    • IQGAP1       bipZ=-3.55 migraineZ=+3.76 Δ=-7.31 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=77.8
+    • GCDH         bipZ=-4.75 migraineZ=+3.24 Δ=-7.98 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=77.5
+    • VENTX        bipZ=-3.89 migraineZ=+3.46 Δ=-7.35 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=76.3
+    • DNAJA3       bipZ=-5.89 migraineZ=+2.89 Δ=-8.77 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=76.0
+    • MRE11        bipZ=+6.52 migraineZ=-2.67 Δ=+9.19 n_sets=2 opp_rows=2 [opp_bippos_migraineneg] prio=73.6
+    • MRPS17       bipZ=-3.78 migraineZ=+3.20 Δ=-6.97 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=66.9
+    • SCMH1        bipZ=-2.99 migraineZ=+4.42 Δ=-7.40 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=66.3
+    • NOS2         bipZ=+6.75 migraineZ=-2.12 Δ=+8.87 n_sets=2 opp_rows=2 [opp_bippos_migraineneg] prio=56.5
+    • PAWR         bipZ=-3.44 migraineZ=+2.84 Δ=-6.29 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=53.6
+    • VEGFA        bipZ=-2.76 migraineZ=+3.07 Δ=-5.83 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=48.3
+    • CRAT         bipZ=-5.80 migraineZ=+2.04 Δ=-7.84 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=47.9
+    • GNAQ         bipZ=+2.35 migraineZ=-4.45 Δ=+6.80 n_sets=2 opp_rows=2 [opp_bippos_migraineneg] prio=47.8
+    • MRPL18       bipZ=-2.33 migraineZ=+3.01 Δ=-5.33 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=37.2
+    • PHC2         bipZ=-3.89 migraineZ=+2.07 Δ=-5.96 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=37.0
+    • F2           bipZ=+2.08 migraineZ=-3.72 Δ=+5.80 n_sets=2 opp_rows=2 [opp_bippos_migraineneg] prio=36.1
+    • NLRP3        bipZ=-2.38 migraineZ=+2.65 Δ=-5.03 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=35.8
+    • TLR2         bipZ=-2.69 migraineZ=+2.21 Δ=-4.90 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=32.5
+    • SLC25A3      bipZ=+2.70 migraineZ=-2.18 Δ=+4.88 n_sets=2 opp_rows=2 [opp_bippos_migraineneg] prio=32.0
+    • UBN1         bipZ=-2.06 migraineZ=+2.01 Δ=-4.07 n_sets=2 opp_rows=2 [opp_bipneg_migrainepos] prio=24.5
+
+========================================================================================
+  [3] LAYER B — CONCORDANT GENES (shared direction; NOT a contrast)
+========================================================================================
+  132 genes same sign in both, both |Z|>=1.96.
+
+    • NEK4         bipZ=+13.47 migraineZ=+3.69 n_sets=2 [concordant_pos]
+    • MRPL11       bipZ=+10.20 migraineZ=+3.35 n_sets=3 [concordant_pos]
+    • CD40         bipZ=-10.04 migraineZ=-2.25 n_sets=1 [concordant_neg]
+    • CNNM4        bipZ=-9.48 migraineZ=-3.56 n_sets=1 [concordant_neg]
+    • ANKRD40      bipZ=+9.39 migraineZ=+3.53 n_sets=1 [concordant_pos]
+    • BAG6         bipZ=+9.30 migraineZ=+6.40 n_sets=2 [concordant_pos]
+    • COX8A        bipZ=-8.82 migraineZ=-2.40 n_sets=3 [concordant_neg]
+    • CIAO1        bipZ=-8.49 migraineZ=-3.13 n_sets=1 [concordant_neg]
+    • CALML6       bipZ=+8.20 migraineZ=+3.93 n_sets=1 [concordant_pos]
+    • SPCS1        bipZ=-7.70 migraineZ=-2.46 n_sets=1 [concordant_neg]
+    • MCAT         bipZ=-7.40 migraineZ=-2.05 n_sets=1 [concordant_neg]
+    • LRRFIP2      bipZ=+7.10 migraineZ=+2.23 n_sets=1 [concordant_pos]
+    • R3HCC1L      bipZ=+7.00 migraineZ=+3.20 n_sets=1 [concordant_pos]
+    • CTSF         bipZ=-6.95 migraineZ=-3.26 n_sets=1 [concordant_neg]
+    • S100A1       bipZ=+6.84 migraineZ=+4.21 n_sets=1 [concordant_pos]
+    • PSMB10       bipZ=-6.84 migraineZ=-5.43 n_sets=1 [concordant_neg]
+    • ERF          bipZ=-6.76 migraineZ=-4.23 n_sets=2 [concordant_neg]
+    • S100A13      bipZ=+6.65 migraineZ=+5.17 n_sets=1 [concordant_pos]
+    • CDKN2D       bipZ=-6.59 migraineZ=-3.01 n_sets=4 [concordant_neg]
+    • FASTK        bipZ=+6.32 migraineZ=+2.57 n_sets=1 [concordant_pos]
+    • AGPAT3       bipZ=+6.29 migraineZ=+2.24 n_sets=1 [concordant_pos]
+    • PRRT1        bipZ=+5.95 migraineZ=+2.39 n_sets=1 [concordant_pos]
+    • USP2         bipZ=+5.90 migraineZ=+2.54 n_sets=1 [concordant_pos]
+    • PPIA         bipZ=+5.88 migraineZ=+5.62 n_sets=1 [concordant_pos]
+    • ABCB8        bipZ=-5.83 migraineZ=-4.61 n_sets=1 [concordant_neg]
+    • SEMA3F       bipZ=-5.80 migraineZ=-2.91 n_sets=1 [concordant_neg]
+    • NDUFA10      bipZ=-5.64 migraineZ=-4.13 n_sets=1 [concordant_neg]
+    • PCSK2        bipZ=+5.64 migraineZ=+2.95 n_sets=1 [concordant_pos]
+    • ABCC8        bipZ=+5.55 migraineZ=+3.34 n_sets=3 [concordant_pos]
+    • CACNA2D2     bipZ=-5.33 migraineZ=-3.34 n_sets=1 [concordant_neg]
+
+========================================================================================
+  [4/5] DISEASE-PRIVATE GENES (only one disease clears |Z|>=1.96)
+========================================================================================
+  bip-private: 436
+    • NT5C         bipZ=-13.98 migraineZ=+0.42 n_sets=1
+    • TAX1BP1      bipZ=+12.56 migraineZ=+1.91 n_sets=1
+    • GLYCTK       bipZ=+12.49 migraineZ=+1.68 n_sets=1
+    • HTR6         bipZ=+12.13 migraineZ=-0.28 n_sets=1
+    • MRPS33       bipZ=+11.29 migraineZ=+1.22 n_sets=1
+    • MAPK3        bipZ=+10.61 migraineZ=+0.25 n_sets=4
+    • GNB2         bipZ=-9.95 migraineZ=-0.61 n_sets=3
+    • TLR9         bipZ=+8.90 migraineZ=+1.05 n_sets=1
+    • RPTOR        bipZ=-8.82 migraineZ=+1.01 n_sets=2
+    • MRPL15       bipZ=+8.60 migraineZ=-1.37 n_sets=3
+    • HLA-DMB      bipZ=-8.27 migraineZ=+1.60 n_sets=1
+    • FEN1         bipZ=-8.24 migraineZ=+0.95 n_sets=1
+    • MRPS7        bipZ=+8.24 migraineZ=+0.67 n_sets=1
+    • PHC1         bipZ=-8.04 migraineZ=+0.04 n_sets=2
+    • NME2         bipZ=+7.90 migraineZ=-0.61 n_sets=1
+
+  migraine-private: 296
+    • DNA2         bipZ=+0.81 migraineZ=+7.24 n_sets=1
+    • C4B          bipZ=-1.49 migraineZ=-6.60 n_sets=1
+    • SLC22A3      bipZ=+0.56 migraineZ=-6.43 n_sets=1
+    • HELLS        bipZ=-1.63 migraineZ=-6.42 n_sets=1
+    • RAD50        bipZ=-1.13 migraineZ=-6.40 n_sets=2
+    • NRAS         bipZ=-1.83 migraineZ=+6.05 n_sets=1
+    • DSCC1        bipZ=-1.34 migraineZ=-5.91 n_sets=1
+    • LSM8         bipZ=-1.55 migraineZ=-5.80 n_sets=1
+    • MTCH2        bipZ=-1.80 migraineZ=-5.67 n_sets=3
+    • MAP2K4       bipZ=+0.57 migraineZ=+5.65 n_sets=4
+    • NDUFS8       bipZ=-1.42 migraineZ=-5.62 n_sets=2
+    • PTPRA        bipZ=+1.29 migraineZ=+5.61 n_sets=1
+    • RAD9A        bipZ=-0.17 migraineZ=+5.56 n_sets=1
+    • CDC26        bipZ=+0.81 migraineZ=+5.40 n_sets=2
+    • STXBP1       bipZ=-1.24 migraineZ=+5.35 n_sets=4
+
+========================================================================================
+  [6] LAYER C — GATED-SET LEADERS (private, non-repeater)
+========================================================================================
+  [REACTOME_MITOPHAGY]  driving disease=bip  (18/19 non-repeater in top 25):
+    • TAX1BP1      Z=+12.56 n_sets=1 [bip_private]
+    • MAP1LC3A     Z=+7.76 n_sets=1 [bip_private]
+    • ATG7         Z=+3.55 n_sets=1 [concordant_pos]
+    • MAP1LC3B     Z=-2.15 n_sets=1 [bip_private]
+    • GABARAP      Z=+1.65 n_sets=1 [both_weak]
+    • GABARAPL1    Z=+1.20 n_sets=2 [both_weak]
+    • PARK7        Z=-0.67 n_sets=2 [both_weak]
+    • ATG16L1      Z=+0.50 n_sets=1 [both_weak]
+    • CALCOCO2     Z=-0.49 n_sets=1 [migraine_private]
+    • OPTN         Z=+0.41 n_sets=1 [both_weak]
+    • NBR1         Z=+0.38 n_sets=1 [migraine_private]
+    • ULK1         Z=+0.37 n_sets=2 [migraine_private]
+    (repeaters ignored here: SQSTM1)
+
+  [KEGG_LTP_ALL]  driving disease=bip  (13/25 non-repeater in top 25):
+    • CALML6       Z=+8.20 n_sets=1 [concordant_pos]
+    • EP300        Z=+5.10 n_sets=2 [bip_private]
+    • PLCB3        Z=+4.03 n_sets=2 [bip_private]
+    • BRAF         Z=+3.16 n_sets=2 [concordant_pos]
+    • MAP2K2       Z=+3.07 n_sets=1 [bip_private]
+    • PPP1CB       Z=+2.62 n_sets=1 [concordant_pos]
+    • CAMK2B       Z=-2.41 n_sets=2 [bip_private]
+    • GNAQ         Z=+2.35 n_sets=2 [opp_bippos_migraineneg]
+    • PRKCA        Z=+2.12 n_sets=2 [concordant_pos]
+    • NRAS         Z=-1.83 n_sets=1 [migraine_private]
+    • CHP2         Z=-1.79 n_sets=2 [migraine_private]
+    • PPP1CC       Z=+1.76 n_sets=1 [migraine_private]
+    (repeaters ignored here: MAPK3, ITPR3, MAPK1, PRKACA, PPP3CA, PPP3R1, PPP3CC, PLCB2, GRIA1, RPS6KA2)
+
+  [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL]  driving disease=migraine  (15/25 non-repeater in top 25):
+    • NDUFS8       Z=-5.62 n_sets=2 [migraine_private]
+    • OGDH         Z=-5.41 n_sets=1 [opp_bippos_migraineneg]
+    • UQCR10       Z=-5.39 n_sets=2 [concordant_neg]
+    • LRPPRC       Z=-5.04 n_sets=2 [migraine_private]
+    • NDUFS7       Z=-4.81 n_sets=1 [missing]
+    • AFG3L2       Z=-4.51 n_sets=2 [migraine_private]
+    • COX11        Z=-4.49 n_sets=2 [migraine_private]
+    • NDUFA7       Z=+4.40 n_sets=2 [concordant_pos]
+    • RETSAT       Z=-4.06 n_sets=2 [opp_bippos_migraineneg]
+    • ACAT1        Z=-3.75 n_sets=2 [migraine_private]
+    • BDH2         Z=-3.67 n_sets=1 [opp_bippos_migraineneg]
+    • NDUFV1       Z=-3.56 n_sets=1 [opp_bippos_migraineneg]
+    (repeaters ignored here: GPI, FDX1, NDUFAB1, DLD, GPX4, MRPL11, ETFB, VDAC2, COX7A2, ACO2)
+
+  [GOBP_INSULIN_SECRETION_INVOLVED_IN_CELLULAR_RESPONSE_TO_GLUCOSE_STIMULUS_ALL]  driving disease=migraine  (21/25 non-repeater in top 25):
+    • RAB11FIP2    Z=+5.29 n_sets=1 [opp_bipneg_migrainepos]
+    • GPR27        Z=+5.17 n_sets=1 [concordant_pos]
+    • PPARD        Z=-5.08 n_sets=1 [concordant_neg]
+    • HLA-DRB1     Z=+4.03 n_sets=2 [migraine_private]
+    • SELENOT      Z=+3.77 n_sets=1 [migraine_private]
+    • BAIAP3       Z=+3.76 n_sets=1 [migraine_private]
+    • CCDC186      Z=+3.12 n_sets=1 [migraine_private]
+    • PLA2G6       Z=-3.07 n_sets=1 [migraine_private]
+    • EFNA5        Z=+2.71 n_sets=1 [concordant_pos]
+    • SIDT2        Z=+2.33 n_sets=1 [migraine_private]
+    • PHPT1        Z=-2.32 n_sets=1 [concordant_neg]
+    • OXCT1        Z=-2.14 n_sets=2 [migraine_private]
+    (repeaters ignored here: RAF1, ABCC8, RAC1, BAD)
+
+
+========================================================================================
+  [7] OPPOSITE-CORE GENES BY BIOLOGICAL MODULE
+========================================================================================
+    mitochondria_oxphos   : 14  (NDUFAB1, RETSAT, FDX1, BCL2L1, BNIP3L, GPX4, ACADS, GCDH, DNAJA3, MRPS17, VEGFA, CRAT)
+    senescence_telomere   : 9  (TNFRSF1A, VENTX, DNAJA3, MRE11, SCMH1, PAWR, VEGFA, PHC2, UBN1)
+    apoptosis             : 7  (TNFRSF1A, BAD, RETSAT, BCL2L1, BNIP3L, GPX4, F2)
+    immune_glia           : 6  (TNFRSF1A, OLR1, NOS2, F2, NLRP3, TLR2)
+    insulin_glp1          : 5  (BAD, STX1A, OLR1, IQGAP1, GNAQ)
+    synaptic_plasticity   : 2  (STX1A, GNAQ)
+    energy_sensing        : 1  (TNFRSF1A)
+    glia_markers          : 1  (OLR1)
+
+========================================================================================
+  [8] PARADOX PANELS (which paradox still has symbols; shared vs opposite)
+========================================================================================
+  paradox_score = frac_opposite - frac_concordant  (+ = contrast, - = shared)
+
+    • apoptotic_rheostat           : CONTRAST_panel             score=+0.36 (opp=0.36, conc=0.00, weak=0.46) [11/11 genes]
+    • oxphos_opposite_candidates   : CONTRAST_panel             score=+0.30 (opp=0.30, conc=0.00, weak=0.30) [10/12 genes]
+    • tnf_receptor_immune          : mixed                      score=+0.12 (opp=0.12, conc=0.00, weak=0.38) [8/8 genes]
+    • snare_release                : mixed                      score=+0.11 (opp=0.11, conc=0.00, weak=0.33) [9/11 genes]
+    • valproate_hdac_gaba          : mostly_weak_uninformative  score=+0.00 (opp=0.00, conc=0.00, weak=1.00) [4/10 genes]
+    • lithium_biology              : mixed                      score=+0.00 (opp=0.00, conc=0.00, weak=0.44) [9/14 genes]
+    • migraine_channel_vascular    : mostly_weak_uninformative  score=+0.00 (opp=0.00, conc=0.00, weak=1.00) [4/11 genes]
+    • circadian_sleep              : mixed                      score=+0.00 (opp=0.00, conc=0.00, weak=0.33) [9/14 genes]
+    • cgrp_axis                    : mixed                      score=+0.00 (opp=0.00, conc=0.00, weak=0.00) [1/8 genes]
+    • dopamine_monoamine           : mixed                      score=+0.00 (opp=0.00, conc=0.00, weak=0.29) [7/11 genes]
+
+  PANEL GENE DETAIL (informative panels only):
+    [apoptotic_rheostat]
+      BAD          bipZ=+7.47 migraineZ=-2.21 [opp_bippos_migraineneg]
+      BAK1         bipZ=+0.08 migraineZ=-1.66 [both_weak]
+      BAX          bipZ=+0.00 migraineZ=+0.00 [both_weak]
+      BCL2         bipZ=+1.46 migraineZ=-1.06 [both_weak]
+      BCL2L1       bipZ=-3.21 migraineZ=+2.57 [opp_bipneg_migrainepos]
+      BCL2L11      bipZ=+0.78 migraineZ=-3.84 [migraine_private]
+      BNIP3L       bipZ=+4.54 migraineZ=-3.05 [opp_bippos_migraineneg]
+      MCL1         bipZ=+3.62 migraineZ=-0.38 [bip_private]
+      PMAIP1       bipZ=-0.82 migraineZ=+1.78 [both_weak]
+      GPX4         bipZ=+2.89 migraineZ=-3.49 [opp_bippos_migraineneg]
+      CYCS         bipZ=+0.86 migraineZ=-1.17 [both_weak]
+
+    [oxphos_opposite_candidates]
+      NDUFAB1      bipZ=-4.35 migraineZ=+3.52 [opp_bipneg_migrainepos]
+      NDUFA5       bipZ=-0.49 migraineZ=-1.11 [both_weak]
+      NDUFA6       bipZ=-3.23 migraineZ=-1.37 [bip_private]
+      NDUFS3       bipZ=-4.16 migraineZ=-0.69 [bip_private]
+      NDUFV2       bipZ=+3.01 migraineZ=-0.83 [bip_private]
+      SDHA         bipZ=-1.23 migraineZ=+0.44 [both_weak]
+      SDHB         bipZ=-2.52 migraineZ=-1.37 [bip_private]
+      COX5B        bipZ=-1.68 migraineZ=+0.04 [both_weak]
+      FDX1         bipZ=-3.65 migraineZ=+3.63 [opp_bipneg_migrainepos]
+      ACADS        bipZ=-3.70 migraineZ=+3.62 [opp_bipneg_migrainepos]
+
+    [tnf_receptor_immune]
+      TNF          bipZ=NA migraineZ=-0.24 [missing]
+      TNFRSF1A     bipZ=-3.32 migraineZ=+5.33 [opp_bipneg_migrainepos]
+      TNFRSF1B     bipZ=-0.81 migraineZ=+3.91 [migraine_private]
+      IL6          bipZ=-0.32 migraineZ=-0.46 [both_weak]
+      IL1B         bipZ=-0.40 migraineZ=-0.68 [both_weak]
+      NFKB1        bipZ=+2.81 migraineZ=+0.57 [bip_private]
+      RELA         bipZ=+1.55 migraineZ=-3.30 [migraine_private]
+      C3           bipZ=+1.40 migraineZ=+0.48 [both_weak]
+
+    [snare_release]
+      STX1A        bipZ=+3.29 migraineZ=-4.45 [opp_bippos_migraineneg]
+      STX1B        bipZ=+0.36 migraineZ=+0.07 [both_weak]
+      STXBP1       bipZ=-1.24 migraineZ=+5.35 [migraine_private]
+      SNAP25       bipZ=+1.27 migraineZ=+0.98 [both_weak]
+      VAMP2        bipZ=+2.19 migraineZ=-0.06 [bip_private]
+      SYT1         bipZ=-1.27 migraineZ=-2.47 [migraine_private]
+      SYT2         bipZ=-1.92 migraineZ=+2.35 [migraine_private]
+      CPLX2        bipZ=-1.81 migraineZ=+1.41 [both_weak]
+      RAB3A        bipZ=+3.11 migraineZ=+1.57 [bip_private]
+
+    [lithium_biology]
+      GSK3B        bipZ=+3.23 migraineZ=-1.71 [bip_private]
+      CLOCK        bipZ=-0.86 migraineZ=+3.88 [migraine_private]
+      ARNTL        bipZ=-4.87 migraineZ=-1.43 [bip_private]
+      PER2         bipZ=-2.06 migraineZ=+0.15 [bip_private]
+      CRY1         bipZ=+0.32 migraineZ=-0.17 [both_weak]
+      GRIN2A       bipZ=-0.74 migraineZ=-2.36 [migraine_private]
+      AKT1         bipZ=-1.20 migraineZ=+0.05 [both_weak]
+      MTOR         bipZ=-1.37 migraineZ=-1.64 [both_weak]
+      BCL2         bipZ=+1.46 migraineZ=-1.06 [both_weak]
+
+    [circadian_sleep]
+      CLOCK        bipZ=-0.86 migraineZ=+3.88 [migraine_private]
+      ARNTL        bipZ=-4.87 migraineZ=-1.43 [bip_private]
+      PER2         bipZ=-2.06 migraineZ=+0.15 [bip_private]
+      CRY1         bipZ=+0.32 migraineZ=-0.17 [both_weak]
+      CRY2         bipZ=-0.97 migraineZ=+0.69 [both_weak]
+      NR1D1        bipZ=+3.04 migraineZ=-1.52 [bip_private]
+      NR1D2        bipZ=NA migraineZ=-0.12 [missing]
+      RORB         bipZ=+4.29 migraineZ=+0.31 [bip_private]
+      CSNK1E       bipZ=+0.73 migraineZ=+0.39 [both_weak]
+
+    [cgrp_axis]
+      RAMP3        bipZ=-2.19 migraineZ=+1.30 [bip_private]
+
+    [dopamine_monoamine]
+      DRD2         bipZ=-2.67 migraineZ=+0.48 [bip_private]
+      DRD3         bipZ=+0.45 migraineZ=-2.89 [migraine_private]
+      COMT         bipZ=+1.79 migraineZ=-2.35 [migraine_private]
+      TH           bipZ=-3.10 migraineZ=-0.10 [bip_private]
+      DDC          bipZ=-0.62 migraineZ=-0.60 [both_weak]
+      SLC6A4       bipZ=+0.09 migraineZ=+0.14 [both_weak]
+      PPP1R1B      bipZ=+4.89 migraineZ=+1.43 [bip_private]
+
+
+========================================================================================
+  [9] TARGETED CUTS
+========================================================================================
+  Circadian set (REACTOME_CIRCADIAN_CLOCK): 12 genes, 6 clear |Z|>=1.96 in >=1 disease.
+    • ARNTL      bipZ=-4.87 migraineZ=-1.43 [bip_private]
+    • RORB       bipZ=+4.29 migraineZ=+0.31 [bip_private]
+    • NR1D1      bipZ=+3.04 migraineZ=-1.52 [bip_private]
+    • PER2       bipZ=-2.06 migraineZ=+0.15 [bip_private]
+    • RORC       bipZ=+1.40 migraineZ=+2.14 [migraine_private]
+    • CRY2       bipZ=-0.97 migraineZ=+0.69 [both_weak]
+    • CLOCK      bipZ=-0.86 migraineZ=+3.88 [migraine_private]
+    • NPAS2      bipZ=+0.82 migraineZ=+0.07 [both_weak]
+    • CSNK1E     bipZ=+0.73 migraineZ=+0.39 [both_weak]
+    • CRY1       bipZ=+0.32 migraineZ=-0.17 [both_weak]
+
+  Lithium panel ∩ LTP membership (is 'lithium biology' just the LTP hit?):
+    shared genes: GRIN2A
+    lithium symbols OUTSIDE LTP (independent contrast candidates): AKT1, ARNTL, BCL2, CLOCK, CRY1, GSK3B, MTOR, PER2
+    → If opposite-sign lithium genes are OUTSIDE LTP while LTP genes are bip-private positives, that is a TWO-LAYER model (plasticity-up + lithium/clock contrast).
+
+========================================================================================
+  [10] PUBLICATION GENE TABLE (Layer A + non-repeater gated leaders)
+========================================================================================
+  62 rows written to 10_publication_gene_table.csv
+
+    • TNFRSF1A     [A_opposite                        ] bipZ=-3.32 migraineZ=+5.33 [opp_bipneg_migrainepos]
+    • BAD          [A_opposite                        ] bipZ=+7.47 migraineZ=-2.21 [opp_bippos_migraineneg]
+    • STX1A        [A_opposite                        ] bipZ=+3.29 migraineZ=-4.45 [opp_bippos_migraineneg]
+    • NDUFAB1      [A_opposite                        ] bipZ=-4.35 migraineZ=+3.52 [opp_bipneg_migrainepos]
+    • RETSAT       [A_opposite                        ] bipZ=+4.73 migraineZ=-4.06 [opp_bippos_migraineneg]
+    • FDX1         [A_opposite                        ] bipZ=-3.65 migraineZ=+3.63 [opp_bipneg_migrainepos]
+    • BCL2L1       [A_opposite                        ] bipZ=-3.21 migraineZ=+2.57 [opp_bipneg_migrainepos]
+    • OLR1         [A_opposite                        ] bipZ=-5.32 migraineZ=+3.68 [opp_bipneg_migrainepos]
+    • BNIP3L       [A_opposite                        ] bipZ=+4.54 migraineZ=-3.05 [opp_bippos_migraineneg]
+    • GPX4         [A_opposite                        ] bipZ=+2.89 migraineZ=-3.49 [opp_bippos_migraineneg]
+    • ACADS        [A_opposite                        ] bipZ=-3.70 migraineZ=+3.62 [opp_bipneg_migrainepos]
+    • IQGAP1       [A_opposite                        ] bipZ=-3.55 migraineZ=+3.76 [opp_bipneg_migrainepos]
+    • GCDH         [A_opposite                        ] bipZ=-4.75 migraineZ=+3.24 [opp_bipneg_migrainepos]
+    • VENTX        [A_opposite                        ] bipZ=-3.89 migraineZ=+3.46 [opp_bipneg_migrainepos]
+    • DNAJA3       [A_opposite                        ] bipZ=-5.89 migraineZ=+2.89 [opp_bipneg_migrainepos]
+    • MRE11        [A_opposite                        ] bipZ=+6.52 migraineZ=-2.67 [opp_bippos_migraineneg]
+    • MRPS17       [A_opposite                        ] bipZ=-3.78 migraineZ=+3.20 [opp_bipneg_migrainepos]
+    • SCMH1        [A_opposite                        ] bipZ=-2.99 migraineZ=+4.42 [opp_bipneg_migrainepos]
+    • NOS2         [A_opposite                        ] bipZ=+6.75 migraineZ=-2.12 [opp_bippos_migraineneg]
+    • PAWR         [A_opposite                        ] bipZ=-3.44 migraineZ=+2.84 [opp_bipneg_migrainepos]
+    • VEGFA        [A_opposite                        ] bipZ=-2.76 migraineZ=+3.07 [opp_bipneg_migrainepos]
+    • CRAT         [A_opposite                        ] bipZ=-5.80 migraineZ=+2.04 [opp_bipneg_migrainepos]
+    • GNAQ         [A_opposite                        ] bipZ=+2.35 migraineZ=-4.45 [opp_bippos_migraineneg]
+    • MRPL18       [A_opposite                        ] bipZ=-2.33 migraineZ=+3.01 [opp_bipneg_migrainepos]
+    • PHC2         [A_opposite                        ] bipZ=-3.89 migraineZ=+2.07 [opp_bipneg_migrainepos]
+    • F2           [A_opposite                        ] bipZ=+2.08 migraineZ=-3.72 [opp_bippos_migraineneg]
+    • NLRP3        [A_opposite                        ] bipZ=-2.38 migraineZ=+2.65 [opp_bipneg_migrainepos]
+    • TLR2         [A_opposite                        ] bipZ=-2.69 migraineZ=+2.21 [opp_bipneg_migrainepos]
+    • SLC25A3      [A_opposite                        ] bipZ=+2.70 migraineZ=-2.18 [opp_bippos_migraineneg]
+    • UBN1         [A_opposite                        ] bipZ=-2.06 migraineZ=+2.01 [opp_bipneg_migrainepos]
+    • TAX1BP1      [C_REACTOME_MITOPHAGY[bip]         ] bipZ=+12.56 migraineZ=+1.91 [bip_private]
+    • MAP1LC3A     [C_REACTOME_MITOPHAGY[bip]         ] bipZ=+7.76 migraineZ=-0.66 [bip_private]
+    • ATG7         [C_REACTOME_MITOPHAGY[bip]         ] bipZ=+3.55 migraineZ=+5.99 [concordant_pos]
+    • MAP1LC3B     [C_REACTOME_MITOPHAGY[bip]         ] bipZ=-2.15 migraineZ=+0.95 [bip_private]
+    • GABARAP      [C_REACTOME_MITOPHAGY[bip]         ] bipZ=+1.65 migraineZ=+1.04 [both_weak]
+    • GABARAPL1    [C_REACTOME_MITOPHAGY[bip]         ] bipZ=+1.20 migraineZ=+1.78 [both_weak]
+    • PARK7        [C_REACTOME_MITOPHAGY[bip]         ] bipZ=-0.67 migraineZ=+0.71 [both_weak]
+    • ATG16L1      [C_REACTOME_MITOPHAGY[bip]         ] bipZ=+0.50 migraineZ=+1.15 [both_weak]
+    • CALML6       [C_KEGG_LTP_ALL[bip]               ] bipZ=+8.20 migraineZ=+3.93 [concordant_pos]
+    • EP300        [C_KEGG_LTP_ALL[bip]               ] bipZ=+5.10 migraineZ=-1.25 [bip_private]
+    • PLCB3        [C_KEGG_LTP_ALL[bip]               ] bipZ=+4.03 migraineZ=-0.65 [bip_private]
+    • BRAF         [C_KEGG_LTP_ALL[bip]               ] bipZ=+3.16 migraineZ=+4.33 [concordant_pos]
+    • MAP2K2       [C_KEGG_LTP_ALL[bip]               ] bipZ=+3.07 migraineZ=+1.58 [bip_private]
+    • PPP1CB       [C_KEGG_LTP_ALL[bip]               ] bipZ=+2.62 migraineZ=+4.73 [concordant_pos]
+    • CAMK2B       [C_KEGG_LTP_ALL[bip]               ] bipZ=-2.41 migraineZ=+1.62 [bip_private]
+
+========================================================================================
+  ★ AUTO-DRAFT RESULTS PARAGRAPH (verify before use)
+========================================================================================
+  No gene set survived global correction (Stage-2). At unique-gene resolution (1966 genes), bip and migraine predicted-expression Z-scores repeatedly disagree at the same symbols: TNFRSF1A, BAD, STX1A, NDUFAB1, RETSAT, FDX1, BCL2L1, OLR1. These 30 recurrent opposite-sign genes are the only gene-level contrast the data support. Shared-direction genes (CD40, CNNM4, COX8A, CIAO1 among 132 concordant genes) reflect common liability, not a bip-migraine difference. Within the robustness-gated sets, leading genes that are not multi-set repeaters carry the residual bip/migraine shifts. Colocalization and eQTL R2 (Stage-4) require the original S-PrediXcan files.
+
+========================================================================================
+  TALLY
+========================================================================================
+    bip_private               : 436
+    gated_leaders             : 94
+    layer_A_opposite          : 30
+    layer_B_concordant        : 132
+    migraine_private          : 296
+    panels_absent             : 0
+    panels_contrast           : 2
+    panels_shared             : 0
+    publication_rows          : 62
+    unique_genes              : 1966
+========================================================================================
+  GUARDRAILS:
+   - Layer A (opposite, >=2 set-rows) is the ONLY gene-level BIP-vs-migraine contrast claim.
+   - Layer B is shared liability; it does NOT rescue any failed gene-set test.
+   - Absent panel symbols (e.g. CGRP) mean the RUN is silent, not that biology is absent.
+   - Repeater genes (>=3 sets) are one signal counted many times, not many discoveries.
+   - No causal / colocalization / MR claim is possible from these CSVs.
+========================================================================================

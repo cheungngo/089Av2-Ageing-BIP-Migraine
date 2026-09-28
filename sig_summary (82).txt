@@ -1,0 +1,2499 @@
+==============================================================================
+  SIGNIFICANT RESULTS SUMMARY
+  Source folder : /content/089Av2_results
+  Mode detected : multi-gene-set
+  Generated     : 2026-09-28 16:28:38
+==============================================================================
+
+  THRESHOLDS:
+    raw p-value             : < 0.05
+    FDR / global FDR        : < 0.05
+    Filter on FDR if avail. : False
+    |Stouffer Z|            : > 1.96
+    |Cohen's d|             : > 0.5
+    |Lin's CCC|             : > 0.5
+    Sign-concordance rate   : > 0.7
+    |Kendall τ|             : > 0.3
+    |Pearson r|             : > 0.3
+    |Rank-biserial r|       : > 0.3
+    include borderline      : False
+    top-N per section       : None
+
+==============================================================================
+  [1] PER-DISEASE ENRICHMENT
+==============================================================================
+  144 significant enrichment finding(s):
+
+    • [KEGG_LTP_ALL]  bip  n=54  Stouffer Z=8.190 CI95=[3.73,13.13]  perm_p=0.0013  wilcoxon_p=0.003339
+        → perm_p=0.0013; wilcoxon_p=0.003339; |Stouffer|=8.19
+    • [ADULT_ASTRO_ALL]  migraine [Brain_Amygdala_spredixcan]  n=27  Stouffer Z=2.492  perm_p=NA  wilcoxon_p=0.002469
+        → wilcoxon_p=0.002469; |Stouffer|=2.49
+    • [REACTOME_TELOMERE_ALL]  bip  n=55  Stouffer Z=-7.495 CI95=[-12.64,-2.86]  perm_p=0.0028  wilcoxon_p=0.01042
+        → perm_p=0.0028; wilcoxon_p=0.01042; |Stouffer|=7.49
+    • [REACTOME_TELOMERE_ALL]  bip [Brain_Amygdala_spredixcan]  n=40  Stouffer Z=-4.362  perm_p=NA  wilcoxon_p=0.00352
+        → wilcoxon_p=0.00352; |Stouffer|=4.36
+    • [KEGG_DOPAMINERGIC_SYNAPSE]  migraine [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=11  Stouffer Z=-2.514  perm_p=NA  wilcoxon_p=0.004883
+        → wilcoxon_p=0.004883; |Stouffer|=2.51
+    • [KEGG_LTP_ALL]  bip [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=31  Stouffer Z=4.285  perm_p=NA  wilcoxon_p=0.005442
+        → wilcoxon_p=0.005442; |Stouffer|=4.28
+    • [KEGG_LTP_ALL]  bip [Brain_Frontal_Cortex_BA9_spredixcan]  n=34  Stouffer Z=4.334  perm_p=NA  wilcoxon_p=0.00813
+        → wilcoxon_p=0.00813; |Stouffer|=4.33
+    • [REACTOME_COMPLEMENT_ALL]  migraine [Brain_Frontal_Cortex_BA9_spredixcan]  n=26  Stouffer Z=-3.177  perm_p=NA  wilcoxon_p=0.01104
+        → wilcoxon_p=0.01104; |Stouffer|=3.18
+    • [ADULT_MICRO_ALL]  bip [Brain_Hippocampus_spredixcan]  n=9  Stouffer Z=-3.580  perm_p=NA  wilcoxon_p=0.01172
+        → wilcoxon_p=0.01172; |Stouffer|=3.58
+    • [GOCC_BCL_2_FAMILY_PROTEIN_COMPLEX_ALL]  bip [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=9  Stouffer Z=4.656  perm_p=NA  wilcoxon_p=0.01172
+        → wilcoxon_p=0.01172; |Stouffer|=4.66
+    • [KEGG_LTP_ALL]  bip [Brain_Hippocampus_spredixcan]  n=31  Stouffer Z=3.670  perm_p=NA  wilcoxon_p=0.01175
+        → wilcoxon_p=0.01175; |Stouffer|=3.67
+    • [GOBP_POSITIVE_REGULATION_OF_MICROGLIAL_ACTIVATION]  migraine [Brain_Hippocampus_spredixcan]  n=10  Stouffer Z=2.462  perm_p=NA  wilcoxon_p=0.01367
+        → wilcoxon_p=0.01367; |Stouffer|=2.46
+    • [HALLMARK_APOPTOSIS_ALL]  bip [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=87  Stouffer Z=3.584  perm_p=NA  wilcoxon_p=0.01548
+        → wilcoxon_p=0.01548; |Stouffer|=3.58
+    • [KEGG_LTP_ALL]  bip [Brain_Caudate_basal_ganglia_spredixcan]  n=38  Stouffer Z=4.282  perm_p=NA  wilcoxon_p=0.01549
+        → wilcoxon_p=0.01549; |Stouffer|=4.28
+    • [MOOTHA_PGC_ALL]  migraine [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=270  Stouffer Z=-2.418  perm_p=NA  wilcoxon_p=0.01614
+        → wilcoxon_p=0.01614; |Stouffer|=2.42
+    • [REACTOME_CELLULAR_SENESCENCE_ALL]  bip [Brain_Amygdala_spredixcan]  n=66  Stouffer Z=-3.926  perm_p=NA  wilcoxon_p=0.01645
+        → wilcoxon_p=0.01645; |Stouffer|=3.93
+    • [REACTOME_SENESCENCE_ALL]  bip [Brain_Amygdala_spredixcan]  n=66  Stouffer Z=-3.926  perm_p=NA  wilcoxon_p=0.01645
+        → wilcoxon_p=0.01645; |Stouffer|=3.93
+    • [REACTOME_MITOPHAGY]  bip  n=19  Stouffer Z=5.926 CI95=[0.64,12.45]  perm_p=0.0169  wilcoxon_p=0.03858
+        → perm_p=0.0169; wilcoxon_p=0.03858; |Stouffer|=5.93
+    • [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL]  migraine  n=159  Stouffer Z=-4.619 CI95=[-8.38,-1.12]  perm_p=0.0196  wilcoxon_p=0.02693
+        → perm_p=0.0196; wilcoxon_p=0.02693; |Stouffer|=4.62
+    • [KEGG_DOPAMINERGIC_SYNAPSE]  bip [Brain_Frontal_Cortex_BA9_spredixcan]  n=12  Stouffer Z=2.539  perm_p=NA  wilcoxon_p=0.021
+        → wilcoxon_p=0.021; |Stouffer|=2.54
+    • [KEGG_LTP_ALL]  bip [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=33  Stouffer Z=3.392  perm_p=NA  wilcoxon_p=0.02412
+        → wilcoxon_p=0.02412; |Stouffer|=3.39
+    • [REACTOME_INTRINSIC_PATHWAY_FOR_APOPTOSIS_ALL]  bip [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=36  Stouffer Z=3.645  perm_p=NA  wilcoxon_p=0.02716
+        → wilcoxon_p=0.02716; |Stouffer|=3.65
+    • [HLA_COMPLEX_ALL]  bip [Brain_Hippocampus_spredixcan]  n=10  Stouffer Z=-4.845  perm_p=NA  wilcoxon_p=0.02734
+        → wilcoxon_p=0.02734; |Stouffer|=4.84
+    • [REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM]  bip [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=9  Stouffer Z=-2.143  perm_p=NA  wilcoxon_p=0.02734
+        → wilcoxon_p=0.02734; |Stouffer|=2.14
+    • [HLA_COMPLEX_ALL]  bip  n=17  Stouffer Z=-5.419 CI95=[-12.66,0.52]  perm_p=0.028  wilcoxon_p=0.4307
+        → perm_p=0.028; |Stouffer|=5.42
+    • [REACTOME_TELOMERE_ALL]  bip [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=36  Stouffer Z=-2.986  perm_p=NA  wilcoxon_p=0.02833
+        → wilcoxon_p=0.02833; |Stouffer|=2.99
+    • [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL]  migraine [Brain_Frontal_Cortex_BA9_spredixcan]  n=129  Stouffer Z=-2.464  perm_p=NA  wilcoxon_p=0.02855
+        → wilcoxon_p=0.02855; |Stouffer|=2.46
+    • [REACTOME_INTRINSIC_PATHWAY_FOR_APOPTOSIS_ALL]  bip  n=47  Stouffer Z=5.413 CI95=[-0.05,10.98]  perm_p=0.0303  wilcoxon_p=0.07058
+        → perm_p=0.0303; |Stouffer|=5.41
+    • [REACTOME_SIRT1_NEGATIVELY_REGULATES_RRNA_EXPRESSION_ALL]  migraine [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=6  Stouffer Z=-3.092  perm_p=NA  wilcoxon_p=0.03125
+        → wilcoxon_p=0.03125; |Stouffer|=3.09
+    • [GOCC_BCL_2_FAMILY_PROTEIN_COMPLEX_ALL]  bip  n=10  Stouffer Z=5.311 CI95=[-0.43,11.05]  perm_p=0.0318  wilcoxon_p=0.1289
+        → perm_p=0.0318; |Stouffer|=5.31
+    • [HALLMARK_PI3K_AKT_MTOR_SIGNALING_ALL]  bip [Brain_Frontal_Cortex_BA9_spredixcan]  n=64  Stouffer Z=3.151  perm_p=NA  wilcoxon_p=0.03182
+        → wilcoxon_p=0.03182; |Stouffer|=3.15
+    • [GOMF_NADPLUS_BINDING_ALL]  migraine [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=15  Stouffer Z=2.111  perm_p=NA  wilcoxon_p=0.03534
+        → wilcoxon_p=0.03534; |Stouffer|=2.11
+    • [REACTOME_GLUCAGON_LIKE_PEPTIDE_1_GLP1_REGULATES_INSULIN_SECRETION_ALL]  bip [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=20  Stouffer Z=-3.647  perm_p=NA  wilcoxon_p=0.03623
+        → wilcoxon_p=0.03623; |Stouffer|=3.65
+    • [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL]  migraine [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=118  Stouffer Z=-2.652  perm_p=NA  wilcoxon_p=0.03904
+        → wilcoxon_p=0.03904; |Stouffer|=2.65
+    • [GOBP_POSITIVE_REGULATION_OF_MICROGLIAL_ACTIVATION]  migraine [Brain_Amygdala_spredixcan]  n=9  Stouffer Z=1.969  perm_p=NA  wilcoxon_p=0.03906
+        → wilcoxon_p=0.03906; |Stouffer|=1.97
+    • [GOBP_CELLULAR_SENESCENCE_ALL]  migraine [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=53  Stouffer Z=2.254  perm_p=NA  wilcoxon_p=0.03956
+        → wilcoxon_p=0.03956; |Stouffer|=2.25
+    • [KEGG_DOPAMINERGIC_SYNAPSE]  bip [Brain_Hippocampus_spredixcan]  n=11  Stouffer Z=2.862  perm_p=NA  wilcoxon_p=0.04199
+        → wilcoxon_p=0.04199; |Stouffer|=2.86
+    • [KEGG_DOPAMINERGIC_SYNAPSE]  migraine [Brain_Amygdala_spredixcan]  n=11  Stouffer Z=-1.458  perm_p=NA  wilcoxon_p=0.04199
+        → wilcoxon_p=0.04199
+    • [REACTOME_CELLULAR_SENESCENCE_ALL]  bip  n=105  Stouffer Z=-5.061 CI95=[-10.31,0.54]  perm_p=0.0425  wilcoxon_p=0.1477
+        → perm_p=0.0425; |Stouffer|=5.06
+    • [REACTOME_SENESCENCE_ALL]  bip  n=105  Stouffer Z=-5.061 CI95=[-10.31,0.54]  perm_p=0.0425  wilcoxon_p=0.1477
+        → perm_p=0.0425; |Stouffer|=5.06
+    • [GOBP_REGULATION_OF_CELLULAR_SENESCENCE_ALL]  migraine [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=22  Stouffer Z=1.892  perm_p=NA  wilcoxon_p=0.0425
+        → wilcoxon_p=0.0425
+    • [GOBP_INSULIN_SECRETION_INVOLVED_IN_CELLULAR_RESPONSE_TO_GLUCOSE_STIMULUS_ALL]  bip [Brain_Hippocampus_spredixcan]  n=38  Stouffer Z=2.706  perm_p=NA  wilcoxon_p=0.0429
+        → wilcoxon_p=0.0429; |Stouffer|=2.71
+    • [REACTOME_CELLULAR_SENESCENCE_ALL]  bip [Brain_Hippocampus_spredixcan]  n=58  Stouffer Z=-2.999  perm_p=NA  wilcoxon_p=0.04291
+        → wilcoxon_p=0.04291; |Stouffer|=3.00
+    • [REACTOME_SENESCENCE_ALL]  bip [Brain_Hippocampus_spredixcan]  n=58  Stouffer Z=-2.999  perm_p=NA  wilcoxon_p=0.04291
+        → wilcoxon_p=0.04291; |Stouffer|=3.00
+    • [REACTOME_REGULATION_OF_INSULIN_SECRETION_ALL]  bip [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=37  Stouffer Z=-3.450  perm_p=NA  wilcoxon_p=0.04555
+        → wilcoxon_p=0.04555; |Stouffer|=3.45
+    • [MOOTHA_PGC_ALL]  bip [Brain_Hippocampus_spredixcan]  n=236  Stouffer Z=3.017  perm_p=NA  wilcoxon_p=0.04569
+        → wilcoxon_p=0.04569; |Stouffer|=3.02
+    • [REACTOME_TELOMERE_ALL]  bip [Brain_Hippocampus_spredixcan]  n=40  Stouffer Z=-2.526  perm_p=NA  wilcoxon_p=0.04661
+        → wilcoxon_p=0.04661; |Stouffer|=2.53
+    • [ADULT_ASTRO_ALL]  bip [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=25  Stouffer Z=2.470  perm_p=NA  wilcoxon_p=0.04826
+        → wilcoxon_p=0.04826; |Stouffer|=2.47
+    • [GOBP_INSULIN_SECRETION_INVOLVED_IN_CELLULAR_RESPONSE_TO_GLUCOSE_STIMULUS_ALL]  migraine  n=55  Stouffer Z=3.916 CI95=[0.06,7.89]  perm_p=0.0484  wilcoxon_p=0.1062
+        → perm_p=0.0484; |Stouffer|=3.92
+    • [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL]  migraine [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=127  Stouffer Z=-2.201  perm_p=NA  wilcoxon_p=0.04904
+        → wilcoxon_p=0.04904; |Stouffer|=2.20
+    • [REACTOME_MITOPHAGY]  bip [Brain_Hippocampus_spredixcan]  n=17  Stouffer Z=3.271  perm_p=NA  wilcoxon_p=0.05054
+        → |Stouffer|=3.27
+    • [HLA_COMPLEX_ALL]  migraine [Brain_Frontal_Cortex_BA9_spredixcan]  n=16  Stouffer Z=2.263  perm_p=NA  wilcoxon_p=0.05066
+        → |Stouffer|=2.26
+    • [KEGG_DOPAMINERGIC_SYNAPSE]  migraine [Brain_Caudate_basal_ganglia_spredixcan]  n=13  Stouffer Z=-2.539  perm_p=NA  wilcoxon_p=0.05737
+        → |Stouffer|=2.54
+    • [REACTOME_MITOPHAGY]  bip [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=13  Stouffer Z=3.865  perm_p=NA  wilcoxon_p=0.05737
+        → |Stouffer|=3.87
+    • [WANG_ADIPOGENIC_GENES_REPRESSED_BY_SIRT1_ALL]  migraine [Brain_Hippocampus_spredixcan]  n=13  Stouffer Z=2.696  perm_p=NA  wilcoxon_p=0.05737
+        → |Stouffer|=2.70
+    • [REACTOME_COMPLEMENT_ALL]  migraine  n=41  Stouffer Z=-3.749 CI95=[-7.53,-0.25]  perm_p=0.05869  wilcoxon_p=0.1542
+        → |Stouffer|=3.75
+    • [GOBP_CAMKK_AMPK_SIGNALING_CASCADE_ALL]  bip [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=6  Stouffer Z=-2.682  perm_p=NA  wilcoxon_p=0.0625
+        → |Stouffer|=2.68
+    • [REACTOME_GLUCAGON_LIKE_PEPTIDE_1_GLP1_REGULATES_INSULIN_SECRETION_ALL]  migraine [Brain_Amygdala_spredixcan]  n=22  Stouffer Z=2.010  perm_p=NA  wilcoxon_p=0.06342
+        → |Stouffer|=2.01
+    • [HLA_COMPLEX_ALL]  migraine [Brain_Hippocampus_spredixcan]  n=15  Stouffer Z=2.322  perm_p=NA  wilcoxon_p=0.06372
+        → |Stouffer|=2.32
+    • [GOBP_INSULIN_SECRETION_INVOLVED_IN_CELLULAR_RESPONSE_TO_GLUCOSE_STIMULUS_ALL]  migraine [Brain_Hippocampus_spredixcan]  n=39  Stouffer Z=2.753  perm_p=NA  wilcoxon_p=0.0661
+        → |Stouffer|=2.75
+    • [KEGG_DOPAMINERGIC_SYNAPSE]  migraine  n=17  Stouffer Z=-3.514 CI95=[-6.73,-0.31]  perm_p=0.07649  wilcoxon_p=0.05688
+        → |Stouffer|=3.51
+    • [HLA_COMPLEX_ALL]  bip [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=8  Stouffer Z=-3.270  perm_p=NA  wilcoxon_p=0.07812
+        → |Stouffer|=3.27
+    • [REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM]  migraine [Brain_Hippocampus_spredixcan]  n=8  Stouffer Z=2.699  perm_p=NA  wilcoxon_p=0.07812
+        → |Stouffer|=2.70
+    • [REACTOME_MITOPHAGY]  bip [Brain_Caudate_basal_ganglia_spredixcan]  n=14  Stouffer Z=2.802  perm_p=NA  wilcoxon_p=0.07849
+        → |Stouffer|=2.80
+    • [REACTOME_TELOMERE_ALL]  bip [Brain_Caudate_basal_ganglia_spredixcan]  n=41  Stouffer Z=-2.080  perm_p=NA  wilcoxon_p=0.08016
+        → |Stouffer|=2.08
+    • [REACTOME_ENERGY_DEPENDENT_REGULATION_OF_MTOR_BY_LKB1_AMPK_ALL]  bip [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=18  Stouffer Z=-1.994  perm_p=NA  wilcoxon_p=0.08143
+        → |Stouffer|=1.99
+    • [REACTOME_TELOMERE_ALL]  bip [Brain_Frontal_Cortex_BA9_spredixcan]  n=39  Stouffer Z=-3.357  perm_p=NA  wilcoxon_p=0.0823
+        → |Stouffer|=3.36
+    • [ADULT_OLIGO_ALL]  migraine [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=11  Stouffer Z=2.172  perm_p=NA  wilcoxon_p=0.08301
+        → |Stouffer|=2.17
+    • [REACTOME_NEUROTRANSMITTER_RELEASE_CYCLE]  migraine  n=12  Stouffer Z=3.371 CI95=[-1.57,8.16]  perm_p=0.08819  wilcoxon_p=0.1763
+        → |Stouffer|=3.37
+    • [HLA_COMPLEX_ALL]  migraine  n=19  Stouffer Z=3.350 CI95=[-0.91,7.71]  perm_p=0.08899  wilcoxon_p=0.08743
+        → |Stouffer|=3.35
+    • [REACTOME_INTRINSIC_PATHWAY_FOR_APOPTOSIS_ALL]  bip [Brain_Caudate_basal_ganglia_spredixcan]  n=38  Stouffer Z=3.405  perm_p=NA  wilcoxon_p=0.0899
+        → |Stouffer|=3.40
+    • [KEGG_LTP_ALL]  bip [Brain_Amygdala_spredixcan]  n=29  Stouffer Z=2.884  perm_p=NA  wilcoxon_p=0.09196
+        → |Stouffer|=2.88
+    • [SAUL_SEN_MAYO_ALL]  migraine [Brain_Hippocampus_spredixcan]  n=58  Stouffer Z=-2.159  perm_p=NA  wilcoxon_p=0.09219
+        → |Stouffer|=2.16
+    • [GOBP_INSULIN_SECRETION_INVOLVED_IN_CELLULAR_RESPONSE_TO_GLUCOSE_STIMULUS_ALL]  migraine [Brain_Frontal_Cortex_BA9_spredixcan]  n=42  Stouffer Z=2.167  perm_p=NA  wilcoxon_p=0.09333
+        → |Stouffer|=2.17
+    • [HLA_COMPLEX_ALL]  bip [Brain_Amygdala_spredixcan]  n=9  Stouffer Z=-3.972  perm_p=NA  wilcoxon_p=0.09766
+        → |Stouffer|=3.97
+    • [REACTOME_INTRINSIC_PATHWAY_FOR_APOPTOSIS_ALL]  bip [Brain_Hippocampus_spredixcan]  n=28  Stouffer Z=2.460  perm_p=NA  wilcoxon_p=0.09928
+        → |Stouffer|=2.46
+    • [ADULT_OLIGO_ALL]  bip [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=11  Stouffer Z=3.378  perm_p=NA  wilcoxon_p=0.1016
+        → |Stouffer|=3.38
+    • [HALLMARK_PI3K_AKT_MTOR_SIGNALING_ALL]  bip [Brain_Caudate_basal_ganglia_spredixcan]  n=68  Stouffer Z=2.442  perm_p=NA  wilcoxon_p=0.1041
+        → |Stouffer|=2.44
+    • [ADULT_ASTRO_ALL]  migraine  n=34  Stouffer Z=3.300 CI95=[-0.57,7.22]  perm_p=0.1043  wilcoxon_p=0.06692
+        → |Stouffer|=3.30
+    • [GOBP_INSULIN_SECRETION_INVOLVED_IN_CELLULAR_RESPONSE_TO_GLUCOSE_STIMULUS_ALL]  bip [Brain_Amygdala_spredixcan]  n=33  Stouffer Z=2.832  perm_p=NA  wilcoxon_p=0.1085
+        → |Stouffer|=2.83
+    • [GOBP_POSITIVE_REGULATION_OF_MICROGLIAL_ACTIVATION]  migraine  n=16  Stouffer Z=3.208 CI95=[-0.06,6.54]  perm_p=0.1086  wilcoxon_p=0.1591
+        → |Stouffer|=3.21
+    • [REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM]  bip [Brain_Hippocampus_spredixcan]  n=8  Stouffer Z=-2.002  perm_p=NA  wilcoxon_p=0.1094
+        → |Stouffer|=2.00
+    • [REACTOME_COMPLEMENT_ALL]  migraine [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=22  Stouffer Z=-1.986  perm_p=NA  wilcoxon_p=0.1129
+        → |Stouffer|=1.99
+    • [REACTOME_TELOMERE_ALL]  bip [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=43  Stouffer Z=-2.521  perm_p=NA  wilcoxon_p=0.1276
+        → |Stouffer|=2.52
+    • [GOBP_CELLULAR_SENESCENCE_ALL]  bip [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=55  Stouffer Z=-2.141  perm_p=NA  wilcoxon_p=0.1294
+        → |Stouffer|=2.14
+    • [HLA_COMPLEX_ALL]  migraine [Brain_Amygdala_spredixcan]  n=12  Stouffer Z=1.988  perm_p=NA  wilcoxon_p=0.1294
+        → |Stouffer|=1.99
+    • [REACTOME_CELLULAR_SENESCENCE_ALL]  bip [Brain_Frontal_Cortex_BA9_spredixcan]  n=70  Stouffer Z=-2.420  perm_p=NA  wilcoxon_p=0.1427
+        → |Stouffer|=2.42
+    • [REACTOME_SENESCENCE_ALL]  bip [Brain_Frontal_Cortex_BA9_spredixcan]  n=70  Stouffer Z=-2.420  perm_p=NA  wilcoxon_p=0.1427
+        → |Stouffer|=2.42
+    • [REACTOME_GLUCAGON_LIKE_PEPTIDE_1_GLP1_REGULATES_INSULIN_SECRETION_ALL]  bip [Brain_Amygdala_spredixcan]  n=17  Stouffer Z=-2.050  perm_p=NA  wilcoxon_p=0.1454
+        → |Stouffer|=2.05
+    • [REACTOME_GLUCAGON_LIKE_PEPTIDE_1_GLP1_REGULATES_INSULIN_SECRETION_ALL]  bip [Brain_Hippocampus_spredixcan]  n=21  Stouffer Z=-2.941  perm_p=NA  wilcoxon_p=0.147
+        → |Stouffer|=2.94
+    • [GOCC_BCL_2_FAMILY_PROTEIN_COMPLEX_ALL]  bip [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=8  Stouffer Z=3.347  perm_p=NA  wilcoxon_p=0.1484
+        → |Stouffer|=3.35
+    • [WANG_ADIPOGENIC_GENES_REPRESSED_BY_SIRT1_ALL]  migraine  n=21  Stouffer Z=2.911 CI95=[-0.77,7.31]  perm_p=0.1489  wilcoxon_p=0.5621
+        → |Stouffer|=2.91
+    • [REACTOME_MITOPHAGY]  migraine [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=14  Stouffer Z=2.726  perm_p=NA  wilcoxon_p=0.1531
+        → |Stouffer|=2.73
+    • [HALLMARK_PI3K_AKT_MTOR_SIGNALING_ALL]  bip  n=88  Stouffer Z=3.504 CI95=[-1.25,8.25]  perm_p=0.1539  wilcoxon_p=0.1319
+        → |Stouffer|=3.50
+    • [KEGG_MEDICUS_REFERENCE_EP_NE_ADRB_CAMP_SIGNALING_PATHWAY_ALL]  migraine [Brain_Caudate_basal_ganglia_spredixcan]  n=7  Stouffer Z=-2.633  perm_p=NA  wilcoxon_p=0.1562
+        → |Stouffer|=2.63
+    • [ADULT_OLIGO_ALL]  migraine  n=26  Stouffer Z=2.849 CI95=[-0.69,6.31]  perm_p=0.1581  wilcoxon_p=0.1358
+        → |Stouffer|=2.85
+    • [GOMF_NADPLUS_BINDING_ALL]  migraine  n=17  Stouffer Z=2.747 CI95=[-1.39,6.58]  perm_p=0.1605  wilcoxon_p=0.1454
+        → |Stouffer|=2.75
+    • [HALLMARK_APOPTOSIS_ALL]  bip [Brain_Amygdala_spredixcan]  n=77  Stouffer Z=2.023  perm_p=NA  wilcoxon_p=0.1634
+        → |Stouffer|=2.02
+    • [MOOTHA_PGC_ALL]  bip  n=339  Stouffer Z=3.438 CI95=[-1.86,9.08]  perm_p=0.165  wilcoxon_p=0.2839
+        → |Stouffer|=3.44
+    • [MOOTHA_PGC_ALL]  migraine  n=353  Stouffer Z=-2.716 CI95=[-6.49,1.26]  perm_p=0.1666  wilcoxon_p=0.2638
+        → |Stouffer|=2.72
+    • [GOBP_INSULIN_SECRETION_INVOLVED_IN_CELLULAR_RESPONSE_TO_GLUCOSE_STIMULUS_ALL]  migraine [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=39  Stouffer Z=2.556  perm_p=NA  wilcoxon_p=0.1711
+        → |Stouffer|=2.56
+    • [REACTOME_COMPLEMENT_ALL]  bip [Brain_Frontal_Cortex_BA9_spredixcan]  n=22  Stouffer Z=2.013  perm_p=NA  wilcoxon_p=0.1762
+        → |Stouffer|=2.01
+    • [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL]  bip [Brain_Frontal_Cortex_BA9_spredixcan]  n=122  Stouffer Z=2.240  perm_p=NA  wilcoxon_p=0.1794
+        → |Stouffer|=2.24
+    • [MONOAMINES_ALL]  bip [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=50  Stouffer Z=-2.188  perm_p=NA  wilcoxon_p=0.1877
+        → |Stouffer|=2.19
+    • [GOBP_INSULIN_SECRETION_INVOLVED_IN_CELLULAR_RESPONSE_TO_GLUCOSE_STIMULUS_ALL]  bip  n=54  Stouffer Z=3.242 CI95=[-0.91,7.69]  perm_p=0.1878  wilcoxon_p=0.2088
+        → |Stouffer|=3.24
+    • [REACTOME_MITOPHAGY]  migraine  n=19  Stouffer Z=2.578 CI95=[-1.94,6.96]  perm_p=0.193  wilcoxon_p=0.2485
+        → |Stouffer|=2.58
+    • [GOMF_NADPLUS_BINDING_ALL]  migraine [Brain_Amygdala_spredixcan]  n=14  Stouffer Z=2.139  perm_p=NA  wilcoxon_p=0.1937
+        → |Stouffer|=2.14
+    • [KEGG_NICOTINATE_AND_NICOTINAMIDE_METABOLISM_ALL]  bip [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=12  Stouffer Z=-3.552  perm_p=NA  wilcoxon_p=0.2036
+        → |Stouffer|=3.55
+    • [REACTOME_INTRINSIC_PATHWAY_FOR_APOPTOSIS_ALL]  bip [Brain_Frontal_Cortex_BA9_spredixcan]  n=37  Stouffer Z=2.217  perm_p=NA  wilcoxon_p=0.2077
+        → |Stouffer|=2.22
+    • [GOBP_REGULATION_OF_CELLULAR_SENESCENCE_ALL]  bip  n=35  Stouffer Z=-3.095 CI95=[-8.18,2.74]  perm_p=0.2092  wilcoxon_p=0.1438
+        → |Stouffer|=3.10
+    • [KEGG_NICOTINATE_AND_NICOTINAMIDE_METABOLISM_ALL]  bip  n=22  Stouffer Z=-3.082 CI95=[-9.84,2.56]  perm_p=0.2123  wilcoxon_p=0.7262
+        → |Stouffer|=3.08
+    • [GOCC_BCL_2_FAMILY_PROTEIN_COMPLEX_ALL]  bip [Brain_Amygdala_spredixcan]  n=7  Stouffer Z=2.986  perm_p=NA  wilcoxon_p=0.2188
+        → |Stouffer|=2.99
+    • [REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM]  migraine [Brain_Amygdala_spredixcan]  n=6  Stouffer Z=2.192  perm_p=NA  wilcoxon_p=0.2188
+        → |Stouffer|=2.19
+    • [REACTOME_GLUCAGON_LIKE_PEPTIDE_1_GLP1_REGULATES_INSULIN_SECRETION_ALL]  bip  n=32  Stouffer Z=-2.991 CI95=[-9.00,3.14]  perm_p=0.2276  wilcoxon_p=0.3309
+        → |Stouffer|=2.99
+    • [GOBP_CAMKK_AMPK_SIGNALING_CASCADE_ALL]  bip  n=9  Stouffer Z=-2.909 CI95=[-7.60,0.19]  perm_p=0.2291  wilcoxon_p=0.1289
+        → |Stouffer|=2.91
+    • [WP_GLP1_FROM_INTESTINE_AND_PANCREAS_AND_ROLE_IN_GLUCOSE_HOMEOSTASIS_ALL]  bip  n=4  Stouffer Z=2.865 CI95=[-1.00,8.33]  perm_p=0.2322  wilcoxon_p=NA
+        → |Stouffer|=2.87
+    • [KEGG_DOPAMINERGIC_SYNAPSE]  bip [Brain_Amygdala_spredixcan]  n=10  Stouffer Z=1.967  perm_p=NA  wilcoxon_p=0.2324
+        → |Stouffer|=1.97
+    • [GOBP_CELLULAR_SENESCENCE_ALL]  bip  n=77  Stouffer Z=-2.928 CI95=[-7.59,1.96]  perm_p=0.2343  wilcoxon_p=0.3958
+        → |Stouffer|=2.93
+    • [HALLMARK_INFLAMMATORY_RESPONSE]  bip [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=9  Stouffer Z=2.582  perm_p=NA  wilcoxon_p=0.25
+        → |Stouffer|=2.58
+    • [HALLMARK_APOPTOSIS_ALL]  bip  n=134  Stouffer Z=2.837 CI95=[-1.18,7.04]  perm_p=0.2508  wilcoxon_p=0.1448
+        → |Stouffer|=2.84
+    • [REACTOME_COMPLEMENT_ALL]  bip [Brain_Caudate_basal_ganglia_spredixcan]  n=19  Stouffer Z=2.076  perm_p=NA  wilcoxon_p=0.2579
+        → |Stouffer|=2.08
+    • [REACTOME_SIRT1_NEGATIVELY_REGULATES_RRNA_EXPRESSION_ALL]  migraine  n=7  Stouffer Z=-2.198 CI95=[-5.53,0.79]  perm_p=0.2649  wilcoxon_p=0.6875
+        → |Stouffer|=2.20
+    • [REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM]  migraine  n=17  Stouffer Z=2.192 CI95=[-1.59,6.45]  perm_p=0.2709  wilcoxon_p=0.8176
+        → |Stouffer|=2.19
+    • [WP_GLP1_FROM_INTESTINE_AND_PANCREAS_AND_ROLE_IN_GLUCOSE_HOMEOSTASIS_ALL]  migraine  n=4  Stouffer Z=2.112 CI95=[-0.08,4.64]  perm_p=0.2736  wilcoxon_p=NA
+        → |Stouffer|=2.11
+    • [ADULT_ASTRO_ALL]  bip  n=34  Stouffer Z=2.634 CI95=[-1.26,6.60]  perm_p=0.2841  wilcoxon_p=0.228
+        → |Stouffer|=2.63
+    • [REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM]  bip  n=16  Stouffer Z=-2.600 CI95=[-6.38,1.61]  perm_p=0.2878  wilcoxon_p=0.08325
+        → |Stouffer|=2.60
+    • [REACTOME_CELLULAR_SENESCENCE_ALL]  bip [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=70  Stouffer Z=-1.995  perm_p=NA  wilcoxon_p=0.2989
+        → |Stouffer|=1.99
+    • [REACTOME_SENESCENCE_ALL]  bip [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=70  Stouffer Z=-1.995  perm_p=NA  wilcoxon_p=0.2989
+        → |Stouffer|=1.99
+    • [REACTOME_MITOPHAGY]  bip [Brain_Amygdala_spredixcan]  n=15  Stouffer Z=2.464  perm_p=NA  wilcoxon_p=0.3028
+        → |Stouffer|=2.46
+    • [WP_NAD_METABOLISM_ALL]  bip  n=14  Stouffer Z=-2.470 CI95=[-7.21,2.53]  perm_p=0.3031  wilcoxon_p=0.2958
+        → |Stouffer|=2.47
+    • [REACTOME_ENERGY_DEPENDENT_REGULATION_OF_MTOR_BY_LKB1_AMPK_ALL]  bip  n=25  Stouffer Z=-2.424 CI95=[-8.62,3.50]  perm_p=0.319  wilcoxon_p=0.4578
+        → |Stouffer|=2.42
+    • [HALLMARK_INFLAMMATORY_RESPONSE]  bip  n=19  Stouffer Z=2.439 CI95=[-0.85,6.22]  perm_p=0.3204  wilcoxon_p=0.2668
+        → |Stouffer|=2.44
+    • [REACTOME_COMPLEMENT_ALL]  migraine [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=27  Stouffer Z=-2.201  perm_p=NA  wilcoxon_p=0.3242
+        → |Stouffer|=2.20
+    • [KEGG_DOPAMINERGIC_SYNAPSE]  bip  n=16  Stouffer Z=2.371 CI95=[-2.12,6.50]  perm_p=0.332  wilcoxon_p=0.3484
+        → |Stouffer|=2.37
+    • [HLA_COMPLEX_ALL]  bip [Brain_Frontal_Cortex_BA9_spredixcan]  n=11  Stouffer Z=-2.783  perm_p=NA  wilcoxon_p=0.3652
+        → |Stouffer|=2.78
+    • [GOBP_REGULATION_OF_SYNAPTIC_PLASTICITY_ALL]  bip  n=160  Stouffer Z=2.179 CI95=[-2.13,6.48]  perm_p=0.3734  wilcoxon_p=0.3721
+        → |Stouffer|=2.18
+    • [GOBP_CAMKK_AMPK_SIGNALING_CASCADE_ALL]  bip [Brain_Amygdala_spredixcan]  n=7  Stouffer Z=-2.068  perm_p=NA  wilcoxon_p=0.375
+        → |Stouffer|=2.07
+    • [REACTOME_COMPLEMENT_ALL]  bip  n=40  Stouffer Z=2.004 CI95=[-2.33,7.12]  perm_p=0.4193  wilcoxon_p=0.6755
+        → |Stouffer|=2.00
+    • [REACTOME_SYNTHESIS_SECRETION_AND_INACTIVATION_OF_GLUCAGON_LIKE_PEPTIDE_1_GLP_1_ALL]  bip [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=11  Stouffer Z=-2.006  perm_p=NA  wilcoxon_p=0.5195
+        → |Stouffer|=2.01
+    • [GOBP_NAD_TRANSPORT_ALL]  bip [Brain_Caudate_basal_ganglia_spredixcan]  n=3  Stouffer Z=2.001  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.00
+    • [GOCC_BCL_2_FAMILY_PROTEIN_COMPLEX_ALL]  bip [Brain_Hippocampus_spredixcan]  n=4  Stouffer Z=3.228  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=3.23
+    • [REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM]  bip [Brain_Amygdala_spredixcan]  n=5  Stouffer Z=-2.922  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.92
+    • [REACTOME_NEUROTRANSMITTER_RELEASE_CYCLE]  bip [Brain_Hippocampus_spredixcan]  n=4  Stouffer Z=2.848  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.85
+    • [REACTOME_SIRT1_NEGATIVELY_REGULATES_RRNA_EXPRESSION_ALL]  bip [Brain_Hippocampus_spredixcan]  n=5  Stouffer Z=2.133  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.13
+
+==============================================================================
+  [2] DIFFERENTIAL TESTS (Kruskal-Wallis + pairwise)
+==============================================================================
+  7 significant differential pair(s):
+
+    • [KEGG_LTP_ALL]  bip vs migraine  mean_Z_diff=1.231  MWU p=0.01234 (FDR=0.01234)  PairedW p=0.007214  RBC=-0.282
+        → MWU_p=0.01234; PairedW_p=0.007214
+    • [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL]  bip vs migraine  mean_Z_diff=0.489  MWU p=0.02794 (FDR=0.02794)  PairedW p=0.03248  RBC=-0.144
+        → MWU_p=0.02794; PairedW_p=0.03248
+    • [KEGG_DOPAMINERGIC_SYNAPSE]  bip vs migraine  mean_Z_diff=1.376  MWU p=0.0621 (FDR=0.0621)  PairedW p=0.07391  RBC=-0.391
+        → |RBC|=0.39
+    • [REACTOME_TELOMERE_ALL]  bip vs migraine  mean_Z_diff=-1.051  MWU p=0.08088 (FDR=0.08088)  PairedW p=0.04172  RBC=0.193
+        → PairedW_p=0.04172
+    • [HALLMARK_PI3K_AKT_MTOR_SIGNALING_ALL]  bip vs migraine  mean_Z_diff=0.498  MWU p=0.08888 (FDR=0.08888)  PairedW p=0.04263  RBC=-0.149
+        → PairedW_p=0.04263
+    • [GOCC_BCL_2_FAMILY_PROTEIN_COMPLEX_ALL]  bip vs migraine  mean_Z_diff=2.186  MWU p=0.09618 (FDR=0.09618)  PairedW p=0.2031  RBC=-0.450
+        → |RBC|=0.45
+    • [MOOTHA_PGC_ALL]  bip vs migraine  mean_Z_diff=0.292  MWU p=0.2339 (FDR=0.2339)  PairedW p=0.04562  RBC=-0.053
+        → PairedW_p=0.04562
+
+==============================================================================
+  [3] PROFILE PROXIMITY (Pearson / Spearman)
+==============================================================================
+  5 significant proximity pair(s):
+
+    • [REACTOME_ENERGY_DEPENDENT_REGULATION_OF_MTOR_BY_LKB1_AMPK_ALL]  bip vs migraine  n=25  r=-0.494 (p=0.01208)  ρ=-0.400 (p=0.04757)  cos=-0.498
+        → Pearson r=-0.49 (p=0.01208); Spearman ρ=-0.40 (p=0.04757)
+    • [WP_GLP1_FROM_INTESTINE_AND_PANCREAS_AND_ROLE_IN_GLUCOSE_HOMEOSTASIS_ALL]  bip vs migraine  n=4  r=0.982 (p=0.01815)  ρ=1.000 (p=0)  cos=0.971
+        → Pearson r=0.98 (p=0.01815); Spearman ρ=1.00 (p=0)
+    • [GOBP_REGULATION_OF_CELLULAR_SENESCENCE_ALL]  bip vs migraine  n=35  r=0.382 (p=0.02352)  ρ=0.250 (p=0.1473)  cos=0.352
+        → Pearson r=0.38 (p=0.02352)
+    • [GOMF_NADPLUS_BINDING_ALL]  bip vs migraine  n=17  r=0.523 (p=0.03138)  ρ=0.390 (p=0.122)  cos=0.490
+        → Pearson r=0.52 (p=0.03138)
+    • [GOBP_NAD_TRANSPORT_ALL]  bip vs migraine  n=3  r=0.876 (p=0.3207)  ρ=1.000 (p=0)  cos=0.729
+        → Spearman ρ=1.00 (p=0)
+
+==============================================================================
+  [4] PAIRWISE DISEASE STATISTICAL TESTS
+==============================================================================
+  20 significant pairwise comparison(s):
+
+    • [MOOTHA_MITOCHONDRIA_ALL]  bip vs migraine  n_paired=360  mean_diff=-0.033  Cohen_d(paired)=-0.01  Cohen_d(unpaired)=-0.01
+        → Levene p=1e-06
+    • [MOOTHA_PGC_ALL]  bip vs migraine  n_paired=336  mean_diff=0.292  Cohen_d(paired)=0.09  Cohen_d(unpaired)=0.14
+        → Levene p=0.000144; Paired Wilcoxon p=0.04562
+    • [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL]  bip vs migraine  n_paired=155  mean_diff=0.489  Cohen_d(paired)=0.16  Cohen_d(unpaired)=0.23
+        → MWU p=0.01866; KS p=0.00344; Welch t p=0.04003; Levene p=0.001423; Brunner-Munzel p=0.01965; Paired t p=0.04488; Paired Wilcoxon p=0.03248
+    • [REACTOME_INTRINSIC_PATHWAY_FOR_APOPTOSIS_ALL]  bip vs migraine  n_paired=47  mean_diff=0.967  Cohen_d(paired)=0.27  Cohen_d(unpaired)=0.42
+        → Welch t p=0.04825; Levene p=0.002164
+    • [KEGG_LTP_ALL]  bip vs migraine  n_paired=53  mean_diff=1.231  Cohen_d(paired)=0.39  Cohen_d(unpaired)=0.49
+        → MWU p=0.01804; Welch t p=0.01149; Brunner-Munzel p=0.01531; Paired t p=0.006773; Paired Wilcoxon p=0.007214; Sign-flip Perm p=0.008499
+    • [REACTOME_CELLULAR_SENESCENCE_ALL]  bip vs migraine  n_paired=103  mean_diff=-0.459  Cohen_d(paired)=-0.17  Cohen_d(unpaired)=-0.21
+        → Levene p=0.008013
+    • [REACTOME_SENESCENCE_ALL]  bip vs migraine  n_paired=103  mean_diff=-0.459  Cohen_d(paired)=-0.17  Cohen_d(unpaired)=-0.21
+        → Levene p=0.008013
+    • [REACTOME_TELOMERE_ALL]  bip vs migraine  n_paired=55  mean_diff=-1.051  Cohen_d(paired)=-0.31  Cohen_d(unpaired)=-0.44
+        → Welch t p=0.02097; Paired t p=0.02733; Paired Wilcoxon p=0.04172; Sign-flip Perm p=0.0287
+    • [REACTOME_ENERGY_DEPENDENT_REGULATION_OF_MTOR_BY_LKB1_AMPK_ALL]  bip vs migraine  n_paired=25  mean_diff=-0.579  Cohen_d(paired)=-0.15  Cohen_d(unpaired)=-0.25
+        → Levene p=0.02212
+    • [KEGG_APOPTOSIS_ALL]  bip vs migraine  n_paired=67  mean_diff=0.157  Cohen_d(paired)=0.06  Cohen_d(unpaired)=0.09
+        → Levene p=0.02214
+    • [WP_NAD_METABOLISM_SIRTUINS_AND_AGING_ALL]  bip vs migraine  n_paired=10  mean_diff=-0.127  Cohen_d(paired)=-0.04  Cohen_d(unpaired)=-0.06
+        → Levene p=0.03495
+    • [GOBP_REGULATION_OF_SYNAPTIC_PLASTICITY_ALL]  bip vs migraine  n_paired=157  mean_diff=0.274  Cohen_d(paired)=0.11  Cohen_d(unpaired)=0.12
+        → Levene p=0.04033
+    • [HALLMARK_PI3K_AKT_MTOR_SIGNALING_ALL]  bip vs migraine  n_paired=88  mean_diff=0.498  Cohen_d(paired)=0.17  Cohen_d(unpaired)=0.25
+        → Paired Wilcoxon p=0.04263
+    • [GOBP_REGULATION_OF_CELLULAR_SENESCENCE_ALL]  bip vs migraine  n_paired=35  mean_diff=-0.730  Cohen_d(paired)=-0.29  Cohen_d(unpaired)=-0.35
+        → MWU p=0.04476; KS p=0.04499; Levene p=0.04661; Brunner-Munzel p=0.04303
+    • [HLA_COMPLEX_ALL]  bip vs migraine  n_paired=17  mean_diff=-2.085  Cohen_d(paired)=-0.42  Cohen_d(unpaired)=-0.71
+        → Welch t p=0.04384; |Cohen's d (unpaired)|=0.71
+    • [KEGG_DOPAMINERGIC_SYNAPSE]  bip vs migraine  n_paired=16  mean_diff=1.376  Cohen_d(paired)=0.47  Cohen_d(unpaired)=0.73
+        → MWU p=0.04962; Welch t p=0.04738; |Cohen's d (unpaired)|=0.73
+    • [REACTOME_GLUCAGON_LIKE_PEPTIDE_1_GLP1_REGULATES_INSULIN_SECRETION_ALL]  bip vs migraine  n_paired=32  mean_diff=-0.733  Cohen_d(paired)=-0.22  Cohen_d(unpaired)=-0.31
+        → Levene p=0.04953
+    • [GOBP_NAD_TRANSPORT_ALL]  bip vs migraine  n_paired=3  mean_diff=0.645  Cohen_d(paired)=0.56  Cohen_d(unpaired)=0.40
+        → |Cohen's d (paired)|=0.56
+    • [GOCC_BCL_2_FAMILY_PROTEIN_COMPLEX_ALL]  bip vs migraine  n_paired=10  mean_diff=2.186  Cohen_d(paired)=0.53  Cohen_d(unpaired)=0.85
+        → |Cohen's d (paired)|=0.53; |Cohen's d (unpaired)|=0.85
+    • [REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM]  bip vs migraine  n_paired=16  mean_diff=-1.199  Cohen_d(paired)=-0.33  Cohen_d(unpaired)=-0.54
+        → |Cohen's d (unpaired)|=0.54
+
+==============================================================================
+  [5] CONCORDANCE METRICS (sign / CCC / Kendall τ)
+==============================================================================
+  2 significant concordance pair(s):
+
+    • [WP_GLP1_FROM_INTESTINE_AND_PANCREAS_AND_ROLE_IN_GLUCOSE_HOMEOSTASIS_ALL]  bip vs migraine  n_paired=4  sign_rate=1.000 (p=0.125)  CCC=0.763  τ=1.000 (p=0.08333)
+        → |Lin_CCC|=0.76
+    • [GOBP_NAD_TRANSPORT_ALL]  bip vs migraine  n_paired=3  sign_rate=1.000 (p=0.25)  CCC=0.697  τ=1.000 (p=0.3333)
+        → |Lin_CCC|=0.70
+
+==============================================================================
+  [6] GENE-LEVEL LOO INFLUENCE (flagged genes)
+==============================================================================
+  1954 influential gene-disease entries:
+
+    [ADULT_ASTRO_ALL] bip:
+      • SDC4: Z=-5.48, ΔStouffer=-0.99 (39.4%)
+      • PRODH: Z=4.75, ΔStouffer=+0.79 (31.4%)
+      • SLC14A1: Z=3.93, ΔStouffer=+0.65 (25.7%)
+      • CLTCL1: Z=3.43, ΔStouffer=+0.56 (22.2%)
+    [ADULT_ASTRO_ALL] migraine:
+      • BMPR1B: Z=-5.27, ΔStouffer=-0.97 (29.9%)
+      • NWD1: Z=5.54, ΔStouffer=+0.92 (28.3%)
+      • SLCO1C1: Z=4.92, ΔStouffer=+0.81 (25.0%)
+      • SPARCL1: Z=-3.51, ΔStouffer=-0.66 (20.4%)
+    [ADULT_MICRO_ALL] bip:
+      • OLR1: Z=-5.32, ΔStouffer=-1.16 (105.2%) (SIGN-FLIP)
+      • ALOX5AP: Z=-5.12, ΔStouffer=-1.12 (101.1%) (SIGN-FLIP)
+      • A2M: Z=3.28, ΔStouffer=+0.76 (68.9%)
+      • CD14: Z=3.22, ΔStouffer=+0.75 (67.5%)
+      • CD83: Z=2.96, ΔStouffer=+0.69 (62.3%)
+      • HLA-DRA: Z=2.15, ΔStouffer=+0.51 (45.9%)
+      • PTPRC: Z=-2.27, ΔStouffer=-0.48 (43.5%)
+      • ITGAX: Z=-2.02, ΔStouffer=-0.42 (38.4%)
+      • PLEK: Z=-1.84, ΔStouffer=-0.38 (34.7%)
+      • C3: Z=1.40, ΔStouffer=+0.34 (30.8%)
+    [ADULT_MICRO_ALL] migraine:
+      • CD83: Z=-3.58, ΔStouffer=-0.84 (55.7%)
+      • OLR1: Z=3.68, ΔStouffer=+0.79 (52.3%)
+      • ALOX5AP: Z=-1.95, ΔStouffer=-0.47 (31.4%)
+      • CMKLR1: Z=2.19, ΔStouffer=+0.45 (30.1%)
+      • HLA-DRA: Z=-1.52, ΔStouffer=-0.38 (25.1%)
+      • A2M: Z=1.85, ΔStouffer=+0.38 (25.0%)
+      • TREM1: Z=1.83, ΔStouffer=+0.37 (24.8%)
+    [ADULT_OLIGO_ALL] bip:
+      • GLYCTK: Z=12.49, ΔStouffer=+2.51 (124.2%) (SIGN-FLIP)
+      • ABCA8: Z=4.61, ΔStouffer=+0.90 (44.5%)
+      • GPNMB: Z=-4.18, ΔStouffer=-0.90 (44.3%)
+      • PLEKHB1: Z=3.61, ΔStouffer=+0.69 (34.4%)
+      • PAQR6: Z=-2.61, ΔStouffer=-0.57 (28.4%)
+      • LGI3: Z=2.78, ΔStouffer=+0.53 (26.0%)
+      • TF: Z=-2.18, ΔStouffer=-0.49 (24.1%)
+      • TMEM144: Z=-2.08, ΔStouffer=-0.47 (23.1%)
+    [ADULT_OLIGO_ALL] migraine:
+      • MOBP: Z=-3.82, ΔStouffer=-0.82 (29.6%)
+      • ABCA8: Z=4.21, ΔStouffer=+0.79 (28.5%)
+      • GPNMB: Z=4.15, ΔStouffer=+0.78 (28.1%)
+    [GOBP_CAMKK_AMPK_SIGNALING_CASCADE_ALL] bip:
+      • LRRK2: Z=-7.20, ΔStouffer=-2.36 (77.8%)
+      • PRKAA1: Z=1.39, ΔStouffer=+0.67 (22.2%)
+    [GOBP_CAMKK_AMPK_SIGNALING_CASCADE_ALL] migraine:
+      • TREM2: Z=2.60, ΔStouffer=+0.93 (85.3%)
+      • MYH7B: Z=-2.08, ΔStouffer=-0.63 (58.5%)
+      • LRRK2: Z=-1.33, ΔStouffer=-0.38 (35.4%)
+      • HTT: Z=0.81, ΔStouffer=+0.33 (30.4%)
+      • KCNJ8: Z=-0.96, ΔStouffer=-0.26 (24.0%)
+      • PRKAA1: Z=-0.95, ΔStouffer=-0.26 (23.9%)
+      • CAMKK2: Z=-0.83, ΔStouffer=-0.22 (20.1%)
+    [GOBP_CELLULAR_SENESCENCE_ALL] bip:
+      • NEK4: Z=13.47, ΔStouffer=+1.56 (67.4%)
+      • TERF2: Z=-7.65, ΔStouffer=-0.86 (37.2%)
+      • DNAJA3: Z=-5.89, ΔStouffer=-0.66 (28.5%)
+      • YPEL3: Z=-5.13, ΔStouffer=-0.57 (24.7%)
+      • GINS3: Z=4.63, ΔStouffer=+0.55 (23.6%)
+      • MAPK9: Z=-4.82, ΔStouffer=-0.54 (23.2%)
+      • KAT6A: Z=4.54, ΔStouffer=+0.54 (23.2%)
+      • SMC6: Z=-4.61, ΔStouffer=-0.51 (22.2%)
+      • MAPK14: Z=-4.56, ΔStouffer=-0.51 (21.9%)
+      • ING2: Z=-4.26, ΔStouffer=-0.47 (20.4%)
+    [GOBP_CELLULAR_SENESCENCE_ALL] migraine:
+      • MAP2K4: Z=5.65, ΔStouffer=+0.63 (82.4%)
+      • PRELP: Z=4.50, ΔStouffer=+0.50 (65.5%)
+      • CALR: Z=-3.91, ΔStouffer=-0.44 (58.0%)
+      • YPEL3: Z=-3.80, ΔStouffer=-0.43 (56.4%)
+      • NEK4: Z=3.69, ΔStouffer=+0.41 (53.7%)
+      • ARG2: Z=-3.43, ΔStouffer=-0.39 (51.1%)
+      • ULK3: Z=-3.37, ΔStouffer=-0.38 (50.1%)
+      • CDK2: Z=-3.36, ΔStouffer=-0.38 (49.9%)
+      • PML: Z=-3.28, ΔStouffer=-0.37 (48.9%)
+      • NUP62: Z=-3.26, ΔStouffer=-0.37 (48.6%)
+      • SIRT1: Z=-3.19, ΔStouffer=-0.36 (47.5%)
+      • GINS3: Z=3.28, ΔStouffer=+0.36 (47.5%)
+      • DNAJA3: Z=2.89, ΔStouffer=+0.32 (41.8%)
+      • PAWR: Z=2.84, ΔStouffer=+0.31 (41.2%)
+      • TBX2: Z=-2.68, ΔStouffer=-0.30 (40.0%)
+      • CDK6: Z=2.69, ΔStouffer=+0.30 (38.8%)
+      • WNT1: Z=2.62, ΔStouffer=+0.29 (37.9%)
+      • NDUFS6: Z=-2.38, ΔStouffer=-0.27 (35.6%)
+      • MAPK14: Z=-2.28, ΔStouffer=-0.26 (34.1%)
+      • ABI3: Z=2.29, ΔStouffer=+0.25 (33.0%)
+      • NEK6: Z=2.20, ΔStouffer=+0.24 (31.7%)
+      • MNT: Z=1.98, ΔStouffer=+0.22 (28.6%)
+      • WNT16: Z=1.92, ΔStouffer=+0.21 (27.6%)
+      • MAPK9: Z=-1.82, ΔStouffer=-0.21 (27.4%)
+      • TOP2B: Z=1.88, ΔStouffer=+0.21 (27.0%)
+      • ZKSCAN3: Z=1.86, ΔStouffer=+0.20 (26.7%)
+      • ING2: Z=1.81, ΔStouffer=+0.20 (26.0%)
+      • HRAS: Z=1.70, ΔStouffer=+0.19 (24.4%)
+      • BRCA2: Z=-1.60, ΔStouffer=-0.18 (24.1%)
+      • MAP2K3: Z=1.60, ΔStouffer=+0.17 (22.8%)
+      • NSMCE2: Z=-1.51, ΔStouffer=-0.17 (22.8%)
+      • ZMIZ1: Z=-1.50, ΔStouffer=-0.17 (22.7%)
+      • NUAK1: Z=1.55, ΔStouffer=+0.17 (22.1%)
+      • ID2: Z=-1.41, ΔStouffer=-0.16 (21.4%)
+      • MAP2K7: Z=1.45, ΔStouffer=+0.16 (20.7%)
+    [GOBP_GLUTAMATERGIC_ALL] bip:
+      • CNIH2: Z=-9.65, ΔStouffer=-1.08 (166.9%) (SIGN-FLIP)
+      • LRRK2: Z=-7.20, ΔStouffer=-0.81 (124.5%) (SIGN-FLIP)
+      • TNR: Z=-6.33, ΔStouffer=-0.71 (109.4%) (SIGN-FLIP)
+      • ABCC8: Z=5.55, ΔStouffer=+0.63 (97.1%)
+      • NF1: Z=5.18, ΔStouffer=+0.59 (90.6%)
+      • KMO: Z=5.02, ΔStouffer=+0.57 (87.7%)
+      • VPS54: Z=-4.31, ΔStouffer=-0.48 (74.2%)
+      • CACNB4: Z=4.18, ΔStouffer=+0.47 (73.1%)
+      • GRIK5: Z=-4.04, ΔStouffer=-0.45 (69.5%)
+      • HOMER1: Z=3.90, ΔStouffer=+0.44 (68.3%)
+      • GRIK2: Z=-3.58, ΔStouffer=-0.40 (61.6%)
+      • PSEN1: Z=-3.12, ΔStouffer=-0.35 (53.6%)
+      • P2RX1: Z=-2.84, ΔStouffer=-0.32 (48.7%)
+      • DRD2: Z=-2.67, ΔStouffer=-0.30 (45.8%)
+      • SLC17A7: Z=2.40, ΔStouffer=+0.27 (42.3%)
+      • CDK5: Z=2.35, ΔStouffer=+0.27 (41.5%)
+      • FRRS1L: Z=2.32, ΔStouffer=+0.27 (41.0%)
+      • NPY2R: Z=2.31, ΔStouffer=+0.26 (40.8%)
+      • GRM3: Z=2.00, ΔStouffer=+0.23 (35.4%)
+      • ATAD1: Z=-2.04, ΔStouffer=-0.22 (34.7%)
+      • UCN: Z=1.93, ΔStouffer=+0.22 (34.2%)
+      • PNOC: Z=-2.00, ΔStouffer=-0.22 (34.1%)
+      • SLC1A4: Z=1.90, ΔStouffer=+0.22 (33.6%)
+      • CACNG5: Z=-1.95, ΔStouffer=-0.22 (33.3%)
+      • CDH8: Z=-1.83, ΔStouffer=-0.20 (31.1%)
+      • UNC13C: Z=1.69, ΔStouffer=+0.19 (30.0%)
+      • GRID1: Z=1.68, ΔStouffer=+0.19 (29.8%)
+      • GRIA1: Z=1.66, ΔStouffer=+0.19 (29.5%)
+      • GRIN3A: Z=-1.71, ΔStouffer=-0.19 (29.1%)
+      • RAB3GAP1: Z=1.63, ΔStouffer=+0.19 (29.0%)
+      • PLPPR4: Z=1.60, ΔStouffer=+0.18 (28.5%)
+      • SLC17A6: Z=-1.57, ΔStouffer=-0.17 (26.7%)
+      • NLGN2: Z=-1.48, ΔStouffer=-0.16 (25.1%)
+      • GRIN2B: Z=1.38, ΔStouffer=+0.16 (24.5%)
+      • RNF167: Z=1.34, ΔStouffer=+0.16 (24.0%)
+      • ADORA1: Z=1.30, ΔStouffer=+0.15 (23.2%)
+      • ATP1A2: Z=-1.34, ΔStouffer=-0.15 (22.7%)
+      • SYT1: Z=-1.27, ΔStouffer=-0.14 (21.4%)
+      • PTK2B: Z=1.19, ΔStouffer=+0.14 (21.4%)
+      • GRM8: Z=1.19, ΔStouffer=+0.14 (21.3%)
+      • STXBP1: Z=-1.24, ΔStouffer=-0.14 (20.9%)
+      • HTR2A: Z=1.16, ΔStouffer=+0.13 (20.8%)
+      • NAPA: Z=1.13, ΔStouffer=+0.13 (20.2%)
+      • DISC1: Z=-1.20, ΔStouffer=-0.13 (20.2%)
+    [GOBP_GLUTAMATERGIC_ALL] migraine:
+      • CNIH2: Z=5.60, ΔStouffer=+0.60 (141.5%) (SIGN-FLIP)
+      • STXBP1: Z=5.35, ΔStouffer=+0.57 (135.1%) (SIGN-FLIP)
+      • SLC17A7: Z=4.32, ΔStouffer=+0.46 (109.0%) (SIGN-FLIP)
+      • CCR2: Z=-3.51, ΔStouffer=-0.38 (89.7%)
+      • ABCC8: Z=3.34, ΔStouffer=+0.36 (84.2%)
+      • ADORA1: Z=3.31, ΔStouffer=+0.35 (83.5%)
+      • CACNG5: Z=-3.14, ΔStouffer=-0.34 (80.2%)
+      • CLSTN3: Z=3.09, ΔStouffer=+0.33 (77.8%)
+      • DRD3: Z=-2.89, ΔStouffer=-0.31 (73.9%)
+      • GRM6: Z=-2.77, ΔStouffer=-0.30 (70.9%)
+      • KMO: Z=-2.54, ΔStouffer=-0.27 (65.0%)
+      • SYT1: Z=-2.47, ΔStouffer=-0.27 (63.2%)
+      • CLN3: Z=2.51, ΔStouffer=+0.27 (63.2%)
+      • GRID1: Z=-2.44, ΔStouffer=-0.26 (62.5%)
+      • GRIN2A: Z=-2.36, ΔStouffer=-0.26 (60.5%)
+      • HTR2A: Z=-2.17, ΔStouffer=-0.23 (55.6%)
+      • MEF2C: Z=-2.11, ΔStouffer=-0.23 (54.2%)
+      • RNF167: Z=-1.92, ΔStouffer=-0.21 (49.4%)
+      • DISC1: Z=1.93, ΔStouffer=+0.20 (48.3%)
+      • GRIN3B: Z=-1.87, ΔStouffer=-0.20 (48.1%)
+      • SLC1A4: Z=1.86, ΔStouffer=+0.20 (46.6%)
+      • NTRK1: Z=1.85, ΔStouffer=+0.20 (46.4%)
+      • GRIK5: Z=-1.79, ΔStouffer=-0.19 (45.9%)
+      • GRIN2D: Z=-1.64, ΔStouffer=-0.18 (42.1%)
+      • CDK5: Z=1.54, ΔStouffer=+0.16 (38.6%)
+      • RELN: Z=1.54, ΔStouffer=+0.16 (38.4%)
+      • SLC17A8: Z=1.53, ΔStouffer=+0.16 (38.2%)
+      • LRRK2: Z=-1.33, ΔStouffer=-0.14 (34.2%)
+      • SERPINE2: Z=1.29, ΔStouffer=+0.14 (32.1%)
+      • CCL2: Z=-1.24, ΔStouffer=-0.14 (32.0%)
+      • DKK1: Z=-1.23, ΔStouffer=-0.13 (31.7%)
+      • MAPK8IP2: Z=1.26, ΔStouffer=+0.13 (31.5%)
+      • CNIH3: Z=1.26, ΔStouffer=+0.13 (31.4%)
+      • CACNG8: Z=1.22, ΔStouffer=+0.13 (30.4%)
+      • ALS2: Z=-1.16, ΔStouffer=-0.13 (29.9%)
+      • CACNB4: Z=1.19, ΔStouffer=+0.12 (29.6%)
+      • CLCN3: Z=-1.10, ΔStouffer=-0.12 (28.6%)
+      • GRIN2B: Z=1.14, ΔStouffer=+0.12 (28.3%)
+      • DTNBP1: Z=-1.08, ΔStouffer=-0.12 (28.0%)
+      • TNR: Z=-1.06, ΔStouffer=-0.12 (27.6%)
+      • NPY2R: Z=-1.05, ΔStouffer=-0.12 (27.3%)
+      • P2RX1: Z=-0.96, ΔStouffer=-0.11 (24.9%)
+      • KCNJ8: Z=-0.96, ΔStouffer=-0.11 (24.9%)
+      • HOMER1: Z=0.99, ΔStouffer=+0.10 (24.6%)
+      • NF1: Z=0.97, ΔStouffer=+0.10 (24.0%)
+      • GRM8: Z=0.96, ΔStouffer=+0.10 (23.9%)
+      • ADORA2A: Z=-0.92, ΔStouffer=-0.10 (23.9%)
+      • HOMER2: Z=-0.91, ΔStouffer=-0.10 (23.7%)
+      • PSEN1: Z=0.91, ΔStouffer=+0.10 (22.6%)
+      • FXR1: Z=-0.81, ΔStouffer=-0.09 (21.2%)
+      • GRIK1: Z=0.84, ΔStouffer=+0.09 (20.6%)
+    [GOBP_INSULIN_SECRETION_INVOLVED_IN_CELLULAR_RESPONSE_TO_GLUCOSE_STIMULUS_ALL] bip:
+      • BAD: Z=7.47, ΔStouffer=+0.99 (29.6%)
+      • ABCC8: Z=5.55, ΔStouffer=+0.73 (21.8%)
+      • PTPRN2: Z=5.49, ΔStouffer=+0.72 (21.5%)
+    [GOBP_INTRINSIC_APOPTOTIC_SIGNALING_PATHWAY_ALL] bip:
+      • BAG6: Z=9.30, ΔStouffer=+0.57 (78.2%)
+      • BAD: Z=7.47, ΔStouffer=+0.46 (62.9%)
+      • FYN: Z=-7.45, ΔStouffer=-0.46 (62.3%)
+      • LRRK2: Z=-7.20, ΔStouffer=-0.44 (60.2%)
+      • PTPMT1: Z=7.09, ΔStouffer=+0.44 (59.7%)
+      • PDCD10: Z=-6.86, ΔStouffer=-0.42 (57.3%)
+      • BNIP3: Z=6.66, ΔStouffer=+0.41 (56.0%)
+      • CDKN2D: Z=-6.59, ΔStouffer=-0.40 (55.1%)
+      • PPIA: Z=5.88, ΔStouffer=+0.36 (49.5%)
+      • STK24: Z=5.33, ΔStouffer=+0.33 (44.9%)
+      • CTNNB1: Z=5.20, ΔStouffer=+0.32 (43.8%)
+      • FBXW7: Z=-5.19, ΔStouffer=-0.32 (43.4%)
+      • EP300: Z=5.10, ΔStouffer=+0.31 (43.0%)
+      • CCAR2: Z=-5.13, ΔStouffer=-0.31 (42.9%)
+      • TAF6: Z=-4.85, ΔStouffer=-0.30 (40.5%)
+      • PRODH: Z=4.75, ΔStouffer=+0.29 (40.1%)
+      • HIPK1: Z=4.69, ΔStouffer=+0.29 (39.5%)
+      • RTKN2: Z=-4.53, ΔStouffer=-0.28 (37.8%)
+      • ATAD5: Z=-4.33, ΔStouffer=-0.26 (36.1%)
+      • ING2: Z=-4.26, ΔStouffer=-0.26 (35.5%)
+      • UACA: Z=-4.23, ΔStouffer=-0.26 (35.3%)
+      • MSH2: Z=-4.06, ΔStouffer=-0.25 (33.9%)
+      • CASP3: Z=-4.04, ΔStouffer=-0.25 (33.7%)
+      • BAG5: Z=3.89, ΔStouffer=+0.24 (32.8%)
+      • SIRT1: Z=-3.91, ΔStouffer=-0.24 (32.6%)
+      • STYXL1: Z=-3.81, ΔStouffer=-0.23 (31.8%)
+      • CEBPB: Z=-3.81, ΔStouffer=-0.23 (31.8%)
+      • FIGNL1: Z=-3.78, ΔStouffer=-0.23 (31.5%)
+      • BDKRB2: Z=-3.69, ΔStouffer=-0.23 (30.8%)
+      • MCL1: Z=3.62, ΔStouffer=+0.22 (30.6%)
+      • IFI27L2: Z=3.58, ΔStouffer=+0.22 (30.2%)
+      • ATF2: Z=-3.55, ΔStouffer=-0.22 (29.6%)
+      • ERO1A: Z=-3.55, ΔStouffer=-0.22 (29.6%)
+      • PHLDA3: Z=-3.53, ΔStouffer=-0.21 (29.4%)
+      • EPO: Z=3.45, ΔStouffer=+0.21 (29.2%)
+      • CASP6: Z=3.42, ΔStouffer=+0.21 (28.9%)
+      • TMEM117: Z=3.36, ΔStouffer=+0.21 (28.4%)
+      • DDX5: Z=3.36, ΔStouffer=+0.21 (28.3%)
+      • PIK3R1: Z=-3.37, ΔStouffer=-0.21 (28.1%)
+      • STK25: Z=-3.33, ΔStouffer=-0.20 (27.8%)
+      • TNFRSF1A: Z=-3.32, ΔStouffer=-0.20 (27.7%)
+      • RPS27L: Z=3.21, ΔStouffer=+0.20 (27.1%)
+      • DNAJA1: Z=-3.23, ΔStouffer=-0.20 (26.9%)
+      • SNAI1: Z=3.17, ΔStouffer=+0.20 (26.8%)
+      • BCL2L1: Z=-3.21, ΔStouffer=-0.20 (26.7%)
+      • MIF: Z=3.14, ΔStouffer=+0.19 (26.5%)
+      • TPT1: Z=-3.15, ΔStouffer=-0.19 (26.2%)
+      • PPIF: Z=-3.12, ΔStouffer=-0.19 (26.0%)
+      • CYP1B1: Z=3.07, ΔStouffer=+0.19 (25.9%)
+      • PARP1: Z=3.02, ΔStouffer=+0.19 (25.5%)
+      • SKIL: Z=-3.06, ΔStouffer=-0.19 (25.5%)
+      • MSH6: Z=-3.05, ΔStouffer=-0.19 (25.4%)
+      • S100A8: Z=-2.99, ΔStouffer=-0.18 (24.9%)
+      • TRIM32: Z=-2.99, ΔStouffer=-0.18 (24.9%)
+      • TRIB3: Z=2.93, ΔStouffer=+0.18 (24.8%)
+      • CRIP1: Z=-2.97, ΔStouffer=-0.18 (24.8%)
+      • TRAF2: Z=2.93, ΔStouffer=+0.18 (24.8%)
+      • XBP1: Z=2.93, ΔStouffer=+0.18 (24.8%)
+      • SFPQ: Z=-2.94, ΔStouffer=-0.18 (24.5%)
+      • PDK1: Z=2.84, ΔStouffer=+0.18 (24.0%)
+      • ERP29: Z=-2.85, ΔStouffer=-0.17 (23.7%)
+      • BIRC2: Z=-2.73, ΔStouffer=-0.17 (22.7%)
+      • PDK2: Z=-2.72, ΔStouffer=-0.17 (22.7%)
+      • JMY: Z=-2.67, ΔStouffer=-0.16 (22.2%)
+      • PLAUR: Z=-2.60, ΔStouffer=-0.16 (21.6%)
+      • S100A9: Z=-2.58, ΔStouffer=-0.16 (21.5%)
+      • ZNF385B: Z=2.53, ΔStouffer=+0.16 (21.4%)
+      • DYRK2: Z=2.50, ΔStouffer=+0.15 (21.1%)
+      • APAF1: Z=2.47, ΔStouffer=+0.15 (20.9%)
+      • FBXO7: Z=2.47, ΔStouffer=+0.15 (20.9%)
+      • CUL2: Z=2.47, ΔStouffer=+0.15 (20.9%)
+      • BID: Z=2.46, ΔStouffer=+0.15 (20.9%)
+      • PPP2R5C: Z=-2.50, ΔStouffer=-0.15 (20.8%)
+      • HNRNPK: Z=-2.46, ΔStouffer=-0.15 (20.4%)
+      • STK11: Z=-2.46, ΔStouffer=-0.15 (20.4%)
+      • VNN1: Z=2.38, ΔStouffer=+0.15 (20.2%)
+      • NCK1: Z=-2.43, ΔStouffer=-0.15 (20.2%)
+    [GOBP_INTRINSIC_APOPTOTIC_SIGNALING_PATHWAY_ALL] migraine:
+      • MAEL: Z=7.46, ΔStouffer=+0.45 (113.7%)
+      • BAG6: Z=6.40, ΔStouffer=+0.39 (97.7%)
+      • HELLS: Z=-6.42, ΔStouffer=-0.39 (97.6%)
+      • MAP2K4: Z=5.65, ΔStouffer=+0.34 (86.2%)
+      • MTCH2: Z=-5.67, ΔStouffer=-0.34 (86.1%)
+      • PPIA: Z=5.62, ΔStouffer=+0.34 (85.8%)
+      • RPS27L: Z=5.62, ΔStouffer=+0.34 (85.7%)
+      • RAD9A: Z=5.56, ΔStouffer=+0.34 (84.8%)
+      • TNFRSF1A: Z=5.33, ΔStouffer=+0.32 (81.3%)
+      • STK24: Z=-5.17, ΔStouffer=-0.31 (78.6%)
+      • FIS1: Z=-5.08, ΔStouffer=-0.31 (77.2%)
+      • PIK3R1: Z=-5.00, ΔStouffer=-0.30 (75.9%)
+      • FBXO7: Z=4.68, ΔStouffer=+0.28 (71.4%)
+      • DNAJA1: Z=-4.46, ΔStouffer=-0.27 (67.8%)
+      • TMEM109: Z=4.35, ΔStouffer=+0.26 (66.4%)
+      • MMP9: Z=-4.34, ΔStouffer=-0.26 (65.9%)
+      • CYLD: Z=-4.22, ΔStouffer=-0.25 (64.0%)
+      • ERP29: Z=-4.07, ΔStouffer=-0.24 (61.8%)
+      • TRIB3: Z=4.00, ΔStouffer=+0.24 (61.1%)
+      • PPP1R15A: Z=-3.99, ΔStouffer=-0.24 (60.5%)
+      • TNFRSF1B: Z=3.91, ΔStouffer=+0.24 (59.7%)
+      • NCK1: Z=-3.92, ΔStouffer=-0.24 (59.5%)
+      • BCL2L11: Z=-3.84, ΔStouffer=-0.23 (58.3%)
+      • ATP2A1: Z=-3.84, ΔStouffer=-0.23 (58.3%)
+      • PDK2: Z=-3.72, ΔStouffer=-0.22 (56.4%)
+      • EIF5A: Z=3.57, ΔStouffer=+0.22 (54.6%)
+      • ATP2A3: Z=-3.58, ΔStouffer=-0.22 (54.3%)
+      • TMEM161A: Z=-3.54, ΔStouffer=-0.21 (53.7%)
+      • NBN: Z=3.34, ΔStouffer=+0.20 (51.1%)
+      • KDM1A: Z=-3.36, ΔStouffer=-0.20 (51.0%)
+      • DDX5: Z=-3.33, ΔStouffer=-0.20 (50.5%)
+      • PML: Z=-3.28, ΔStouffer=-0.20 (49.8%)
+      • NFATC4: Z=-3.26, ΔStouffer=-0.20 (49.4%)
+      • SIVA1: Z=3.23, ΔStouffer=+0.20 (49.3%)
+      • PLAGL2: Z=-3.25, ΔStouffer=-0.20 (49.3%)
+      • XPA: Z=3.18, ΔStouffer=+0.19 (48.6%)
+      • RTKN2: Z=-3.20, ΔStouffer=-0.19 (48.6%)
+      • SIRT1: Z=-3.19, ΔStouffer=-0.19 (48.4%)
+      • BRCA1: Z=3.14, ΔStouffer=+0.19 (48.0%)
+      • FNIP2: Z=-3.10, ΔStouffer=-0.19 (47.0%)
+      • PTPMT1: Z=-3.05, ΔStouffer=-0.18 (46.2%)
+      • CDKN2D: Z=-3.01, ΔStouffer=-0.18 (45.7%)
+      • MSH6: Z=2.96, ΔStouffer=+0.18 (45.2%)
+      • PTTG1IP: Z=-2.97, ΔStouffer=-0.18 (45.0%)
+      • NUPR1: Z=-2.95, ΔStouffer=-0.18 (44.8%)
+      • HIP1R: Z=2.92, ΔStouffer=+0.18 (44.6%)
+      • ATF4: Z=-2.79, ΔStouffer=-0.17 (42.3%)
+      • SFRP2: Z=-2.76, ΔStouffer=-0.17 (41.8%)
+      • BDKRB2: Z=2.67, ΔStouffer=+0.16 (40.8%)
+      • TRIM32: Z=-2.68, ΔStouffer=-0.16 (40.6%)
+      • ZNF385B: Z=-2.66, ΔStouffer=-0.16 (40.3%)
+      • WNT1: Z=2.62, ΔStouffer=+0.16 (40.1%)
+      • TREM2: Z=2.60, ΔStouffer=+0.16 (39.8%)
+      • IFI27L1: Z=2.60, ΔStouffer=+0.16 (39.7%)
+      • PTGS2: Z=2.59, ΔStouffer=+0.16 (39.6%)
+      • MYBBP1A: Z=-2.61, ΔStouffer=-0.16 (39.5%)
+      • BCL2L1: Z=2.57, ΔStouffer=+0.16 (39.3%)
+      • HYOU1: Z=2.54, ΔStouffer=+0.15 (38.9%)
+      • PERP: Z=2.54, ΔStouffer=+0.15 (38.9%)
+      • CREB3: Z=2.52, ΔStouffer=+0.15 (38.5%)
+      • E2F1: Z=2.49, ΔStouffer=+0.15 (38.1%)
+      • ERCC6: Z=2.47, ΔStouffer=+0.15 (37.7%)
+      • PPIF: Z=2.43, ΔStouffer=+0.15 (37.2%)
+      • TXNDC12: Z=2.41, ΔStouffer=+0.15 (36.9%)
+      • IER3: Z=2.37, ΔStouffer=+0.14 (36.2%)
+      • IFI27L2: Z=-2.39, ΔStouffer=-0.14 (36.2%)
+      • CDIP1: Z=2.37, ΔStouffer=+0.14 (36.2%)
+      • MDM2: Z=-2.39, ΔStouffer=-0.14 (36.2%)
+      • IFI16: Z=2.36, ΔStouffer=+0.14 (36.1%)
+      • CHEK2: Z=-2.36, ΔStouffer=-0.14 (35.7%)
+      • ELL3: Z=2.33, ΔStouffer=+0.14 (35.6%)
+      • RPS3: Z=2.32, ΔStouffer=+0.14 (35.6%)
+      • MMP2: Z=-2.31, ΔStouffer=-0.14 (34.9%)
+      • DDIAS: Z=-2.28, ΔStouffer=-0.14 (34.5%)
+      • RPL26: Z=-2.25, ΔStouffer=-0.14 (34.1%)
+      • S100A9: Z=2.22, ΔStouffer=+0.13 (33.9%)
+      • BAD: Z=-2.21, ΔStouffer=-0.13 (33.5%)
+      • ATF2: Z=2.18, ΔStouffer=+0.13 (33.4%)
+      • FIGNL1: Z=2.16, ΔStouffer=+0.13 (33.1%)
+      • IKBKE: Z=-2.17, ΔStouffer=-0.13 (32.8%)
+      • DDIT3: Z=-2.16, ΔStouffer=-0.13 (32.8%)
+      • NCK2: Z=2.13, ΔStouffer=+0.13 (32.7%)
+      • SHISA5: Z=-2.13, ΔStouffer=-0.13 (32.3%)
+      • ERCC2: Z=2.10, ΔStouffer=+0.13 (32.1%)
+      • CASP3: Z=-2.12, ΔStouffer=-0.13 (32.1%)
+      • HNRNPK: Z=2.08, ΔStouffer=+0.13 (31.8%)
+      • TP73: Z=2.04, ΔStouffer=+0.12 (31.2%)
+      • RPS7: Z=-2.05, ΔStouffer=-0.12 (31.1%)
+      • PTPN2: Z=-2.04, ΔStouffer=-0.12 (30.9%)
+      • TP53BP2: Z=-2.01, ΔStouffer=-0.12 (30.5%)
+      • FBXW7: Z=-2.00, ΔStouffer=-0.12 (30.3%)
+      • USP28: Z=-1.94, ΔStouffer=-0.12 (29.4%)
+      • IFI27: Z=-1.91, ΔStouffer=-0.11 (28.9%)
+      • GSKIP: Z=1.88, ΔStouffer=+0.11 (28.8%)
+      • PHLDA3: Z=1.86, ΔStouffer=+0.11 (28.4%)
+      • SOD2: Z=-1.86, ΔStouffer=-0.11 (28.1%)
+      • RRM2B: Z=1.82, ΔStouffer=+0.11 (27.9%)
+      • CCAR2: Z=1.82, ΔStouffer=+0.11 (27.9%)
+      • CUL3: Z=-1.84, ΔStouffer=-0.11 (27.8%)
+      • ING2: Z=1.81, ΔStouffer=+0.11 (27.8%)
+      • MAPK8IP1: Z=1.81, ΔStouffer=+0.11 (27.7%)
+      • VNN1: Z=1.79, ΔStouffer=+0.11 (27.4%)
+      • PMAIP1: Z=1.78, ΔStouffer=+0.11 (27.3%)
+      • BCL2L2: Z=-1.79, ΔStouffer=-0.11 (27.1%)
+      • YBX3: Z=1.76, ΔStouffer=+0.11 (27.0%)
+      • CHAC1: Z=1.70, ΔStouffer=+0.10 (26.1%)
+      • HRAS: Z=1.70, ΔStouffer=+0.10 (26.1%)
+      • SNAI1: Z=-1.73, ΔStouffer=-0.10 (26.1%)
+      • MSX1: Z=1.67, ΔStouffer=+0.10 (25.7%)
+      • CRIP1: Z=1.67, ΔStouffer=+0.10 (25.6%)
+      • SOD1: Z=1.65, ΔStouffer=+0.10 (25.2%)
+      • UBQLN1: Z=-1.67, ΔStouffer=-0.10 (25.2%)
+      • BAK1: Z=-1.66, ΔStouffer=-0.10 (25.2%)
+      • SKIL: Z=1.64, ΔStouffer=+0.10 (25.1%)
+      • PRKRA: Z=1.64, ΔStouffer=+0.10 (25.1%)
+      • HDAC1: Z=1.60, ΔStouffer=+0.10 (24.5%)
+      • BRCA2: Z=-1.60, ΔStouffer=-0.10 (24.1%)
+      • CEBPB: Z=1.57, ΔStouffer=+0.10 (24.1%)
+      • TNFRSF10B: Z=-1.57, ΔStouffer=-0.09 (23.8%)
+      • GPX1: Z=1.52, ΔStouffer=+0.09 (23.4%)
+      • TPT1: Z=1.52, ΔStouffer=+0.09 (23.3%)
+      • S100A8: Z=-1.54, ΔStouffer=-0.09 (23.3%)
+      • PARL: Z=-1.51, ΔStouffer=-0.09 (22.8%)
+      • DAPK2: Z=-1.51, ΔStouffer=-0.09 (22.8%)
+      • EPHA2: Z=1.43, ΔStouffer=+0.09 (21.9%)
+      • CD24: Z=-1.44, ΔStouffer=-0.09 (21.8%)
+      • AEN: Z=-1.44, ΔStouffer=-0.09 (21.8%)
+      • FYN: Z=1.42, ΔStouffer=+0.09 (21.7%)
+      • TMEM117: Z=-1.44, ΔStouffer=-0.09 (21.7%)
+      • CA3: Z=-1.38, ΔStouffer=-0.08 (20.8%)
+      • RACK1: Z=1.35, ΔStouffer=+0.08 (20.7%)
+      • FZD1: Z=1.32, ΔStouffer=+0.08 (20.2%)
+      • PRODH: Z=1.32, ΔStouffer=+0.08 (20.2%)
+      • HSPB1: Z=-1.33, ΔStouffer=-0.08 (20.1%)
+      • LRRK2: Z=-1.33, ΔStouffer=-0.08 (20.0%)
+    [GOBP_POSITIVE_REGULATION_OF_MICROGLIAL_ACTIVATION] bip:
+      • CD68: Z=3.92, ΔStouffer=+1.06 (406.0%)
+      • APOE: Z=3.62, ΔStouffer=+0.98 (375.1%)
+      • SPP1: Z=-3.18, ΔStouffer=-0.84 (323.3%) (SIGN-FLIP)
+      • TLR4: Z=2.64, ΔStouffer=+0.72 (274.7%)
+      • TLR2: Z=-2.69, ΔStouffer=-0.71 (272.3%) (SIGN-FLIP)
+      • NLRP3: Z=-2.38, ΔStouffer=-0.63 (240.4%) (SIGN-FLIP)
+      • ITGAX: Z=-2.02, ΔStouffer=-0.53 (203.7%) (SIGN-FLIP)
+      • AIF1: Z=1.34, ΔStouffer=+0.37 (141.3%)
+      • P2RY12: Z=-0.75, ΔStouffer=-0.19 (74.0%)
+      • TREM2: Z=-0.44, ΔStouffer=-0.11 (42.0%)
+      • CX3CL1: Z=-0.42, ΔStouffer=-0.10 (40.1%)
+      • IL1B: Z=-0.40, ΔStouffer=-0.10 (37.2%)
+      • IL6: Z=-0.32, ΔStouffer=-0.08 (29.5%)
+    [GOBP_POSITIVE_REGULATION_OF_MICROGLIAL_ACTIVATION] migraine:
+      • AIF1: Z=-3.13, ΔStouffer=-0.91 (28.8%)
+      • P2RY12: Z=3.89, ΔStouffer=+0.90 (28.4%)
+    [GOBP_REGULATION_OF_CELLULAR_SENESCENCE_ALL] bip:
+      • NEK4: Z=13.47, ΔStouffer=+2.35 (88.4%)
+      • TERF2: Z=-7.65, ΔStouffer=-1.27 (47.9%)
+      • YPEL3: Z=-5.13, ΔStouffer=-0.84 (31.6%)
+      • ING2: Z=-4.26, ΔStouffer=-0.69 (26.0%)
+      • SIRT1: Z=-3.91, ΔStouffer=-0.63 (23.8%)
+      • SIRT6: Z=3.32, ΔStouffer=+0.61 (22.9%)
+      • MIF: Z=3.14, ΔStouffer=+0.58 (21.7%)
+      • MORC3: Z=-3.54, ΔStouffer=-0.57 (21.4%)
+      • PAWR: Z=-3.44, ΔStouffer=-0.55 (20.8%)
+    [GOBP_REGULATION_OF_CELLULAR_SENESCENCE_ALL] migraine:
+      • YPEL3: Z=-3.80, ΔStouffer=-0.67 (35.3%)
+      • ARG2: Z=-3.43, ΔStouffer=-0.61 (32.1%)
+      • NEK4: Z=3.69, ΔStouffer=+0.60 (31.6%)
+      • SIRT1: Z=-3.19, ΔStouffer=-0.57 (29.9%)
+      • TBX2: Z=-2.68, ΔStouffer=-0.48 (25.4%)
+      • PAWR: Z=2.84, ΔStouffer=+0.45 (24.0%)
+      • CDK6: Z=2.69, ΔStouffer=+0.43 (22.6%)
+      • WNT1: Z=2.62, ΔStouffer=+0.42 (22.0%)
+    [GOBP_REGULATION_OF_SYNAPTIC_PLASTICITY_ALL] bip:
+      • PRRT2: Z=7.39, ΔStouffer=+0.58 (26.1%)
+      • TNR: Z=-6.33, ΔStouffer=-0.51 (23.0%)
+      • ARC: Z=-5.81, ΔStouffer=-0.47 (21.1%)
+      • PRRT1: Z=5.95, ΔStouffer=+0.47 (21.0%)
+      • ITPR3: Z=5.69, ΔStouffer=+0.44 (20.0%)
+    [GOBP_REGULATION_OF_SYNAPTIC_PLASTICITY_ALL] migraine:
+      • STXBP1: Z=5.35, ΔStouffer=+0.42 (49.1%)
+      • CALM3: Z=-4.58, ΔStouffer=-0.36 (41.5%)
+      • BRAF: Z=4.33, ΔStouffer=+0.34 (39.8%)
+      • RAB5A: Z=4.29, ΔStouffer=+0.34 (39.4%)
+      • RAB8A: Z=-4.32, ΔStouffer=-0.34 (39.1%)
+      • NEURL1: Z=4.23, ΔStouffer=+0.33 (38.9%)
+      • SCT: Z=-3.98, ΔStouffer=-0.31 (36.0%)
+      • CDC20: Z=-3.85, ΔStouffer=-0.30 (34.8%)
+      • AGER: Z=-3.83, ΔStouffer=-0.30 (34.6%)
+      • NPAS4: Z=-3.74, ΔStouffer=-0.29 (33.8%)
+      • ITPKA: Z=-3.74, ΔStouffer=-0.29 (33.8%)
+      • SHISA6: Z=3.65, ΔStouffer=+0.29 (33.6%)
+      • CHRNA7: Z=-3.71, ΔStouffer=-0.29 (33.5%)
+      • VPS13A: Z=-3.69, ΔStouffer=-0.29 (33.4%)
+      • ADORA1: Z=3.31, ΔStouffer=+0.26 (30.5%)
+      • STX3: Z=-3.34, ΔStouffer=-0.26 (30.1%)
+      • NFATC4: Z=-3.26, ΔStouffer=-0.25 (29.4%)
+      • PTN: Z=3.10, ΔStouffer=+0.25 (28.6%)
+      • EPHA4: Z=-3.00, ΔStouffer=-0.23 (27.1%)
+      • PDE9A: Z=2.85, ΔStouffer=+0.23 (26.3%)
+      • ATF4: Z=-2.79, ΔStouffer=-0.22 (25.1%)
+      • PRRT2: Z=-2.77, ΔStouffer=-0.21 (24.9%)
+      • SLC8A2: Z=-2.76, ΔStouffer=-0.21 (24.9%)
+      • CYP46A1: Z=2.63, ΔStouffer=+0.21 (24.3%)
+      • APOE: Z=2.55, ΔStouffer=+0.20 (23.6%)
+      • CLN3: Z=2.51, ΔStouffer=+0.20 (23.2%)
+      • DBN1: Z=2.43, ΔStouffer=+0.19 (22.4%)
+      • PRRT1: Z=2.39, ΔStouffer=+0.19 (22.1%)
+      • PICK1: Z=-2.44, ΔStouffer=-0.19 (22.0%)
+      • GRID1: Z=-2.44, ΔStouffer=-0.19 (22.0%)
+      • RAC1: Z=2.37, ΔStouffer=+0.19 (21.9%)
+      • JPH3: Z=2.36, ΔStouffer=+0.19 (21.8%)
+      • FAM107A: Z=2.33, ΔStouffer=+0.19 (21.6%)
+      • GRIN2A: Z=-2.36, ΔStouffer=-0.18 (21.2%)
+      • IGSF11: Z=-2.36, ΔStouffer=-0.18 (21.2%)
+      • SNCA: Z=-2.32, ΔStouffer=-0.18 (20.9%)
+    [GOBP_SYNAPSE_PRUNING_ALL] bip:
+      • NGEF: Z=4.42, ΔStouffer=+1.11 (555.1%)
+      • C1QA: Z=-3.29, ΔStouffer=-0.82 (408.0%) (SIGN-FLIP)
+      • VANGL2: Z=-2.85, ΔStouffer=-0.71 (352.8%) (SIGN-FLIP)
+      • KCNK13: Z=-1.52, ΔStouffer=-0.37 (186.7%) (SIGN-FLIP)
+      • C3: Z=1.40, ΔStouffer=+0.36 (178.1%)
+      • C1QB: Z=1.33, ΔStouffer=+0.34 (168.9%)
+      • C1QC: Z=-1.19, ΔStouffer=-0.29 (145.8%) (SIGN-FLIP)
+      • ITGB1: Z=1.13, ΔStouffer=+0.29 (144.5%)
+      • SARM1: Z=-1.08, ΔStouffer=-0.26 (131.5%) (SIGN-FLIP)
+      • EPHA4: Z=0.83, ΔStouffer=+0.21 (106.5%)
+      • PLXNC1: Z=0.44, ΔStouffer=+0.12 (58.6%)
+      • TREM2: Z=-0.44, ΔStouffer=-0.10 (52.3%)
+      • CX3CL1: Z=-0.42, ΔStouffer=-0.10 (49.9%)
+      • DKK1: Z=0.28, ΔStouffer=+0.08 (38.5%)
+    [GOBP_SYNAPSE_PRUNING_ALL] migraine:
+      • EPHA4: Z=-3.00, ΔStouffer=-0.73 (111.4%) (SIGN-FLIP)
+      • VANGL2: Z=2.81, ΔStouffer=+0.72 (110.4%)
+      • TREM2: Z=2.60, ΔStouffer=+0.67 (102.2%)
+      • C1QA: Z=-1.69, ΔStouffer=-0.40 (61.3%)
+      • SARM1: Z=1.49, ΔStouffer=+0.39 (60.0%)
+      • DKK1: Z=-1.23, ΔStouffer=-0.29 (43.7%)
+      • C1QC: Z=-1.18, ΔStouffer=-0.28 (42.0%)
+      • CX3CR1: Z=-0.88, ΔStouffer=-0.20 (30.5%)
+      • C1QB: Z=-0.84, ΔStouffer=-0.19 (28.9%)
+      • KCNK13: Z=-0.67, ΔStouffer=-0.15 (22.3%)
+      • C3: Z=0.48, ΔStouffer=+0.14 (21.6%)
+    [GOCC_BCL_2_FAMILY_PROTEIN_COMPLEX_ALL] bip:
+      • BAD: Z=7.47, ΔStouffer=+2.20 (41.5%)
+      • BIK: Z=5.35, ΔStouffer=+1.50 (28.2%)
+      • BCL2L1: Z=-3.21, ΔStouffer=-1.36 (25.6%)
+    [GOCC_BCL_2_FAMILY_PROTEIN_COMPLEX_ALL] migraine:
+      • BCL2L11: Z=-3.84, ΔStouffer=-1.19 (74.2%)
+      • BCL2L1: Z=2.57, ΔStouffer=+0.94 (58.6%)
+      • PMAIP1: Z=1.78, ΔStouffer=+0.68 (42.3%)
+      • BAD: Z=-2.21, ΔStouffer=-0.65 (40.5%)
+      • BIK: Z=1.51, ΔStouffer=+0.59 (36.6%)
+      • BCL2L2: Z=-1.79, ΔStouffer=-0.51 (31.6%)
+      • BAK1: Z=-1.66, ΔStouffer=-0.47 (29.1%)
+    [GOMF_NADPLUS_BINDING_ALL] bip:
+      • ZC3HAV1: Z=-4.39, ΔStouffer=-1.09 (479.8%) (SIGN-FLIP)
+      • HADH: Z=4.32, ΔStouffer=+1.09 (479.0%)
+      • SIRT1: Z=-3.91, ΔStouffer=-0.97 (427.1%) (SIGN-FLIP)
+      • SIRT6: Z=3.32, ΔStouffer=+0.84 (369.0%)
+      • PARP14: Z=2.49, ΔStouffer=+0.63 (277.2%)
+      • HPGD: Z=-2.47, ΔStouffer=-0.61 (269.1%) (SIGN-FLIP)
+      • SIRT5: Z=2.04, ΔStouffer=+0.52 (228.1%)
+      • PARP9: Z=1.94, ΔStouffer=+0.49 (216.6%)
+      • SIRT3: Z=-1.85, ΔStouffer=-0.46 (200.4%) (SIGN-FLIP)
+      • SIRT4: Z=1.38, ΔStouffer=+0.35 (155.3%)
+      • PARP15: Z=-1.44, ΔStouffer=-0.35 (155.1%) (SIGN-FLIP)
+      • GLUD1: Z=-1.31, ΔStouffer=-0.32 (141.4%) (SIGN-FLIP)
+      • HADHA: Z=-1.07, ΔStouffer=-0.26 (115.1%) (SIGN-FLIP)
+      • SIRT2: Z=-0.89, ΔStouffer=-0.21 (94.5%)
+      • ALDH1A3: Z=0.68, ΔStouffer=+0.18 (77.9%)
+      • UXS1: Z=0.20, ΔStouffer=+0.06 (24.9%)
+    [GOMF_NADPLUS_BINDING_ALL] migraine:
+      • HPGD: Z=-3.31, ΔStouffer=-0.91 (33.1%)
+      • SIRT1: Z=-3.19, ΔStouffer=-0.88 (32.0%)
+      • SIRT5: Z=3.87, ΔStouffer=+0.88 (32.0%)
+      • PARP9: Z=3.55, ΔStouffer=+0.80 (29.1%)
+      • SIRT3: Z=3.25, ΔStouffer=+0.73 (26.4%)
+      • HADH: Z=3.15, ΔStouffer=+0.70 (25.5%)
+    [HALLMARK_APOPTOSIS_ALL] migraine:
+      • RNASEL: Z=7.09, ΔStouffer=+0.61 (84.9%)
+      • PDGFRB: Z=-5.20, ΔStouffer=-0.44 (61.6%)
+      • DNAJA1: Z=-4.46, ΔStouffer=-0.38 (52.9%)
+      • CYLD: Z=-4.22, ΔStouffer=-0.36 (49.9%)
+      • RETSAT: Z=-4.06, ΔStouffer=-0.34 (48.1%)
+      • RHOB: Z=-3.86, ΔStouffer=-0.33 (45.6%)
+      • DNAJC3: Z=3.78, ΔStouffer=+0.33 (45.5%)
+      • BCL2L11: Z=-3.84, ΔStouffer=-0.33 (45.5%)
+      • ROCK1: Z=-3.84, ΔStouffer=-0.33 (45.4%)
+      • CREBBP: Z=3.72, ΔStouffer=+0.32 (44.8%)
+      • F2: Z=-3.72, ΔStouffer=-0.32 (44.0%)
+      • GCH1: Z=-3.67, ΔStouffer=-0.31 (43.5%)
+      • GPX4: Z=-3.49, ΔStouffer=-0.30 (41.3%)
+      • DAP: Z=-3.41, ΔStouffer=-0.29 (40.3%)
+      • CDK2: Z=-3.36, ΔStouffer=-0.28 (39.6%)
+      • RELA: Z=-3.30, ΔStouffer=-0.28 (39.0%)
+      • BRCA1: Z=3.14, ΔStouffer=+0.27 (37.9%)
+      • VDAC2: Z=-3.06, ΔStouffer=-0.26 (36.2%)
+      • TSPO: Z=3.00, ΔStouffer=+0.26 (36.1%)
+      • BNIP3L: Z=-3.05, ΔStouffer=-0.26 (36.0%)
+      • MGMT: Z=2.87, ΔStouffer=+0.25 (34.5%)
+      • ATF3: Z=2.81, ΔStouffer=+0.24 (33.9%)
+      • TNFRSF12A: Z=2.63, ΔStouffer=+0.23 (31.7%)
+      • BCL2L1: Z=2.57, ΔStouffer=+0.22 (31.0%)
+      • CCND2: Z=2.49, ΔStouffer=+0.22 (30.1%)
+      • PPP2R5B: Z=2.43, ΔStouffer=+0.21 (29.3%)
+      • IER3: Z=2.37, ΔStouffer=+0.20 (28.6%)
+      • IRF1: Z=-2.36, ΔStouffer=-0.20 (27.7%)
+      • MMP2: Z=-2.31, ΔStouffer=-0.19 (27.1%)
+      • PLCB2: Z=2.16, ΔStouffer=+0.19 (26.2%)
+      • PPT1: Z=2.16, ΔStouffer=+0.19 (26.1%)
+      • F2R: Z=-2.22, ΔStouffer=-0.19 (26.1%)
+      • HMGB2: Z=2.13, ΔStouffer=+0.18 (25.7%)
+      • DDIT3: Z=-2.16, ΔStouffer=-0.18 (25.4%)
+      • TGFB2: Z=2.10, ΔStouffer=+0.18 (25.4%)
+      • SC5D: Z=-2.13, ΔStouffer=-0.18 (25.1%)
+      • CASP3: Z=-2.12, ΔStouffer=-0.18 (24.9%)
+      • GPX3: Z=2.02, ΔStouffer=+0.18 (24.4%)
+      • PAK1: Z=-1.99, ΔStouffer=-0.17 (23.3%)
+      • GSN: Z=1.88, ΔStouffer=+0.16 (22.8%)
+      • SOD2: Z=-1.86, ΔStouffer=-0.16 (21.8%)
+      • PMAIP1: Z=1.78, ΔStouffer=+0.15 (21.6%)
+      • PLAT: Z=1.78, ΔStouffer=+0.15 (21.6%)
+      • BCL2L2: Z=-1.79, ΔStouffer=-0.15 (21.0%)
+      • SMAD7: Z=1.73, ΔStouffer=+0.15 (20.9%)
+      • CASP8: Z=-1.73, ΔStouffer=-0.14 (20.2%)
+      • SOD1: Z=1.65, ΔStouffer=+0.14 (20.0%)
+    [HALLMARK_INFLAMMATORY_RESPONSE] bip:
+      • NOS2: Z=6.75, ΔStouffer=+1.52 (59.9%)
+      • CXCL1: Z=-3.12, ΔStouffer=-0.81 (31.7%)
+      • NFKB1: Z=2.81, ΔStouffer=+0.59 (23.3%)
+    [HALLMARK_INFLAMMATORY_RESPONSE] migraine:
+      • RELA: Z=-3.30, ΔStouffer=-0.74 (463.8%)
+      • CCL5: Z=2.82, ΔStouffer=+0.63 (391.1%) (SIGN-FLIP)
+      • PTGS2: Z=2.59, ΔStouffer=+0.57 (359.0%) (SIGN-FLIP)
+      • NOS2: Z=-2.12, ΔStouffer=-0.48 (298.7%)
+      • SELE: Z=1.75, ΔStouffer=+0.39 (241.6%) (SIGN-FLIP)
+      • CCL4: Z=1.32, ΔStouffer=+0.29 (181.9%) (SIGN-FLIP)
+      • CCL2: Z=-1.24, ΔStouffer=-0.28 (175.4%)
+      • CXCL2: Z=-1.03, ΔStouffer=-0.23 (146.2%)
+      • VCAM1: Z=0.99, ΔStouffer=+0.22 (136.3%) (SIGN-FLIP)
+      • IL1B: Z=-0.68, ΔStouffer=-0.16 (97.5%)
+      • CCL3: Z=0.57, ΔStouffer=+0.12 (77.5%)
+      • NFKB1: Z=0.57, ΔStouffer=+0.12 (77.1%)
+      • IL6: Z=-0.46, ΔStouffer=-0.11 (66.7%)
+      • STAT3: Z=-0.36, ΔStouffer=-0.09 (53.2%)
+      • CXCL1: Z=-0.33, ΔStouffer=-0.08 (48.4%)
+      • TNF: Z=-0.24, ΔStouffer=-0.06 (35.6%)
+      • FOS: Z=0.27, ΔStouffer=+0.06 (35.3%)
+      • IL1A: Z=-0.17, ΔStouffer=-0.04 (26.4%)
+      • CXCL3: Z=-0.14, ΔStouffer=-0.04 (22.3%)
+    [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL] bip:
+      • MRPL11: Z=10.20, ΔStouffer=+0.81 (39.4%)
+      • COX8A: Z=-8.82, ΔStouffer=-0.71 (34.7%)
+      • MRPL15: Z=8.60, ΔStouffer=+0.68 (33.2%)
+      • NDUFS2: Z=-7.02, ΔStouffer=-0.57 (27.7%)
+      • UQCRB: Z=-5.97, ΔStouffer=-0.49 (23.6%)
+      • MRPL34: Z=5.42, ΔStouffer=+0.43 (20.8%)
+      • NDUFC2: Z=5.31, ΔStouffer=+0.42 (20.4%)
+    [HALLMARK_PI3K_AKT_MTOR_SIGNALING_ALL] bip:
+      • RPTOR: Z=-8.82, ΔStouffer=-0.96 (30.4%)
+    [HALLMARK_PI3K_AKT_MTOR_SIGNALING_ALL] migraine:
+      • UBE2D3: Z=9.70, ΔStouffer=+1.04 (70.5%)
+      • TNFRSF1A: Z=5.33, ΔStouffer=+0.57 (38.9%)
+      • PRKAR2A: Z=-4.53, ΔStouffer=-0.47 (32.1%)
+      • FGF17: Z=-4.42, ΔStouffer=-0.46 (31.3%)
+      • RAF1: Z=4.19, ΔStouffer=+0.45 (30.7%)
+      • RALB: Z=-4.18, ΔStouffer=-0.43 (29.5%)
+      • TRIB3: Z=4.00, ΔStouffer=+0.43 (29.4%)
+      • NCK1: Z=-3.92, ΔStouffer=-0.41 (27.7%)
+      • CALR: Z=-3.91, ΔStouffer=-0.41 (27.6%)
+      • CSNK2B: Z=-3.66, ΔStouffer=-0.38 (25.8%)
+      • PFN1: Z=-3.63, ΔStouffer=-0.38 (25.6%)
+      • TBK1: Z=3.35, ΔStouffer=+0.36 (24.7%)
+      • EIF4E: Z=-3.50, ΔStouffer=-0.36 (24.7%)
+      • ACACA: Z=3.29, ΔStouffer=+0.36 (24.3%)
+      • RPS6KA1: Z=-3.38, ΔStouffer=-0.35 (23.8%)
+      • CDK2: Z=-3.36, ΔStouffer=-0.35 (23.6%)
+      • PLCB1: Z=-3.33, ΔStouffer=-0.34 (23.4%)
+      • NOD1: Z=-3.04, ΔStouffer=-0.31 (21.3%)
+      • PLCG1: Z=2.77, ΔStouffer=+0.30 (20.5%)
+      • PRKCB: Z=-2.92, ΔStouffer=-0.30 (20.5%)
+    [HALLMARK_TNFA_SIGNALING_VIA_NFKB] bip:
+      • NOS2: Z=6.75, ΔStouffer=+1.62 (213.2%) (SIGN-FLIP)
+      • CHUK: Z=-6.08, ΔStouffer=-1.50 (197.4%)
+      • NFKB1: Z=2.81, ΔStouffer=+0.66 (87.0%)
+      • NFKBIB: Z=-2.36, ΔStouffer=-0.59 (78.4%)
+      • EGR1: Z=1.84, ΔStouffer=+0.43 (56.1%)
+      • SELE: Z=-1.65, ΔStouffer=-0.42 (55.9%)
+      • FOS: Z=-1.55, ΔStouffer=-0.40 (52.5%)
+      • RELA: Z=1.55, ΔStouffer=+0.35 (46.6%)
+      • NFKB2: Z=1.41, ΔStouffer=+0.32 (42.2%)
+      • PTGS2: Z=1.23, ΔStouffer=+0.28 (36.5%)
+      • CXCL8: Z=-0.59, ΔStouffer=-0.16 (21.6%)
+      • CCL5: Z=0.74, ΔStouffer=+0.16 (20.9%)
+    [HALLMARK_TNFA_SIGNALING_VIA_NFKB] migraine:
+      • RELA: Z=-3.30, ΔStouffer=-0.77 (127.0%)
+      • CCL5: Z=2.82, ΔStouffer=+0.63 (103.5%) (SIGN-FLIP)
+      • ATF3: Z=2.81, ΔStouffer=+0.63 (103.3%) (SIGN-FLIP)
+      • PTGS2: Z=2.59, ΔStouffer=+0.58 (94.8%)
+      • NOS2: Z=-2.12, ΔStouffer=-0.50 (82.4%)
+      • SELE: Z=1.75, ΔStouffer=+0.39 (63.2%)
+      • CHUK: Z=-1.32, ΔStouffer=-0.32 (52.2%)
+      • CCL2: Z=-1.24, ΔStouffer=-0.30 (49.2%)
+      • NFKBIB: Z=1.05, ΔStouffer=+0.22 (36.9%)
+      • CXCL8: Z=-0.91, ΔStouffer=-0.22 (36.9%)
+      • VCAM1: Z=0.99, ΔStouffer=+0.21 (34.8%)
+      • MYC: Z=0.95, ΔStouffer=+0.20 (33.3%)
+      • NFKB2: Z=-0.74, ΔStouffer=-0.19 (30.6%)
+      • IL1B: Z=-0.68, ΔStouffer=-0.17 (28.2%)
+    [HLA_COMPLEX_ALL] bip:
+      • HLA-DMA: Z=-10.11, ΔStouffer=-2.36 (43.0%)
+      • HLA-DMB: Z=-8.27, ΔStouffer=-1.90 (34.6%)
+    [HLA_COMPLEX_ALL] migraine:
+      • HLA-C: Z=7.13, ΔStouffer=+1.59 (46.2%)
+      • HLA-B: Z=-3.80, ΔStouffer=-0.99 (28.9%)
+      • HLA-DRB1: Z=4.03, ΔStouffer=+0.86 (24.9%)
+      • HLA-A: Z=-2.67, ΔStouffer=-0.72 (21.1%)
+    [KEGG_APOPTOSIS_ALL] bip:
+      • BAD: Z=7.47, ΔStouffer=+0.91 (98.5%)
+      • CHUK: Z=-6.08, ΔStouffer=-0.76 (81.5%)
+      • CASP3: Z=-4.04, ΔStouffer=-0.50 (54.4%)
+      • PRKACA: Z=4.04, ΔStouffer=+0.49 (52.9%)
+      • PPP3CA: Z=-3.75, ΔStouffer=-0.47 (50.6%)
+      • PIK3R1: Z=-3.37, ΔStouffer=-0.42 (45.6%)
+      • TNFRSF1A: Z=-3.32, ΔStouffer=-0.42 (44.9%)
+      • CASP6: Z=3.42, ΔStouffer=+0.41 (44.6%)
+      • BCL2L1: Z=-3.21, ΔStouffer=-0.40 (43.4%)
+      • CFLAR: Z=-2.91, ΔStouffer=-0.37 (39.5%)
+      • TRAF2: Z=2.93, ΔStouffer=+0.35 (38.2%)
+      • PRKAR1B: Z=2.88, ΔStouffer=+0.35 (37.5%)
+      • PPP3R1: Z=2.84, ΔStouffer=+0.34 (37.0%)
+      • BIRC2: Z=-2.73, ΔStouffer=-0.34 (37.0%)
+      • TNFRSF10C: Z=-2.72, ΔStouffer=-0.34 (36.9%)
+      • NFKB1: Z=2.81, ΔStouffer=+0.34 (36.6%)
+      • ENDOG: Z=2.67, ΔStouffer=+0.32 (34.7%)
+      • APAF1: Z=2.47, ΔStouffer=+0.30 (32.1%)
+      • BID: Z=2.46, ΔStouffer=+0.30 (32.0%)
+      • CASP8: Z=2.45, ΔStouffer=+0.29 (31.8%)
+      • PIK3CA: Z=2.42, ΔStouffer=+0.29 (31.4%)
+      • PPP3CC: Z=2.40, ΔStouffer=+0.29 (31.1%)
+      • EXOG: Z=-2.19, ΔStouffer=-0.28 (29.9%)
+      • CASP10: Z=1.95, ΔStouffer=+0.23 (25.2%)
+      • CHP2: Z=-1.79, ΔStouffer=-0.23 (24.5%)
+      • ATM: Z=-1.76, ΔStouffer=-0.22 (24.2%)
+      • PRKAR2A: Z=-1.73, ΔStouffer=-0.22 (23.7%)
+      • PIK3R2: Z=1.82, ΔStouffer=+0.22 (23.5%)
+      • CASP7: Z=1.72, ΔStouffer=+0.20 (22.1%)
+      • IRAK3: Z=-1.58, ΔStouffer=-0.20 (21.8%)
+    [KEGG_APOPTOSIS_ALL] migraine:
+      • TNFRSF1A: Z=5.33, ΔStouffer=+0.64 (132.1%)
+      • PIK3R1: Z=-5.00, ΔStouffer=-0.59 (122.5%) (SIGN-FLIP)
+      • PRKAR2A: Z=-4.53, ΔStouffer=-0.54 (111.0%) (SIGN-FLIP)
+      • IRAK2: Z=4.20, ΔStouffer=+0.51 (104.2%)
+      • RELA: Z=-3.30, ΔStouffer=-0.39 (80.8%)
+      • BCL2L1: Z=2.57, ΔStouffer=+0.31 (64.1%)
+      • CHP2: Z=2.37, ΔStouffer=+0.29 (59.0%)
+      • BAD: Z=-2.21, ΔStouffer=-0.26 (53.9%)
+      • CASP3: Z=-2.12, ΔStouffer=-0.25 (51.6%)
+      • ENDOG: Z=1.92, ΔStouffer=+0.23 (48.1%)
+      • CAPN2: Z=-1.98, ΔStouffer=-0.23 (48.1%)
+      • NTRK1: Z=1.85, ΔStouffer=+0.22 (46.4%)
+      • CSF2RB: Z=-1.88, ΔStouffer=-0.22 (45.7%)
+      • DFFB: Z=1.80, ΔStouffer=+0.22 (45.2%)
+      • FADD: Z=-1.82, ΔStouffer=-0.21 (44.1%)
+      • CASP8: Z=-1.73, ΔStouffer=-0.20 (41.9%)
+      • PPP3CA: Z=-1.64, ΔStouffer=-0.19 (39.8%)
+      • TNFRSF10B: Z=-1.57, ΔStouffer=-0.18 (38.1%)
+      • CHP1: Z=-1.47, ΔStouffer=-0.17 (35.6%)
+      • PIK3R5: Z=1.41, ΔStouffer=+0.17 (35.4%)
+      • ENDOD1: Z=1.35, ΔStouffer=+0.16 (34.0%)
+      • TNFSF10: Z=1.31, ΔStouffer=+0.16 (32.9%)
+      • PRKACA: Z=-1.32, ΔStouffer=-0.15 (31.9%)
+      • CHUK: Z=-1.32, ΔStouffer=-0.15 (31.8%)
+      • ATM: Z=1.26, ΔStouffer=+0.15 (31.7%)
+      • PRKAR1A: Z=1.23, ΔStouffer=+0.15 (31.1%)
+      • IRAK3: Z=1.22, ΔStouffer=+0.15 (30.7%)
+      • TRAF2: Z=1.18, ΔStouffer=+0.14 (29.9%)
+      • FAS: Z=-1.23, ΔStouffer=-0.14 (29.5%)
+      • CASP7: Z=1.15, ΔStouffer=+0.14 (29.1%)
+      • CYCS: Z=-1.17, ΔStouffer=-0.14 (28.1%)
+      • PPP3CC: Z=-1.12, ΔStouffer=-0.13 (27.0%)
+      • PRKACB: Z=-1.08, ΔStouffer=-0.13 (26.0%)
+      • IL1RAP: Z=-1.06, ΔStouffer=-0.12 (25.4%)
+      • BCL2: Z=-1.06, ΔStouffer=-0.12 (25.3%)
+      • TP53: Z=0.87, ΔStouffer=+0.11 (22.2%)
+      • CFLAR: Z=0.84, ΔStouffer=+0.10 (21.5%)
+      • NGF: Z=-0.87, ΔStouffer=-0.10 (20.6%)
+      • PRKAR1B: Z=0.80, ΔStouffer=+0.10 (20.4%)
+      • CASP10: Z=0.79, ΔStouffer=+0.10 (20.1%)
+    [KEGG_DOPAMINERGIC_SYNAPSE] bip:
+      • PPP1R1B: Z=4.89, ΔStouffer=+1.18 (49.2%)
+      • PPP3CA: Z=-3.75, ΔStouffer=-1.05 (43.5%)
+      • TH: Z=-3.10, ΔStouffer=-0.88 (36.5%)
+      • STX1A: Z=3.29, ΔStouffer=+0.77 (32.0%)
+      • DRD2: Z=-2.67, ΔStouffer=-0.77 (31.9%)
+      • PPP3CC: Z=2.40, ΔStouffer=+0.54 (22.4%)
+      • VAMP2: Z=2.19, ΔStouffer=+0.49 (20.2%)
+    [KEGG_DOPAMINERGIC_SYNAPSE] migraine:
+      • STX1A: Z=-4.45, ΔStouffer=-1.00 (28.1%)
+    [KEGG_LTP_ALL] migraine:
+      • NRAS: Z=6.05, ΔStouffer=+0.82 (587.5%)
+      • PPP1CB: Z=4.73, ΔStouffer=+0.64 (459.6%)
+      • CALM3: Z=-4.58, ΔStouffer=-0.62 (443.5%) (SIGN-FLIP)
+      • GNAQ: Z=-4.45, ΔStouffer=-0.60 (430.4%) (SIGN-FLIP)
+      • BRAF: Z=4.33, ΔStouffer=+0.58 (420.5%)
+      • RAF1: Z=4.19, ΔStouffer=+0.57 (406.7%)
+      • PPP1CC: Z=-4.06, ΔStouffer=-0.55 (392.3%) (SIGN-FLIP)
+      • CALML6: Z=3.93, ΔStouffer=+0.53 (382.0%)
+      • CREBBP: Z=3.72, ΔStouffer=+0.50 (361.7%)
+      • RPS6KA1: Z=-3.38, ΔStouffer=-0.45 (326.6%) (SIGN-FLIP)
+      • PLCB1: Z=-3.33, ΔStouffer=-0.45 (321.6%) (SIGN-FLIP)
+      • PPP1R12A: Z=-3.01, ΔStouffer=-0.40 (290.8%) (SIGN-FLIP)
+      • PRKCB: Z=-2.92, ΔStouffer=-0.39 (282.4%) (SIGN-FLIP)
+      • ATF4: Z=-2.79, ΔStouffer=-0.38 (269.6%) (SIGN-FLIP)
+      • CHP2: Z=2.37, ΔStouffer=+0.32 (230.2%)
+      • GRIN2A: Z=-2.36, ΔStouffer=-0.32 (228.2%) (SIGN-FLIP)
+      • PRKCA: Z=2.18, ΔStouffer=+0.30 (212.4%)
+      • PLCB2: Z=2.16, ΔStouffer=+0.29 (210.7%)
+      • CALM1: Z=-2.10, ΔStouffer=-0.28 (202.9%) (SIGN-FLIP)
+      • MAPK1: Z=-1.78, ΔStouffer=-0.24 (171.7%) (SIGN-FLIP)
+      • HRAS: Z=1.70, ΔStouffer=+0.23 (165.9%)
+      • CAMK2B: Z=1.62, ΔStouffer=+0.22 (158.3%)
+      • PPP3CA: Z=-1.64, ΔStouffer=-0.22 (158.2%) (SIGN-FLIP)
+      • GRIN2D: Z=-1.64, ΔStouffer=-0.22 (157.7%) (SIGN-FLIP)
+      • MAP2K2: Z=1.58, ΔStouffer=+0.21 (154.4%)
+      • CHP1: Z=-1.47, ΔStouffer=-0.20 (141.6%) (SIGN-FLIP)
+      • PRKACA: Z=-1.32, ΔStouffer=-0.18 (127.1%) (SIGN-FLIP)
+      • RAP1B: Z=1.24, ΔStouffer=+0.17 (121.2%)
+      • EP300: Z=-1.25, ΔStouffer=-0.17 (119.9%) (SIGN-FLIP)
+      • GRIN2B: Z=1.14, ΔStouffer=+0.15 (111.2%)
+      • PPP3CC: Z=-1.12, ΔStouffer=-0.15 (108.0%) (SIGN-FLIP)
+      • PRKACB: Z=-1.08, ΔStouffer=-0.14 (104.2%) (SIGN-FLIP)
+      • ITPR1: Z=1.02, ΔStouffer=+0.14 (99.6%)
+      • CALML5: Z=-0.84, ΔStouffer=-0.11 (81.0%)
+      • KRAS: Z=0.74, ΔStouffer=+0.10 (72.3%)
+      • CAMK4: Z=-0.72, ΔStouffer=-0.10 (69.1%)
+      • GRIA2: Z=0.68, ΔStouffer=+0.09 (67.1%)
+      • CALML3: Z=-0.70, ΔStouffer=-0.09 (66.8%)
+      • GRIA1: Z=0.66, ΔStouffer=+0.09 (65.3%)
+      • PLCB3: Z=-0.65, ΔStouffer=-0.09 (62.3%)
+      • ITPR2: Z=0.55, ΔStouffer=+0.08 (54.2%)
+      • MAP2K1: Z=0.51, ΔStouffer=+0.07 (50.2%)
+      • PPP1R1A: Z=0.48, ΔStouffer=+0.07 (47.4%)
+      • GRIN2C: Z=-0.46, ΔStouffer=-0.06 (43.2%)
+      • ADCY1: Z=-0.44, ΔStouffer=-0.06 (41.4%)
+      • CALM2: Z=0.36, ΔStouffer=+0.05 (36.2%)
+      • PLCB4: Z=0.34, ΔStouffer=+0.05 (34.2%)
+      • ITPR3: Z=0.27, ΔStouffer=+0.04 (26.9%)
+      • MAPK3: Z=0.25, ΔStouffer=+0.04 (25.4%)
+      • RAPGEF3: Z=0.21, ΔStouffer=+0.03 (21.6%)
+      • PPP3R1: Z=-0.23, ΔStouffer=-0.03 (21.2%)
+    [KEGG_MEDICUS_REFERENCE_EP_NE_ADRB_CAMP_SIGNALING_PATHWAY_ALL] bip:
+      • ADCY6: Z=-5.40, ΔStouffer=-1.70 (110.6%)
+      • PRKACA: Z=4.04, ΔStouffer=+1.15 (75.0%)
+      • PLN: Z=3.11, ΔStouffer=+0.87 (56.7%)
+      • ADCY7: Z=2.56, ΔStouffer=+0.70 (45.8%)
+      • ADCY3: Z=-1.96, ΔStouffer=-0.66 (42.9%)
+      • ADCY9: Z=-1.41, ΔStouffer=-0.49 (32.2%)
+      • ADCY2: Z=1.86, ΔStouffer=+0.49 (32.1%)
+      • ADCY4: Z=1.70, ΔStouffer=+0.45 (29.0%)
+    [KEGG_MEDICUS_REFERENCE_EP_NE_ADRB_CAMP_SIGNALING_PATHWAY_ALL] migraine:
+      • ADRB2: Z=4.27, ΔStouffer=+1.30 (641.7%)
+      • ADCY4: Z=4.00, ΔStouffer=+1.22 (601.2%)
+      • ADCY9: Z=-2.89, ΔStouffer=-0.86 (427.0%) (SIGN-FLIP)
+      • PLN: Z=-2.32, ΔStouffer=-0.69 (341.4%) (SIGN-FLIP)
+      • ADCY2: Z=1.92, ΔStouffer=+0.59 (290.9%)
+      • ADCY6: Z=-1.89, ΔStouffer=-0.56 (278.2%) (SIGN-FLIP)
+      • ADCY3: Z=-1.43, ΔStouffer=-0.42 (208.4%) (SIGN-FLIP)
+      • PRKACA: Z=-1.32, ΔStouffer=-0.39 (192.6%) (SIGN-FLIP)
+      • PRKACB: Z=-1.08, ΔStouffer=-0.32 (157.3%) (SIGN-FLIP)
+      • GNAS: Z=0.59, ΔStouffer=+0.19 (92.1%)
+      • ADCY1: Z=-0.44, ΔStouffer=-0.12 (60.6%)
+    [KEGG_NICOTINATE_AND_NICOTINAMIDE_METABOLISM_ALL] bip:
+      • NT5C: Z=-13.98, ΔStouffer=-2.97 (85.8%)
+      • NADSYN1: Z=4.32, ΔStouffer=+1.03 (29.6%)
+      • CD38: Z=-3.74, ΔStouffer=-0.73 (21.2%)
+    [KEGG_NICOTINATE_AND_NICOTINAMIDE_METABOLISM_ALL] migraine:
+      • BST1: Z=-4.51, ΔStouffer=-0.96 (109.2%) (SIGN-FLIP)
+      • NT5E: Z=-3.61, ΔStouffer=-0.77 (87.0%)
+      • ENPP3: Z=3.26, ΔStouffer=+0.73 (82.9%)
+      • NNT: Z=-2.52, ΔStouffer=-0.53 (59.9%)
+      • NT5M: Z=2.11, ΔStouffer=+0.48 (54.5%)
+      • NT5C3A: Z=1.90, ΔStouffer=+0.44 (49.4%)
+      • NMNAT3: Z=-2.02, ΔStouffer=-0.42 (47.7%)
+      • PNP: Z=1.75, ΔStouffer=+0.40 (45.7%)
+      • NUDT12: Z=-1.86, ΔStouffer=-0.39 (43.7%)
+      • NT5C1A: Z=1.31, ΔStouffer=+0.31 (34.7%)
+      • NT5C2: Z=-1.30, ΔStouffer=-0.26 (29.8%)
+      • CD38: Z=1.11, ΔStouffer=+0.26 (29.8%)
+      • ENPP1: Z=1.01, ΔStouffer=+0.24 (27.3%)
+      • NADSYN1: Z=-1.00, ΔStouffer=-0.20 (22.5%)
+      • NMNAT1: Z=-0.91, ΔStouffer=-0.18 (20.2%)
+    [MONOAMINES_ALL] bip:
+      • HTR6: Z=12.13, ΔStouffer=+1.44 (91.3%)
+      • GNB2: Z=-9.95, ΔStouffer=-1.20 (76.2%)
+      • GNB3: Z=-7.71, ΔStouffer=-0.93 (59.2%)
+      • GNG7: Z=5.27, ΔStouffer=+0.62 (39.2%)
+      • PPP1R1B: Z=4.89, ΔStouffer=+0.57 (36.4%)
+      • ADRA2B: Z=4.39, ΔStouffer=+0.51 (32.6%)
+      • SYT4: Z=4.33, ΔStouffer=+0.51 (32.2%)
+      • PNMT: Z=-3.99, ΔStouffer=-0.49 (31.0%)
+      • HTR1E: Z=-3.46, ΔStouffer=-0.42 (27.0%)
+      • TH: Z=-3.10, ΔStouffer=-0.38 (24.2%)
+      • STX1A: Z=3.29, ΔStouffer=+0.38 (24.2%)
+      • DRD2: Z=-2.67, ΔStouffer=-0.33 (21.0%)
+    [MONOAMINES_ALL] migraine:
+      • SLC22A3: Z=-6.43, ΔStouffer=-0.75 (84.1%)
+      • STX1A: Z=-4.45, ΔStouffer=-0.52 (58.4%)
+      • GNG11: Z=4.32, ΔStouffer=+0.50 (55.3%)
+      • ADRB2: Z=4.27, ΔStouffer=+0.49 (54.7%)
+      • GCH1: Z=-3.67, ΔStouffer=-0.43 (48.3%)
+      • PDE4B: Z=3.76, ΔStouffer=+0.43 (48.1%)
+      • GNB5: Z=3.15, ΔStouffer=+0.36 (40.1%)
+      • ADRA2B: Z=3.08, ΔStouffer=+0.35 (39.2%)
+      • HTR2B: Z=3.04, ΔStouffer=+0.35 (38.7%)
+      • ADCY9: Z=-2.89, ΔStouffer=-0.34 (38.2%)
+      • DRD3: Z=-2.89, ΔStouffer=-0.34 (38.1%)
+      • HTR1D: Z=2.75, ΔStouffer=+0.31 (34.9%)
+      • HRH2: Z=2.67, ΔStouffer=+0.30 (34.0%)
+      • SYT1: Z=-2.47, ΔStouffer=-0.29 (32.7%)
+      • HNMT: Z=-2.39, ΔStouffer=-0.28 (31.7%)
+      • COMT: Z=-2.35, ΔStouffer=-0.28 (31.1%)
+      • SLC18A2: Z=-2.34, ΔStouffer=-0.28 (31.0%)
+      • SYT2: Z=2.35, ΔStouffer=+0.27 (29.9%)
+      • HTR5A: Z=2.30, ΔStouffer=+0.26 (29.2%)
+      • HTR2A: Z=-2.17, ΔStouffer=-0.26 (28.8%)
+      • ADCY2: Z=1.92, ΔStouffer=+0.22 (24.2%)
+      • AANAT: Z=1.77, ΔStouffer=+0.20 (22.2%)
+      • ADRB1: Z=-1.65, ΔStouffer=-0.20 (22.1%)
+      • GNG7: Z=-1.55, ΔStouffer=-0.19 (20.8%)
+    [MOOTHA_MITOCHONDRIA_ALL] bip:
+      • MRPS33: Z=11.29, ΔStouffer=+0.60 (261.2%)
+      • MRPL11: Z=10.20, ΔStouffer=+0.54 (236.0%)
+      • CD40: Z=-10.04, ΔStouffer=-0.53 (231.9%) (SIGN-FLIP)
+      • CNNM4: Z=-9.48, ΔStouffer=-0.50 (219.1%) (SIGN-FLIP)
+      • COX8A: Z=-8.82, ΔStouffer=-0.46 (203.8%) (SIGN-FLIP)
+      • MRPL15: Z=8.60, ΔStouffer=+0.45 (199.0%)
+      • MRPS7: Z=8.24, ΔStouffer=+0.43 (190.6%)
+      • NME2: Z=7.90, ΔStouffer=+0.42 (182.8%)
+      • MCAT: Z=-7.40, ΔStouffer=-0.39 (171.0%) (SIGN-FLIP)
+      • NDUFS5: Z=7.32, ΔStouffer=+0.39 (169.4%)
+      • PRPF6: Z=7.26, ΔStouffer=+0.38 (168.0%)
+      • NDUFS2: Z=-7.02, ΔStouffer=-0.37 (162.2%) (SIGN-FLIP)
+      • R3HCC1L: Z=7.00, ΔStouffer=+0.37 (162.0%)
+      • DHODH: Z=-6.06, ΔStouffer=-0.32 (140.0%) (SIGN-FLIP)
+      • CPT1B: Z=-6.04, ΔStouffer=-0.32 (139.6%) (SIGN-FLIP)
+      • GCFC2: Z=-5.99, ΔStouffer=-0.32 (138.3%) (SIGN-FLIP)
+      • UQCRB: Z=-5.97, ΔStouffer=-0.31 (137.9%) (SIGN-FLIP)
+      • TIMM22: Z=-5.93, ΔStouffer=-0.31 (136.9%) (SIGN-FLIP)
+      • ABCB8: Z=-5.83, ΔStouffer=-0.31 (134.7%) (SIGN-FLIP)
+      • CRAT: Z=-5.80, ΔStouffer=-0.31 (134.0%) (SIGN-FLIP)
+      • NDUFA10: Z=-5.64, ΔStouffer=-0.30 (130.4%) (SIGN-FLIP)
+      • MRPL34: Z=5.42, ΔStouffer=+0.29 (125.4%)
+      • BIK: Z=5.35, ΔStouffer=+0.28 (123.8%)
+      • SLC25A40: Z=-5.32, ΔStouffer=-0.28 (122.9%) (SIGN-FLIP)
+      • NDUFC2: Z=5.31, ΔStouffer=+0.28 (122.8%)
+      • GATB: Z=-5.26, ΔStouffer=-0.28 (121.5%) (SIGN-FLIP)
+      • GLS2: Z=-5.25, ΔStouffer=-0.28 (121.3%) (SIGN-FLIP)
+      • NDUFA2: Z=-5.02, ΔStouffer=-0.26 (115.9%) (SIGN-FLIP)
+      • LCAT: Z=4.97, ΔStouffer=+0.26 (115.0%)
+      • SPG7: Z=4.92, ΔStouffer=+0.26 (114.0%)
+      • MRPS16: Z=-4.89, ΔStouffer=-0.26 (113.0%) (SIGN-FLIP)
+      • GCDH: Z=-4.75, ΔStouffer=-0.25 (109.6%) (SIGN-FLIP)
+      • PCCA: Z=-4.70, ΔStouffer=-0.25 (108.5%) (SIGN-FLIP)
+      • SDHD: Z=4.66, ΔStouffer=+0.25 (107.9%)
+      • CAD: Z=-4.66, ΔStouffer=-0.25 (107.6%) (SIGN-FLIP)
+      • POLR1B: Z=-4.59, ΔStouffer=-0.24 (106.1%) (SIGN-FLIP)
+      • TSFM: Z=-4.57, ΔStouffer=-0.24 (105.5%) (SIGN-FLIP)
+      • BNIP3L: Z=4.54, ΔStouffer=+0.24 (105.2%)
+      • ADCK2: Z=4.52, ΔStouffer=+0.24 (104.6%)
+      • CPS1: Z=-4.49, ΔStouffer=-0.24 (103.8%) (SIGN-FLIP)
+      • AMT: Z=-4.49, ΔStouffer=-0.24 (103.6%) (SIGN-FLIP)
+      • CYB5B: Z=4.45, ΔStouffer=+0.23 (103.1%)
+      • BCKDHA: Z=4.45, ΔStouffer=+0.23 (103.1%)
+      • MRPS27: Z=4.44, ΔStouffer=+0.23 (102.8%)
+      • AZIN1: Z=4.40, ΔStouffer=+0.23 (101.9%)
+      • CYP2E1: Z=4.34, ΔStouffer=+0.23 (100.6%)
+      • NDUFAB1: Z=-4.35, ΔStouffer=-0.23 (100.5%) (SIGN-FLIP)
+      • HADH: Z=4.32, ΔStouffer=+0.23 (100.1%)
+      • ME3: Z=-4.32, ΔStouffer=-0.23 (99.8%)
+      • ECI2: Z=4.20, ΔStouffer=+0.22 (97.2%)
+      • MRPL33: Z=4.15, ΔStouffer=+0.22 (96.1%)
+      • NDUFS3: Z=-4.16, ΔStouffer=-0.22 (96.0%)
+      • ACO2: Z=4.12, ΔStouffer=+0.22 (95.3%)
+      • VDAC2: Z=-4.04, ΔStouffer=-0.21 (93.3%)
+      • NME4: Z=-3.96, ΔStouffer=-0.21 (91.5%)
+      • PPOX: Z=-3.82, ΔStouffer=-0.20 (88.2%)
+      • MRPS18B: Z=-3.80, ΔStouffer=-0.20 (87.7%)
+      • CYP11A1: Z=-3.78, ΔStouffer=-0.20 (87.3%)
+      • UQCRH: Z=-3.78, ΔStouffer=-0.20 (87.3%)
+      • MRPS17: Z=-3.78, ΔStouffer=-0.20 (87.2%)
+      • ANXA7: Z=3.69, ΔStouffer=+0.19 (85.4%)
+      • ACADS: Z=-3.70, ΔStouffer=-0.19 (85.4%)
+      • FDX1: Z=-3.65, ΔStouffer=-0.19 (84.3%)
+      • PDHB: Z=3.64, ΔStouffer=+0.19 (84.2%)
+      • TIMM8B: Z=3.61, ΔStouffer=+0.19 (83.6%)
+      • GOT2: Z=-3.61, ΔStouffer=-0.19 (83.4%)
+      • SLC25A1: Z=3.60, ΔStouffer=+0.19 (83.3%)
+      • MRPL2: Z=-3.56, ΔStouffer=-0.19 (82.2%)
+      • MRPS14: Z=3.47, ΔStouffer=+0.18 (80.3%)
+      • ALDH2: Z=3.46, ΔStouffer=+0.18 (80.2%)
+      • TFAM: Z=3.46, ΔStouffer=+0.18 (80.1%)
+      • TXN2: Z=-3.47, ΔStouffer=-0.18 (80.1%)
+      • MRPS35: Z=-3.45, ΔStouffer=-0.18 (79.7%)
+      • SHB: Z=-3.43, ΔStouffer=-0.18 (79.3%)
+      • PAM16: Z=3.39, ΔStouffer=+0.18 (78.5%)
+      • MTRF1: Z=-3.40, ΔStouffer=-0.18 (78.5%)
+      • EMC8: Z=3.26, ΔStouffer=+0.17 (75.4%)
+      • TOMM20: Z=-3.24, ΔStouffer=-0.17 (74.8%)
+      • NDUFA6: Z=-3.23, ΔStouffer=-0.17 (74.7%)
+      • TXNRD2: Z=-3.22, ΔStouffer=-0.17 (74.3%)
+      • BCL2L1: Z=-3.21, ΔStouffer=-0.17 (74.0%)
+      • CDC42BPB: Z=3.18, ΔStouffer=+0.17 (73.7%)
+      • POLG: Z=-3.18, ΔStouffer=-0.17 (73.4%)
+      • COX5A: Z=3.16, ΔStouffer=+0.17 (73.3%)
+      • LMF2: Z=3.15, ΔStouffer=+0.17 (72.9%)
+      • TOMM22: Z=-3.14, ΔStouffer=-0.17 (72.4%)
+      • CYB5R3: Z=-3.09, ΔStouffer=-0.16 (71.4%)
+      • MRPL13: Z=3.05, ΔStouffer=+0.16 (70.6%)
+      • ETFDH: Z=3.03, ΔStouffer=+0.16 (70.2%)
+      • DLAT: Z=-3.03, ΔStouffer=-0.16 (70.0%)
+      • NDUFV2: Z=3.01, ΔStouffer=+0.16 (69.7%)
+      • MRPL46: Z=3.00, ΔStouffer=+0.16 (69.5%)
+      • DLD: Z=-2.98, ΔStouffer=-0.16 (68.7%)
+      • FPGS: Z=-2.95, ΔStouffer=-0.16 (68.1%)
+      • TIMM10: Z=2.90, ΔStouffer=+0.15 (67.1%)
+      • MRPS18C: Z=-2.91, ΔStouffer=-0.15 (67.0%)
+      • GPX4: Z=2.89, ΔStouffer=+0.15 (66.9%)
+      • SURF1: Z=2.88, ΔStouffer=+0.15 (66.7%)
+      • PDK1: Z=2.84, ΔStouffer=+0.15 (65.7%)
+      • MRPL42: Z=2.81, ΔStouffer=+0.15 (65.1%)
+      • MTO1: Z=-2.81, ΔStouffer=-0.15 (64.8%)
+      • TOMM34: Z=2.78, ΔStouffer=+0.15 (64.4%)
+      • UQCRFS1: Z=2.75, ΔStouffer=+0.15 (63.7%)
+      • NDUFS1: Z=-2.75, ΔStouffer=-0.14 (63.4%)
+      • COX6C: Z=-2.71, ΔStouffer=-0.14 (62.6%)
+      • SLC25A3: Z=2.70, ΔStouffer=+0.14 (62.6%)
+      • NDUFB3: Z=-2.70, ΔStouffer=-0.14 (62.4%)
+      • ACADVL: Z=-2.69, ΔStouffer=-0.14 (62.0%)
+      • MTX2: Z=-2.69, ΔStouffer=-0.14 (62.0%)
+      • ENDOG: Z=2.67, ΔStouffer=+0.14 (61.8%)
+      • SLC25A12: Z=2.65, ΔStouffer=+0.14 (61.4%)
+      • TSPO: Z=2.62, ΔStouffer=+0.14 (60.8%)
+      • SLC25A36: Z=-2.63, ΔStouffer=-0.14 (60.8%)
+      • MPST: Z=-2.58, ΔStouffer=-0.14 (59.6%)
+      • PDK4: Z=2.54, ΔStouffer=+0.13 (58.8%)
+      • BCS1L: Z=2.52, ΔStouffer=+0.13 (58.5%)
+      • SDHB: Z=-2.52, ΔStouffer=-0.13 (58.2%)
+      • FDXR: Z=-2.52, ΔStouffer=-0.13 (58.1%)
+      • SLC1A3: Z=2.50, ΔStouffer=+0.13 (58.0%)
+      • APAF1: Z=2.47, ΔStouffer=+0.13 (57.4%)
+      • HMGCL: Z=-2.49, ΔStouffer=-0.13 (57.3%)
+      • BID: Z=2.46, ΔStouffer=+0.13 (57.1%)
+      • DECR1: Z=-2.47, ΔStouffer=-0.13 (57.0%)
+      • CASP8: Z=2.45, ΔStouffer=+0.13 (56.8%)
+      • NDUFA7: Z=2.41, ΔStouffer=+0.13 (55.9%)
+      • CYP27B1: Z=-2.41, ΔStouffer=-0.13 (55.6%)
+      • FXN: Z=2.36, ΔStouffer=+0.12 (54.7%)
+      • CYBA: Z=-2.37, ΔStouffer=-0.12 (54.6%)
+      • NFS1: Z=-2.33, ΔStouffer=-0.12 (53.6%)
+      • MRPL18: Z=-2.33, ΔStouffer=-0.12 (53.6%)
+      • NDUFB6: Z=2.31, ΔStouffer=+0.12 (53.6%)
+      • NDUFA3: Z=2.28, ΔStouffer=+0.12 (53.0%)
+      • TST: Z=-2.25, ΔStouffer=-0.12 (51.9%)
+      • SLC25A17: Z=2.23, ΔStouffer=+0.12 (51.6%)
+      • SLC25A21: Z=-2.24, ΔStouffer=-0.12 (51.6%)
+      • PDHX: Z=-2.20, ΔStouffer=-0.12 (50.7%)
+      • TWNK: Z=2.12, ΔStouffer=+0.11 (49.2%)
+      • MB: Z=-2.08, ΔStouffer=-0.11 (47.9%)
+      • TBCB: Z=2.05, ΔStouffer=+0.11 (47.5%)
+      • YME1L1: Z=-2.04, ΔStouffer=-0.11 (47.1%)
+      • BCKDK: Z=1.98, ΔStouffer=+0.10 (45.9%)
+      • ACADM: Z=1.94, ΔStouffer=+0.10 (45.0%)
+      • COX6A2: Z=1.91, ΔStouffer=+0.10 (44.3%)
+      • TOMM70: Z=-1.89, ΔStouffer=-0.10 (43.7%)
+      • COQ8A: Z=-1.89, ΔStouffer=-0.10 (43.5%)
+      • TIMM10B: Z=-1.87, ΔStouffer=-0.10 (43.1%)
+      • TFB1M: Z=1.86, ΔStouffer=+0.10 (43.1%)
+      • BDH1: Z=1.85, ΔStouffer=+0.10 (42.9%)
+      • OAZ3: Z=-1.86, ΔStouffer=-0.10 (42.8%)
+      • FIBP: Z=-1.85, ΔStouffer=-0.10 (42.5%)
+      • VAV1: Z=1.82, ΔStouffer=+0.10 (42.3%)
+      • NBN: Z=1.82, ΔStouffer=+0.10 (42.3%)
+      • CA5A: Z=1.80, ΔStouffer=+0.10 (41.9%)
+      • FARSA: Z=1.80, ΔStouffer=+0.09 (41.6%)
+      • HADHB: Z=1.79, ΔStouffer=+0.09 (41.6%)
+      • MTCH2: Z=-1.80, ΔStouffer=-0.09 (41.5%)
+      • MAP3K1: Z=-1.80, ΔStouffer=-0.09 (41.4%)
+      • SUCLG1: Z=1.77, ΔStouffer=+0.09 (41.1%)
+      • MDH2: Z=1.77, ΔStouffer=+0.09 (41.0%)
+      • MRPL4: Z=1.76, ΔStouffer=+0.09 (40.9%)
+      • RAN: Z=-1.76, ΔStouffer=-0.09 (40.5%)
+      • AFG3L2: Z=-1.76, ΔStouffer=-0.09 (40.5%)
+      • MRPL48: Z=1.74, ΔStouffer=+0.09 (40.4%)
+      • ETFB: Z=1.74, ΔStouffer=+0.09 (40.3%)
+      • UCP3: Z=1.69, ΔStouffer=+0.09 (39.2%)
+      • CYB5A: Z=1.68, ΔStouffer=+0.09 (39.0%)
+      • ACP6: Z=1.68, ΔStouffer=+0.09 (38.9%)
+      • COX5B: Z=-1.68, ΔStouffer=-0.09 (38.8%)
+      • YWHAE: Z=1.65, ΔStouffer=+0.09 (38.4%)
+      • MRPS12: Z=1.65, ΔStouffer=+0.09 (38.2%)
+      • ALDH4A1: Z=1.64, ΔStouffer=+0.09 (38.1%)
+      • PRDX3: Z=1.64, ΔStouffer=+0.09 (38.0%)
+      • STARD3: Z=1.62, ΔStouffer=+0.09 (37.7%)
+      • ACAT1: Z=-1.62, ΔStouffer=-0.09 (37.4%)
+      • MTHFD2: Z=1.60, ΔStouffer=+0.08 (37.1%)
+      • SNCA: Z=-1.60, ΔStouffer=-0.08 (36.8%)
+      • CS: Z=1.58, ΔStouffer=+0.08 (36.7%)
+      • SLC25A37: Z=1.58, ΔStouffer=+0.08 (36.6%)
+      • MTCH1: Z=1.58, ΔStouffer=+0.08 (36.6%)
+      • NPIPA1: Z=1.54, ΔStouffer=+0.08 (35.8%)
+      • NT5M: Z=-1.53, ΔStouffer=-0.08 (35.3%)
+      • PMPCB: Z=-1.53, ΔStouffer=-0.08 (35.2%)
+      • MRPL12: Z=1.50, ΔStouffer=+0.08 (34.9%)
+      • COX6A1: Z=1.50, ΔStouffer=+0.08 (34.8%)
+      • TP53AIP1: Z=-1.49, ΔStouffer=-0.08 (34.3%)
+      • BCL2: Z=1.46, ΔStouffer=+0.08 (34.0%)
+      • CASQ1: Z=-1.47, ΔStouffer=-0.08 (33.8%)
+      • TAT: Z=-1.46, ΔStouffer=-0.08 (33.6%)
+      • NDUFB4: Z=1.45, ΔStouffer=+0.08 (33.5%)
+      • PLA2G2A: Z=1.44, ΔStouffer=+0.08 (33.4%)
+      • HSPE1: Z=-1.44, ΔStouffer=-0.08 (33.1%)
+      • MRPL20: Z=1.42, ΔStouffer=+0.08 (33.0%)
+      • NDUFS8: Z=-1.42, ΔStouffer=-0.07 (32.6%)
+      • SIRT4: Z=1.38, ΔStouffer=+0.07 (32.1%)
+      • NDUFC1: Z=1.38, ΔStouffer=+0.07 (32.0%)
+      • COX4I1: Z=1.36, ΔStouffer=+0.07 (31.5%)
+      • TPO: Z=1.36, ΔStouffer=+0.07 (31.5%)
+      • MRPS15: Z=1.34, ΔStouffer=+0.07 (31.0%)
+      • TIMM44: Z=-1.33, ΔStouffer=-0.07 (30.7%)
+      • GLUD1: Z=-1.31, ΔStouffer=-0.07 (30.2%)
+      • PTPRA: Z=1.29, ΔStouffer=+0.07 (30.1%)
+      • SLC25A32: Z=1.28, ΔStouffer=+0.07 (29.8%)
+      • FECH: Z=1.25, ΔStouffer=+0.07 (29.1%)
+      • POLRMT: Z=1.24, ΔStouffer=+0.07 (28.8%)
+      • MRPL24: Z=1.23, ΔStouffer=+0.07 (28.6%)
+      • MRPL39: Z=1.22, ΔStouffer=+0.06 (28.4%)
+      • SDHA: Z=-1.23, ΔStouffer=-0.06 (28.3%)
+      • ZNF33B: Z=-1.22, ΔStouffer=-0.06 (28.2%)
+      • AK2: Z=1.21, ΔStouffer=+0.06 (28.1%)
+      • POLR3B: Z=-1.22, ΔStouffer=-0.06 (28.1%)
+      • COX11: Z=1.20, ΔStouffer=+0.06 (27.8%)
+      • CBARP: Z=-1.21, ΔStouffer=-0.06 (27.8%)
+      • MBD3: Z=1.17, ΔStouffer=+0.06 (27.2%)
+      • COX7A2: Z=1.16, ΔStouffer=+0.06 (27.0%)
+      • MRPL44: Z=-1.11, ΔStouffer=-0.06 (25.6%)
+      • CYP27A1: Z=1.09, ΔStouffer=+0.06 (25.3%)
+      • RAF1: Z=-1.09, ΔStouffer=-0.06 (25.1%)
+      • HADHA: Z=-1.07, ΔStouffer=-0.06 (24.7%)
+      • GCK: Z=-1.07, ΔStouffer=-0.06 (24.5%)
+      • LONP1: Z=-1.05, ΔStouffer=-0.06 (24.2%)
+      • POR: Z=1.03, ΔStouffer=+0.05 (23.9%)
+      • UCP2: Z=1.00, ΔStouffer=+0.05 (23.4%)
+      • SARDH: Z=-1.01, ΔStouffer=-0.05 (23.3%)
+      • ARG2: Z=-1.00, ΔStouffer=-0.05 (23.0%)
+      • MRPL57: Z=-0.97, ΔStouffer=-0.05 (22.4%)
+      • SSBP1: Z=0.94, ΔStouffer=+0.05 (21.9%)
+      • CASP2: Z=-0.95, ΔStouffer=-0.05 (21.9%)
+      • NDUFB8: Z=0.93, ΔStouffer=+0.05 (21.7%)
+      • LARS2: Z=-0.94, ΔStouffer=-0.05 (21.6%)
+      • AK4: Z=0.93, ΔStouffer=+0.05 (21.6%)
+      • COX6B1: Z=0.92, ΔStouffer=+0.05 (21.5%)
+      • SLC25A28: Z=0.91, ΔStouffer=+0.05 (21.2%)
+      • PC: Z=-0.92, ΔStouffer=-0.05 (21.2%)
+      • CPT1A: Z=0.89, ΔStouffer=+0.05 (20.8%)
+      • CNOT7: Z=-0.90, ΔStouffer=-0.05 (20.7%)
+      • MRPL16: Z=-0.89, ΔStouffer=-0.05 (20.4%)
+      • PKLR: Z=-0.89, ΔStouffer=-0.05 (20.4%)
+      • CYCS: Z=0.86, ΔStouffer=+0.05 (20.1%)
+    [MOOTHA_MITOCHONDRIA_ALL] migraine:
+      • HAX1: Z=-6.01, ΔStouffer=-0.31 (151.5%)
+      • PAM16: Z=-5.82, ΔStouffer=-0.30 (146.7%)
+      • MTCH2: Z=-5.67, ΔStouffer=-0.30 (142.8%)
+      • NDUFS8: Z=-5.62, ΔStouffer=-0.29 (141.6%)
+      • PTPRA: Z=5.61, ΔStouffer=+0.29 (141.0%) (SIGN-FLIP)
+      • IVD: Z=5.23, ΔStouffer=+0.27 (131.6%) (SIGN-FLIP)
+      • ABCB8: Z=-4.61, ΔStouffer=-0.24 (116.1%)
+      • MRPS27: Z=4.61, ΔStouffer=+0.24 (115.9%) (SIGN-FLIP)
+      • POLR1B: Z=4.54, ΔStouffer=+0.24 (114.2%) (SIGN-FLIP)
+      • AFG3L2: Z=-4.51, ΔStouffer=-0.24 (113.6%)
+      • ME2: Z=4.51, ΔStouffer=+0.24 (113.4%) (SIGN-FLIP)
+      • COX11: Z=-4.49, ΔStouffer=-0.24 (113.3%)
+      • NDUFA7: Z=4.40, ΔStouffer=+0.23 (110.6%) (SIGN-FLIP)
+      • CAD: Z=4.38, ΔStouffer=+0.23 (110.1%) (SIGN-FLIP)
+      • ALDH2: Z=-4.36, ΔStouffer=-0.23 (109.9%)
+      • WARS2: Z=-4.30, ΔStouffer=-0.22 (108.3%)
+      • RAF1: Z=4.19, ΔStouffer=+0.22 (105.3%) (SIGN-FLIP)
+      • NDUFA10: Z=-4.13, ΔStouffer=-0.22 (104.2%)
+      • ADCK2: Z=4.12, ΔStouffer=+0.22 (103.6%) (SIGN-FLIP)
+      • MTO1: Z=4.12, ΔStouffer=+0.21 (103.5%) (SIGN-FLIP)
+      • MRPS10: Z=4.08, ΔStouffer=+0.21 (102.5%) (SIGN-FLIP)
+      • MPST: Z=3.77, ΔStouffer=+0.20 (94.7%)
+      • ACAT1: Z=-3.75, ΔStouffer=-0.20 (94.7%)
+      • MTCH1: Z=-3.70, ΔStouffer=-0.19 (93.3%)
+      • LCAT: Z=3.64, ΔStouffer=+0.19 (91.4%)
+      • FDX1: Z=3.63, ΔStouffer=+0.19 (91.4%)
+      • ACADS: Z=3.62, ΔStouffer=+0.19 (91.1%)
+      • CNNM4: Z=-3.56, ΔStouffer=-0.19 (89.7%)
+      • CPT1B: Z=3.53, ΔStouffer=+0.18 (88.8%)
+      • NDUFAB1: Z=3.52, ΔStouffer=+0.18 (88.5%)
+      • DLD: Z=-3.50, ΔStouffer=-0.18 (88.4%)
+      • GPX4: Z=-3.49, ΔStouffer=-0.18 (88.1%)
+      • ARG2: Z=-3.43, ΔStouffer=-0.18 (86.6%)
+      • CAT: Z=3.43, ΔStouffer=+0.18 (86.1%)
+      • AMT: Z=-3.41, ΔStouffer=-0.18 (85.9%)
+      • CA5A: Z=3.41, ΔStouffer=+0.18 (85.7%)
+      • CYBA: Z=-3.36, ΔStouffer=-0.18 (84.7%)
+      • MRPL11: Z=3.35, ΔStouffer=+0.17 (84.1%)
+      • NBN: Z=3.34, ΔStouffer=+0.17 (84.0%)
+      • FARSA: Z=3.31, ΔStouffer=+0.17 (83.1%)
+      • GCDH: Z=3.24, ΔStouffer=+0.17 (81.3%)
+      • R3HCC1L: Z=3.20, ΔStouffer=+0.17 (80.4%)
+      • MRPS17: Z=3.20, ΔStouffer=+0.17 (80.4%)
+      • LMF2: Z=3.19, ΔStouffer=+0.17 (80.2%)
+      • HADH: Z=3.15, ΔStouffer=+0.16 (79.2%)
+      • ETFB: Z=-3.09, ΔStouffer=-0.16 (78.0%)
+      • VDAC2: Z=-3.06, ΔStouffer=-0.16 (77.3%)
+      • MRPL4: Z=-3.05, ΔStouffer=-0.16 (77.0%)
+      • BNIP3L: Z=-3.05, ΔStouffer=-0.16 (76.9%)
+      • PLA2G2A: Z=3.04, ΔStouffer=+0.16 (76.5%)
+      • MRPL18: Z=3.01, ΔStouffer=+0.16 (75.5%)
+      • TSPO: Z=3.00, ΔStouffer=+0.16 (75.4%)
+      • ZNF33B: Z=-2.97, ΔStouffer=-0.16 (75.0%)
+      • MBD3: Z=2.94, ΔStouffer=+0.15 (73.8%)
+      • COX5A: Z=2.91, ΔStouffer=+0.15 (73.1%)
+      • MAP3K1: Z=-2.82, ΔStouffer=-0.15 (71.1%)
+      • MRPS18B: Z=-2.81, ΔStouffer=-0.15 (71.0%)
+      • MRPL28: Z=-2.76, ΔStouffer=-0.14 (69.7%)
+      • PKLR: Z=2.75, ΔStouffer=+0.14 (69.0%)
+      • TSFM: Z=-2.73, ΔStouffer=-0.14 (68.8%)
+      • GOT2: Z=-2.66, ΔStouffer=-0.14 (67.2%)
+      • COX7A2: Z=2.66, ΔStouffer=+0.14 (66.8%)
+      • ACO2: Z=2.65, ΔStouffer=+0.14 (66.5%)
+      • TIMM44: Z=-2.59, ΔStouffer=-0.14 (65.4%)
+      • POLG2: Z=2.59, ΔStouffer=+0.14 (65.0%)
+      • BCL2L1: Z=2.57, ΔStouffer=+0.13 (64.5%)
+      • NNT: Z=-2.52, ΔStouffer=-0.13 (63.6%)
+      • CLN3: Z=2.51, ΔStouffer=+0.13 (63.2%)
+      • ACADVL: Z=-2.48, ΔStouffer=-0.13 (62.6%)
+      • MFN2: Z=-2.45, ΔStouffer=-0.13 (61.9%)
+      • GNLY: Z=-2.43, ΔStouffer=-0.13 (61.3%)
+      • LARS2: Z=2.43, ΔStouffer=+0.13 (61.1%)
+      • CYP2E1: Z=2.42, ΔStouffer=+0.13 (60.8%)
+      • COX8A: Z=-2.40, ΔStouffer=-0.13 (60.6%)
+      • NDUFS6: Z=-2.38, ΔStouffer=-0.12 (60.0%)
+      • MTRF1: Z=-2.38, ΔStouffer=-0.12 (60.0%)
+      • MDH2: Z=2.37, ΔStouffer=+0.12 (59.6%)
+      • ATPAF2: Z=2.37, ΔStouffer=+0.12 (59.5%)
+      • METTL17: Z=-2.36, ΔStouffer=-0.12 (59.4%)
+      • OAZ3: Z=-2.35, ΔStouffer=-0.12 (59.2%)
+      • ACADSB: Z=-2.35, ΔStouffer=-0.12 (59.2%)
+      • SNCA: Z=-2.32, ΔStouffer=-0.12 (58.6%)
+      • CD40: Z=-2.25, ΔStouffer=-0.12 (56.8%)
+      • TOMM34: Z=2.25, ΔStouffer=+0.12 (56.5%)
+      • MRPL3: Z=2.22, ΔStouffer=+0.12 (55.8%)
+      • SLC25A40: Z=-2.21, ΔStouffer=-0.12 (55.6%)
+      • SLC25A3: Z=-2.18, ΔStouffer=-0.11 (55.1%)
+      • AZIN1: Z=2.18, ΔStouffer=+0.11 (54.7%)
+      • NDUFB1: Z=2.15, ΔStouffer=+0.11 (54.1%)
+      • CYP27B1: Z=-2.14, ΔStouffer=-0.11 (53.9%)
+      • NT5M: Z=2.11, ΔStouffer=+0.11 (52.9%)
+      • MRPS34: Z=-2.08, ΔStouffer=-0.11 (52.5%)
+      • IMMT: Z=2.09, ΔStouffer=+0.11 (52.4%)
+      • RPAIN: Z=-2.07, ΔStouffer=-0.11 (52.4%)
+      • SLC1A3: Z=-2.07, ΔStouffer=-0.11 (52.3%)
+      • ACSL1: Z=-2.06, ΔStouffer=-0.11 (52.0%)
+      • MCAT: Z=-2.05, ΔStouffer=-0.11 (51.7%)
+      • PCCB: Z=2.05, ΔStouffer=+0.11 (51.5%)
+      • GFM1: Z=-2.03, ΔStouffer=-0.11 (51.3%)
+      • SARDH: Z=-2.03, ΔStouffer=-0.11 (51.2%)
+      • CRAT: Z=2.04, ΔStouffer=+0.11 (51.1%)
+      • MRPS12: Z=2.03, ΔStouffer=+0.11 (50.9%)
+      • MRPS18A: Z=-1.96, ΔStouffer=-0.10 (49.4%)
+      • ALDH4A1: Z=-1.93, ΔStouffer=-0.10 (48.7%)
+      • ETFDH: Z=1.93, ΔStouffer=+0.10 (48.5%)
+      • MTX2: Z=1.93, ΔStouffer=+0.10 (48.4%)
+      • NDUFA3: Z=1.93, ΔStouffer=+0.10 (48.4%)
+      • PPA1: Z=1.93, ΔStouffer=+0.10 (48.4%)
+      • ENDOG: Z=1.92, ΔStouffer=+0.10 (48.2%)
+      • NDUFB4: Z=-1.90, ΔStouffer=-0.10 (47.9%)
+      • CPT1A: Z=-1.88, ΔStouffer=-0.10 (47.6%)
+      • MRPL22: Z=-1.87, ΔStouffer=-0.10 (47.3%)
+      • SOD2: Z=-1.86, ΔStouffer=-0.10 (47.0%)
+      • GCFC2: Z=-1.86, ΔStouffer=-0.10 (46.9%)
+      • SLC25A32: Z=1.87, ΔStouffer=+0.10 (46.9%)
+      • VAV1: Z=1.86, ΔStouffer=+0.10 (46.8%)
+      • MRPL19: Z=-1.85, ΔStouffer=-0.10 (46.7%)
+      • MRPL16: Z=1.86, ΔStouffer=+0.10 (46.6%)
+      • TFB1M: Z=1.85, ΔStouffer=+0.10 (46.5%)
+      • MRPS16: Z=-1.84, ΔStouffer=-0.10 (46.5%)
+      • TXN2: Z=-1.83, ΔStouffer=-0.10 (46.2%)
+      • GCK: Z=-1.82, ΔStouffer=-0.10 (46.0%)
+      • EMC8: Z=1.77, ΔStouffer=+0.09 (44.5%)
+      • MTX1: Z=-1.76, ΔStouffer=-0.09 (44.3%)
+      • TIMM10B: Z=1.75, ΔStouffer=+0.09 (44.0%)
+      • CASP8: Z=-1.73, ΔStouffer=-0.09 (43.6%)
+      • MRPL12: Z=-1.71, ΔStouffer=-0.09 (43.2%)
+      • MRPL17: Z=1.72, ΔStouffer=+0.09 (43.1%)
+      • SBNO2: Z=1.71, ΔStouffer=+0.09 (42.9%)
+      • TPO: Z=-1.68, ΔStouffer=-0.09 (42.5%)
+      • FARS2: Z=1.69, ΔStouffer=+0.09 (42.4%)
+      • GLUD1: Z=-1.67, ΔStouffer=-0.09 (42.3%)
+      • BAK1: Z=-1.66, ΔStouffer=-0.09 (42.0%)
+      • NCAPH2: Z=-1.65, ΔStouffer=-0.09 (41.6%)
+      • CKMT2: Z=-1.63, ΔStouffer=-0.09 (41.2%)
+      • POLG: Z=1.64, ΔStouffer=+0.09 (41.1%)
+      • BCAT2: Z=-1.62, ΔStouffer=-0.09 (41.0%)
+      • ACADM: Z=1.61, ΔStouffer=+0.08 (40.4%)
+      • FPGS: Z=1.61, ΔStouffer=+0.08 (40.3%)
+      • PCK2: Z=1.59, ΔStouffer=+0.08 (40.0%)
+      • COX6C: Z=1.58, ΔStouffer=+0.08 (39.6%)
+      • MRPS14: Z=-1.57, ΔStouffer=-0.08 (39.6%)
+      • ME3: Z=-1.56, ΔStouffer=-0.08 (39.5%)
+      • POLR3B: Z=1.57, ΔStouffer=+0.08 (39.5%)
+      • NDUFS2: Z=1.56, ΔStouffer=+0.08 (39.2%)
+      • SHMT2: Z=-1.54, ΔStouffer=-0.08 (39.0%)
+      • CYB5B: Z=1.55, ΔStouffer=+0.08 (39.0%)
+      • NDUFS5: Z=-1.54, ΔStouffer=-0.08 (38.9%)
+      • MRPL57: Z=1.53, ΔStouffer=+0.08 (38.3%)
+      • PMPCB: Z=1.51, ΔStouffer=+0.08 (37.9%)
+      • BIK: Z=1.51, ΔStouffer=+0.08 (37.8%)
+      • C1QBP: Z=1.50, ΔStouffer=+0.08 (37.6%)
+      • UQCRH: Z=-1.49, ΔStouffer=-0.08 (37.6%)
+      • PYGB: Z=-1.48, ΔStouffer=-0.08 (37.4%)
+      • DCTN6: Z=1.49, ΔStouffer=+0.08 (37.3%)
+      • SPG7: Z=1.47, ΔStouffer=+0.08 (36.8%)
+      • MRPS31: Z=1.47, ΔStouffer=+0.08 (36.8%)
+      • NDUFB2: Z=-1.44, ΔStouffer=-0.08 (36.3%)
+      • MRPL39: Z=1.45, ΔStouffer=+0.08 (36.3%)
+      • FDXR: Z=1.44, ΔStouffer=+0.08 (36.2%)
+      • TYMP: Z=-1.43, ΔStouffer=-0.08 (36.2%)
+      • ANXA7: Z=1.44, ΔStouffer=+0.07 (36.1%)
+      • SLC1A1: Z=-1.41, ΔStouffer=-0.07 (35.7%)
+      • MRPL13: Z=-1.41, ΔStouffer=-0.07 (35.7%)
+      • MLYCD: Z=1.41, ΔStouffer=+0.07 (35.4%)
+      • SLC25A12: Z=-1.39, ΔStouffer=-0.07 (35.1%)
+      • CYB5R3: Z=1.38, ΔStouffer=+0.07 (34.7%)
+      • MRPL15: Z=-1.37, ΔStouffer=-0.07 (34.7%)
+      • NDUFA6: Z=-1.37, ΔStouffer=-0.07 (34.6%)
+      • SDHB: Z=-1.37, ΔStouffer=-0.07 (34.6%)
+      • BDH1: Z=1.38, ΔStouffer=+0.07 (34.5%)
+      • FECH: Z=-1.35, ΔStouffer=-0.07 (34.0%)
+      • SDHD: Z=1.36, ΔStouffer=+0.07 (34.0%)
+      • SLC25A1: Z=-1.35, ΔStouffer=-0.07 (34.0%)
+      • COX6A2: Z=-1.34, ΔStouffer=-0.07 (33.9%)
+      • ACP6: Z=-1.34, ΔStouffer=-0.07 (33.9%)
+      • MTIF2: Z=1.34, ΔStouffer=+0.07 (33.6%)
+      • UQCR11: Z=1.34, ΔStouffer=+0.07 (33.6%)
+      • SLC25A37: Z=-1.31, ΔStouffer=-0.07 (33.1%)
+      • POLRMT: Z=-1.31, ΔStouffer=-0.07 (33.0%)
+      • PRDX3: Z=1.32, ΔStouffer=+0.07 (33.0%)
+      • TNFSF10: Z=1.31, ΔStouffer=+0.07 (32.8%)
+      • STAR: Z=-1.29, ΔStouffer=-0.07 (32.5%)
+      • CYB5A: Z=1.28, ΔStouffer=+0.07 (32.1%)
+      • UCP3: Z=1.27, ΔStouffer=+0.07 (31.9%)
+      • MRPL2: Z=1.27, ΔStouffer=+0.07 (31.8%)
+      • COQ7: Z=1.26, ΔStouffer=+0.07 (31.5%)
+      • NDUFS1: Z=-1.22, ΔStouffer=-0.06 (30.8%)
+      • MRPS33: Z=1.22, ΔStouffer=+0.06 (30.6%)
+      • MPO: Z=1.20, ΔStouffer=+0.06 (30.2%)
+      • BCKDHB: Z=1.20, ΔStouffer=+0.06 (30.0%)
+      • ECI2: Z=-1.18, ΔStouffer=-0.06 (29.8%)
+      • UQCRFS1: Z=1.18, ΔStouffer=+0.06 (29.7%)
+      • TOMM20: Z=1.18, ΔStouffer=+0.06 (29.6%)
+      • SSBP1: Z=1.18, ΔStouffer=+0.06 (29.6%)
+      • UCP2: Z=1.18, ΔStouffer=+0.06 (29.6%)
+      • CYCS: Z=-1.17, ΔStouffer=-0.06 (29.6%)
+      • FIBP: Z=-1.16, ΔStouffer=-0.06 (29.4%)
+      • TXNRD2: Z=1.15, ΔStouffer=+0.06 (28.9%)
+      • MRPL46: Z=1.15, ΔStouffer=+0.06 (28.8%)
+      • ACADL: Z=-1.13, ΔStouffer=-0.06 (28.7%)
+      • COX7A1: Z=-1.13, ΔStouffer=-0.06 (28.6%)
+      • PDHX: Z=1.13, ΔStouffer=+0.06 (28.2%)
+      • NDUFA5: Z=-1.11, ΔStouffer=-0.06 (28.0%)
+      • PCCA: Z=1.10, ΔStouffer=+0.06 (27.6%)
+      • CYP11A1: Z=1.07, ΔStouffer=+0.06 (26.9%)
+      • BCL2: Z=-1.06, ΔStouffer=-0.06 (26.7%)
+      • TIMM8B: Z=1.05, ΔStouffer=+0.05 (26.3%)
+      • NME4: Z=1.05, ΔStouffer=+0.05 (26.2%)
+      • PYCR1: Z=-1.01, ΔStouffer=-0.05 (25.7%)
+      • SLF2: Z=1.00, ΔStouffer=+0.05 (25.0%)
+      • HADHB: Z=-0.97, ΔStouffer=-0.05 (24.5%)
+      • UQCRB: Z=0.98, ΔStouffer=+0.05 (24.5%)
+      • NPIPA1: Z=-0.96, ΔStouffer=-0.05 (24.4%)
+      • TBCB: Z=0.97, ΔStouffer=+0.05 (24.2%)
+      • POR: Z=0.94, ΔStouffer=+0.05 (23.6%)
+      • MRPS28: Z=0.93, ΔStouffer=+0.05 (23.4%)
+      • MTHFD1: Z=0.93, ΔStouffer=+0.05 (23.4%)
+      • DNM1L: Z=-0.92, ΔStouffer=-0.05 (23.3%)
+      • GPD2: Z=-0.90, ΔStouffer=-0.05 (22.7%)
+      • SURF1: Z=-0.89, ΔStouffer=-0.05 (22.5%)
+      • TP53: Z=0.87, ΔStouffer=+0.05 (21.8%)
+      • COX6A1: Z=-0.86, ΔStouffer=-0.05 (21.7%)
+      • SLC25A22: Z=0.86, ΔStouffer=+0.04 (21.6%)
+      • PC: Z=0.86, ΔStouffer=+0.04 (21.4%)
+      • COX6B1: Z=0.85, ΔStouffer=+0.04 (21.4%)
+      • COQ8A: Z=-0.84, ΔStouffer=-0.04 (21.2%)
+      • NDUFV2: Z=-0.83, ΔStouffer=-0.04 (21.0%)
+      • GATB: Z=0.84, ΔStouffer=+0.04 (20.9%)
+      • COX15: Z=-0.82, ΔStouffer=-0.04 (20.9%)
+      • TWNK: Z=-0.82, ΔStouffer=-0.04 (20.7%)
+      • ACAD8: Z=-0.81, ΔStouffer=-0.04 (20.6%)
+      • DGUOK: Z=-0.81, ΔStouffer=-0.04 (20.5%)
+      • COX10: Z=0.82, ΔStouffer=+0.04 (20.5%)
+      • SLC1A2: Z=0.81, ΔStouffer=+0.04 (20.2%)
+      • TFAM: Z=-0.80, ΔStouffer=-0.04 (20.2%)
+    [REACTOME_ACTIVATION_OF_INNATE_IMMUNE_RESPONSE] bip:
+      • TLR9: Z=8.90, ΔStouffer=+2.40 (143.5%) (SIGN-FLIP)
+      • CHUK: Z=-6.08, ΔStouffer=-1.75 (104.4%)
+      • TLR2: Z=-2.69, ΔStouffer=-0.81 (48.3%)
+      • IL18: Z=-2.69, ΔStouffer=-0.81 (48.2%)
+      • NLRP3: Z=-2.38, ΔStouffer=-0.72 (43.1%)
+      • NFKB1: Z=2.81, ΔStouffer=+0.72 (42.7%)
+      • TLR4: Z=2.64, ΔStouffer=+0.67 (40.0%)
+      • DDX58: Z=2.27, ΔStouffer=+0.57 (33.8%)
+      • CASP1: Z=1.92, ΔStouffer=+0.47 (28.0%)
+      • MAVS: Z=-1.45, ΔStouffer=-0.47 (27.8%)
+      • PYCARD: Z=1.57, ΔStouffer=+0.37 (22.2%)
+      • RELA: Z=1.55, ΔStouffer=+0.37 (21.8%)
+    [REACTOME_ACTIVATION_OF_INNATE_IMMUNE_RESPONSE] migraine:
+      • MAVS: Z=-4.40, ΔStouffer=-1.12 (213.4%)
+      • RELA: Z=-3.30, ΔStouffer=-0.84 (161.0%)
+      • NLRP3: Z=2.65, ΔStouffer=+0.65 (123.6%) (SIGN-FLIP)
+      • TLR4: Z=2.52, ΔStouffer=+0.61 (117.3%) (SIGN-FLIP)
+      • TLR2: Z=2.21, ΔStouffer=+0.54 (102.7%) (SIGN-FLIP)
+      • DDX58: Z=1.69, ΔStouffer=+0.41 (77.8%)
+      • CHUK: Z=-1.32, ΔStouffer=-0.35 (66.1%)
+      • IFIH1: Z=1.21, ΔStouffer=+0.29 (54.7%)
+      • TLR9: Z=1.05, ΔStouffer=+0.25 (47.3%)
+      • IL1B: Z=-0.68, ΔStouffer=-0.19 (35.6%)
+      • CASP1: Z=0.61, ΔStouffer=+0.14 (26.3%)
+      • PYCARD: Z=-0.47, ΔStouffer=-0.13 (25.3%)
+      • NFKB1: Z=0.57, ΔStouffer=+0.13 (24.2%)
+    [REACTOME_CELLULAR_SENESCENCE_ALL] bip:
+      • MAPK3: Z=10.61, ΔStouffer=+1.06 (22.6%)
+    [REACTOME_CELLULAR_SENESCENCE_ALL] migraine:
+      • RAD50: Z=-6.40, ΔStouffer=-0.62 (346.1%) (SIGN-FLIP)
+      • MAP2K4: Z=5.65, ΔStouffer=+0.55 (306.3%)
+      • CDC26: Z=5.40, ΔStouffer=+0.53 (292.7%)
+      • SCMH1: Z=4.42, ΔStouffer=+0.43 (239.7%)
+      • ERF: Z=-4.23, ΔStouffer=-0.41 (228.7%) (SIGN-FLIP)
+      • TXN: Z=4.19, ΔStouffer=+0.41 (227.5%)
+      • POT1: Z=3.96, ΔStouffer=+0.39 (215.1%)
+      • ANAPC7: Z=-3.97, ΔStouffer=-0.39 (214.6%) (SIGN-FLIP)
+      • UBE2D1: Z=3.70, ΔStouffer=+0.36 (200.9%)
+      • VENTX: Z=3.46, ΔStouffer=+0.34 (187.9%)
+      • ANAPC16: Z=3.37, ΔStouffer=+0.33 (182.8%)
+      • RPS6KA1: Z=-3.38, ΔStouffer=-0.33 (182.5%) (SIGN-FLIP)
+      • NBN: Z=3.34, ΔStouffer=+0.33 (181.4%)
+      • CDK2: Z=-3.36, ΔStouffer=-0.33 (181.2%) (SIGN-FLIP)
+      • RELA: Z=-3.30, ΔStouffer=-0.32 (178.4%) (SIGN-FLIP)
+      • UBA52: Z=-3.30, ΔStouffer=-0.32 (177.9%) (SIGN-FLIP)
+      • ANAPC5: Z=-3.26, ΔStouffer=-0.32 (175.8%) (SIGN-FLIP)
+      • CDKN2D: Z=-3.01, ΔStouffer=-0.29 (162.6%) (SIGN-FLIP)
+      • MDM4: Z=-2.87, ΔStouffer=-0.28 (154.9%) (SIGN-FLIP)
+      • CDK6: Z=2.69, ΔStouffer=+0.26 (145.8%)
+      • MRE11: Z=-2.67, ΔStouffer=-0.26 (144.1%) (SIGN-FLIP)
+      • E2F1: Z=2.49, ΔStouffer=+0.24 (135.3%)
+      • MDM2: Z=-2.39, ΔStouffer=-0.23 (128.8%) (SIGN-FLIP)
+      • RING1: Z=2.29, ΔStouffer=+0.22 (124.6%)
+      • MAPK14: Z=-2.28, ΔStouffer=-0.22 (122.8%) (SIGN-FLIP)
+      • ANAPC11: Z=-2.24, ΔStouffer=-0.22 (121.0%) (SIGN-FLIP)
+      • CDC16: Z=-2.24, ΔStouffer=-0.22 (120.7%) (SIGN-FLIP)
+      • PHC2: Z=2.07, ΔStouffer=+0.20 (112.5%)
+      • UBN1: Z=2.01, ΔStouffer=+0.20 (109.1%)
+      • MAP4K4: Z=-1.83, ΔStouffer=-0.18 (98.4%)
+      • MAPK9: Z=-1.82, ΔStouffer=-0.18 (98.1%)
+      • EZH2: Z=1.78, ΔStouffer=+0.17 (97.0%)
+      • MAPK1: Z=-1.78, ΔStouffer=-0.17 (95.9%)
+      • MAPKAPK2: Z=-1.70, ΔStouffer=-0.16 (91.3%)
+      • MAP2K3: Z=1.60, ΔStouffer=+0.16 (86.9%)
+      • CEBPB: Z=1.57, ΔStouffer=+0.15 (85.3%)
+      • RB1: Z=1.49, ΔStouffer=+0.15 (81.3%)
+      • ETS1: Z=1.48, ΔStouffer=+0.14 (80.5%)
+      • EHMT2: Z=-1.49, ΔStouffer=-0.14 (80.2%)
+      • MAP2K7: Z=1.45, ΔStouffer=+0.14 (79.0%)
+      • AGO1: Z=1.33, ΔStouffer=+0.13 (72.5%)
+      • CCNA1: Z=-1.32, ΔStouffer=-0.13 (70.8%)
+      • ID1: Z=-1.29, ΔStouffer=-0.12 (69.2%)
+      • ATM: Z=1.26, ΔStouffer=+0.12 (68.5%)
+      • MAPK7: Z=-1.26, ΔStouffer=-0.12 (67.6%)
+      • MINK1: Z=1.18, ΔStouffer=+0.12 (64.2%)
+      • CBX2: Z=1.14, ΔStouffer=+0.11 (62.0%)
+      • CCNE1: Z=-1.12, ΔStouffer=-0.11 (60.1%)
+      • UBC: Z=-1.09, ΔStouffer=-0.10 (58.3%)
+      • TNRC6A: Z=-1.07, ΔStouffer=-0.10 (57.5%)
+      • CCNE2: Z=1.04, ΔStouffer=+0.10 (57.0%)
+      • CDK4: Z=1.02, ΔStouffer=+0.10 (55.5%)
+      • ANAPC1: Z=0.97, ΔStouffer=+0.10 (53.0%)
+      • CDKN2A: Z=-0.98, ΔStouffer=-0.09 (52.4%)
+      • LMNB1: Z=-0.94, ΔStouffer=-0.09 (50.4%)
+      • ANAPC10: Z=-0.94, ΔStouffer=-0.09 (50.3%)
+      • MAPK10: Z=0.92, ΔStouffer=+0.09 (50.2%)
+      • CXCL8: Z=-0.91, ΔStouffer=-0.09 (48.9%)
+      • SP1: Z=-0.90, ΔStouffer=-0.09 (48.1%)
+      • CDC23: Z=0.87, ΔStouffer=+0.09 (47.6%)
+      • TP53: Z=0.87, ΔStouffer=+0.09 (47.5%)
+      • MAP3K5: Z=-0.87, ΔStouffer=-0.08 (46.4%)
+      • EP400: Z=0.74, ΔStouffer=+0.07 (40.5%)
+      • SUZ12: Z=-0.72, ΔStouffer=-0.07 (38.3%)
+      • MOV10: Z=0.69, ΔStouffer=+0.07 (37.8%)
+      • RNF2: Z=-0.68, ΔStouffer=-0.07 (36.2%)
+      • CDKN2B: Z=0.64, ΔStouffer=+0.06 (35.3%)
+      • IGFBP7: Z=-0.59, ΔStouffer=-0.06 (31.7%)
+      • CBX8: Z=-0.59, ΔStouffer=-0.06 (31.5%)
+      • NFKB1: Z=0.57, ΔStouffer=+0.06 (31.3%)
+      • TNIK: Z=0.57, ΔStouffer=+0.06 (31.1%)
+      • MAPK11: Z=-0.58, ΔStouffer=-0.06 (30.9%)
+      • FZR1: Z=0.53, ΔStouffer=+0.05 (28.9%)
+      • ETS2: Z=-0.54, ΔStouffer=-0.05 (28.7%)
+      • CABIN1: Z=0.48, ΔStouffer=+0.05 (26.5%)
+      • EED: Z=-0.50, ΔStouffer=-0.05 (26.5%)
+      • MAPKAPK3: Z=-0.50, ΔStouffer=-0.05 (26.4%)
+      • IL6: Z=-0.46, ΔStouffer=-0.04 (24.4%)
+      • RPS27A: Z=0.43, ΔStouffer=+0.04 (23.6%)
+      • CDKN1A: Z=-0.44, ΔStouffer=-0.04 (23.5%)
+      • RBBP4: Z=0.38, ΔStouffer=+0.04 (21.0%)
+      • CBX6: Z=0.38, ΔStouffer=+0.04 (20.9%)
+      • MAP2K6: Z=-0.39, ΔStouffer=-0.04 (20.8%)
+    [REACTOME_CIRCADIAN_CLOCK] bip:
+      • ARNTL: Z=-4.87, ΔStouffer=-1.66 (285.3%)
+      • RORB: Z=4.29, ΔStouffer=+1.40 (240.6%) (SIGN-FLIP)
+      • NR1D1: Z=3.04, ΔStouffer=+0.98 (169.2%) (SIGN-FLIP)
+      • PER2: Z=-2.06, ΔStouffer=-0.72 (123.8%)
+      • RORC: Z=1.40, ΔStouffer=+0.43 (74.9%)
+      • CRY2: Z=-0.97, ΔStouffer=-0.35 (60.9%)
+      • CLOCK: Z=-0.86, ΔStouffer=-0.32 (54.9%)
+      • NPAS2: Z=0.82, ΔStouffer=+0.24 (41.9%)
+      • CSNK1E: Z=0.73, ΔStouffer=+0.21 (36.5%)
+    [REACTOME_CIRCADIAN_CLOCK] migraine:
+      • CLOCK: Z=3.88, ΔStouffer=+1.12 (96.5%)
+      • RORC: Z=2.14, ΔStouffer=+0.59 (51.2%)
+      • NR1D1: Z=-1.52, ΔStouffer=-0.51 (43.9%)
+      • ARNTL: Z=-1.43, ΔStouffer=-0.48 (41.6%)
+    [REACTOME_COMPLEMENT_ALL] bip:
+      • C4A: Z=9.97, ΔStouffer=+1.57 (69.2%)
+      • CD46: Z=5.40, ΔStouffer=+0.84 (36.9%)
+      • CFB: Z=-4.34, ΔStouffer=-0.72 (31.9%)
+      • PROS1: Z=-3.98, ΔStouffer=-0.67 (29.4%)
+      • CFH: Z=4.19, ΔStouffer=+0.64 (28.4%)
+      • CD19: Z=3.85, ΔStouffer=+0.59 (25.9%)
+      • C1QA: Z=-3.29, ΔStouffer=-0.56 (24.6%)
+      • SERPING1: Z=3.44, ΔStouffer=+0.52 (23.0%)
+    [REACTOME_COMPLEMENT_ALL] migraine:
+      • C4B: Z=-6.60, ΔStouffer=-0.99 (25.7%)
+    [REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM] bip:
+      • IL6R: Z=6.37, ΔStouffer=+1.72 (70.9%)
+      • IL17RA: Z=-4.39, ΔStouffer=-1.05 (43.4%)
+      • TNFRSF1A: Z=-3.32, ΔStouffer=-0.78 (32.0%)
+      • IL10RA: Z=-2.67, ΔStouffer=-0.61 (25.1%)
+      • IL4R: Z=-2.54, ΔStouffer=-0.58 (23.7%)
+    [REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM] migraine:
+      • TNFRSF1A: Z=5.33, ΔStouffer=+1.26 (56.5%)
+      • IL4R: Z=3.97, ΔStouffer=+0.92 (41.3%)
+      • TNFRSF1B: Z=3.91, ΔStouffer=+0.91 (40.6%)
+      • CCL5: Z=2.82, ΔStouffer=+0.64 (28.4%)
+      • IL10RA: Z=-2.01, ΔStouffer=-0.57 (25.5%)
+      • IL6R: Z=-1.83, ΔStouffer=-0.53 (23.5%)
+    [REACTOME_ENERGY_DEPENDENT_REGULATION_OF_MTOR_BY_LKB1_AMPK_ALL] bip:
+      • RPTOR: Z=-8.82, ΔStouffer=-1.75 (73.1%)
+      • PPM1A: Z=-7.96, ΔStouffer=-1.58 (65.8%)
+      • LAMTOR3: Z=5.78, ΔStouffer=+1.23 (51.3%)
+      • PRKAB1: Z=4.35, ΔStouffer=+0.94 (39.1%)
+      • PRKAG1: Z=4.07, ΔStouffer=+0.88 (36.8%)
+      • RRAGC: Z=2.18, ΔStouffer=+0.49 (20.6%)
+    [REACTOME_ENERGY_DEPENDENT_REGULATION_OF_MTOR_BY_LKB1_AMPK_ALL] migraine:
+      • PPM1A: Z=3.31, ΔStouffer=+0.65 (114.3%) (SIGN-FLIP)
+      • LAMTOR2: Z=2.73, ΔStouffer=+0.54 (94.1%)
+      • STRADA: Z=-2.47, ΔStouffer=-0.51 (88.8%)
+      • RRAGA: Z=2.20, ΔStouffer=+0.43 (75.3%)
+      • LAMTOR3: Z=-1.81, ΔStouffer=-0.37 (65.5%)
+      • MTOR: Z=-1.64, ΔStouffer=-0.34 (59.7%)
+      • MLST8: Z=-1.54, ΔStouffer=-0.32 (56.0%)
+      • LAMTOR4: Z=-1.08, ΔStouffer=-0.23 (39.9%)
+      • LAMTOR5: Z=1.12, ΔStouffer=+0.21 (37.5%)
+      • PRKAA1: Z=-0.95, ΔStouffer=-0.20 (35.4%)
+      • TSC1: Z=1.06, ΔStouffer=+0.20 (35.2%)
+      • RPTOR: Z=1.01, ΔStouffer=+0.19 (33.6%)
+      • PRKAG1: Z=-0.78, ΔStouffer=-0.17 (29.2%)
+      • STK11: Z=0.83, ΔStouffer=+0.15 (27.0%)
+      • CAB39: Z=0.68, ΔStouffer=+0.13 (22.1%)
+    [REACTOME_GLUCAGON_LIKE_PEPTIDE_1_GLP1_REGULATES_INSULIN_SECRETION_ALL] bip:
+      • GNB2: Z=-9.95, ΔStouffer=-1.74 (56.2%)
+      • GNB3: Z=-7.71, ΔStouffer=-1.34 (43.2%)
+      • ITPR3: Z=5.69, ΔStouffer=+1.07 (34.7%)
+      • GNG7: Z=5.27, ΔStouffer=+1.00 (32.2%)
+      • ADCY6: Z=-5.40, ΔStouffer=-0.92 (29.8%)
+      • PRKACA: Z=4.04, ΔStouffer=+0.78 (25.1%)
+      • KCNG2: Z=-3.94, ΔStouffer=-0.66 (21.3%)
+    [REACTOME_GLUCAGON_LIKE_PEPTIDE_1_GLP1_REGULATES_INSULIN_SECRETION_ALL] migraine:
+      • PRKAR2A: Z=-4.53, ΔStouffer=-0.81 (62.2%)
+      • GNG11: Z=4.32, ΔStouffer=+0.73 (56.3%)
+      • IQGAP1: Z=3.76, ΔStouffer=+0.64 (48.9%)
+      • GNB5: Z=3.15, ΔStouffer=+0.53 (40.6%)
+      • GNG10: Z=-2.32, ΔStouffer=-0.42 (32.6%)
+      • ADCY6: Z=-1.89, ΔStouffer=-0.35 (26.9%)
+      • GNG7: Z=-1.55, ΔStouffer=-0.29 (22.3%)
+    [REACTOME_INTRINSIC_PATHWAY_FOR_APOPTOSIS_ALL] bip:
+      • MAPK3: Z=10.61, ΔStouffer=+1.50 (26.7%)
+    [REACTOME_INTRINSIC_PATHWAY_FOR_APOPTOSIS_ALL] migraine:
+      • BCL2L11: Z=-3.84, ΔStouffer=-0.56 (55.0%)
+      • NMT1: Z=3.02, ΔStouffer=+0.46 (45.2%)
+      • BCL2L1: Z=2.57, ΔStouffer=+0.39 (38.6%)
+      • E2F1: Z=2.49, ΔStouffer=+0.38 (37.5%)
+      • DYNLL2: Z=-2.38, ΔStouffer=-0.34 (33.7%)
+      • BAD: Z=-2.21, ΔStouffer=-0.32 (31.3%)
+      • TP73: Z=2.04, ΔStouffer=+0.31 (30.8%)
+      • CASP3: Z=-2.12, ΔStouffer=-0.30 (29.9%)
+      • TP53BP2: Z=-2.01, ΔStouffer=-0.29 (28.4%)
+      • PMAIP1: Z=1.78, ΔStouffer=+0.27 (27.1%)
+      • YWHAQ: Z=1.78, ΔStouffer=+0.27 (27.1%)
+      • MAPK1: Z=-1.78, ΔStouffer=-0.25 (24.9%)
+      • YWHAZ: Z=-1.76, ΔStouffer=-0.25 (24.7%)
+      • CASP8: Z=-1.73, ΔStouffer=-0.24 (24.1%)
+      • BAK1: Z=-1.66, ΔStouffer=-0.23 (23.2%)
+      • C1QBP: Z=1.50, ΔStouffer=+0.23 (23.0%)
+    [REACTOME_MITOPHAGY] bip:
+      • TAX1BP1: Z=12.56, ΔStouffer=+2.79 (46.1%)
+      • MAP1LC3A: Z=7.76, ΔStouffer=+1.66 (27.4%)
+    [REACTOME_MITOPHAGY] migraine:
+      • ATG7: Z=5.99, ΔStouffer=+1.34 (51.5%)
+      • CALCOCO2: Z=-4.21, ΔStouffer=-1.06 (40.9%)
+      • ULK2: Z=4.24, ΔStouffer=+0.93 (35.6%)
+      • PARK2: Z=-3.15, ΔStouffer=-0.81 (31.3%)
+      • ATG12: Z=3.38, ΔStouffer=+0.72 (27.8%)
+      • NBR1: Z=-2.16, ΔStouffer=-0.58 (22.3%)
+      • ULK1: Z=2.54, ΔStouffer=+0.53 (20.2%)
+    [REACTOME_NEUROTRANSMITTER_RELEASE_CYCLE] bip:
+      • STX1A: Z=3.29, ΔStouffer=+0.92 (60.8%)
+      • RAB3A: Z=3.11, ΔStouffer=+0.87 (57.1%)
+      • SLC17A7: Z=2.40, ΔStouffer=+0.66 (43.2%)
+      • SYT2: Z=-1.92, ΔStouffer=-0.65 (42.5%)
+      • CPLX2: Z=-1.81, ΔStouffer=-0.61 (40.3%)
+      • VAMP2: Z=2.19, ΔStouffer=+0.59 (39.0%)
+      • SLC17A6: Z=-1.57, ΔStouffer=-0.54 (35.6%)
+      • SYT1: Z=-1.27, ΔStouffer=-0.45 (29.6%)
+      • STXBP1: Z=-1.24, ΔStouffer=-0.44 (29.0%)
+      • SYN2: Z=1.32, ΔStouffer=+0.33 (21.7%)
+      • SNAP25: Z=1.27, ΔStouffer=+0.32 (20.7%)
+    [REACTOME_NEUROTRANSMITTER_RELEASE_CYCLE] migraine:
+      • STX1A: Z=-4.45, ΔStouffer=-1.49 (44.6%)
+      • STXBP1: Z=5.35, ΔStouffer=+1.46 (43.8%)
+      • SLC17A7: Z=4.32, ΔStouffer=+1.15 (34.5%)
+      • SYT1: Z=-2.47, ΔStouffer=-0.89 (26.7%)
+    [REACTOME_NICOTINATE_METABOLISM_ALL] bip:
+      • NADSYN1: Z=4.32, ΔStouffer=+0.87 (85.2%)
+      • CD38: Z=-3.74, ΔStouffer=-0.71 (70.1%)
+      • NAMPT: Z=-3.44, ΔStouffer=-0.66 (64.4%)
+      • NT5E: Z=-3.17, ΔStouffer=-0.60 (59.2%)
+      • NADK: Z=-3.10, ΔStouffer=-0.59 (57.9%)
+      • PARP10: Z=-3.06, ΔStouffer=-0.58 (57.1%)
+      • NAXD: Z=-2.88, ΔStouffer=-0.55 (53.6%)
+      • PARP14: Z=2.49, ΔStouffer=+0.51 (49.9%)
+      • PARP9: Z=1.94, ΔStouffer=+0.40 (39.3%)
+      • PARP6: Z=-1.80, ΔStouffer=-0.33 (32.8%)
+      • SLC25A51: Z=-1.76, ΔStouffer=-0.33 (32.0%)
+      • NMRK1: Z=1.48, ΔStouffer=+0.31 (30.5%)
+      • NMRK2: Z=1.47, ΔStouffer=+0.31 (30.1%)
+      • NMNAT2: Z=1.45, ΔStouffer=+0.30 (29.9%)
+      • NMNAT3: Z=-1.65, ΔStouffer=-0.30 (29.8%)
+      • SLC22A13: Z=1.40, ΔStouffer=+0.29 (28.9%)
+      • NMNAT1: Z=1.30, ΔStouffer=+0.27 (26.9%)
+      • SLC5A8: Z=1.13, ΔStouffer=+0.24 (23.6%)
+      • BST1: Z=1.10, ΔStouffer=+0.24 (23.2%)
+    [REACTOME_NICOTINATE_METABOLISM_ALL] migraine:
+      • NAXE: Z=5.07, ΔStouffer=+0.99 (156.3%)
+      • BST1: Z=-4.51, ΔStouffer=-0.86 (135.6%) (SIGN-FLIP)
+      • PARP9: Z=3.55, ΔStouffer=+0.69 (109.8%)
+      • NT5E: Z=-3.61, ΔStouffer=-0.68 (108.2%) (SIGN-FLIP)
+      • NMRK2: Z=3.27, ΔStouffer=+0.64 (101.4%)
+      • PARP10: Z=-3.36, ΔStouffer=-0.63 (100.4%) (SIGN-FLIP)
+      • NMNAT3: Z=-2.02, ΔStouffer=-0.38 (59.8%)
+      • NUDT12: Z=-1.86, ΔStouffer=-0.35 (54.9%)
+      • SLC25A51: Z=-1.76, ΔStouffer=-0.33 (51.8%)
+      • PARP4: Z=1.50, ΔStouffer=+0.30 (47.5%)
+      • NAPRT: Z=1.19, ΔStouffer=+0.24 (38.0%)
+      • NADK2: Z=-1.29, ΔStouffer=-0.24 (37.4%)
+      • CD38: Z=1.11, ΔStouffer=+0.23 (35.6%)
+      • NADSYN1: Z=-1.00, ΔStouffer=-0.18 (28.7%)
+      • NMNAT1: Z=-0.91, ΔStouffer=-0.16 (25.9%)
+      • SLC22A13: Z=-0.85, ΔStouffer=-0.15 (24.0%)
+      • SLC5A8: Z=0.65, ΔStouffer=+0.14 (21.7%)
+    [REACTOME_REGULATION_OF_INSULIN_SECRETION_ALL] bip:
+      • GNB2: Z=-9.95, ΔStouffer=-1.29 (128.0%) (SIGN-FLIP)
+      • GNB3: Z=-7.71, ΔStouffer=-1.00 (99.0%)
+      • ITPR3: Z=5.69, ΔStouffer=+0.75 (74.5%)
+      • ABCC8: Z=5.55, ΔStouffer=+0.73 (72.7%)
+      • ADCY6: Z=-5.40, ΔStouffer=-0.69 (69.1%)
+      • GNG7: Z=5.27, ΔStouffer=+0.69 (69.0%)
+      • CACNA2D2: Z=-5.33, ΔStouffer=-0.69 (68.1%)
+      • CACNB3: Z=-4.27, ΔStouffer=-0.55 (54.5%)
+      • PRKACA: Z=4.04, ΔStouffer=+0.53 (53.1%)
+      • PLCB3: Z=4.03, ΔStouffer=+0.53 (53.0%)
+      • KCNG2: Z=-3.94, ΔStouffer=-0.50 (50.2%)
+      • IQGAP1: Z=-3.55, ΔStouffer=-0.45 (45.1%)
+      • STX1A: Z=3.29, ΔStouffer=+0.44 (43.4%)
+      • SYT5: Z=3.27, ΔStouffer=+0.43 (43.2%)
+      • PRKAR1B: Z=2.88, ΔStouffer=+0.38 (38.1%)
+      • CACNA1D: Z=2.66, ΔStouffer=+0.36 (35.3%)
+      • CACNB2: Z=-2.76, ΔStouffer=-0.35 (34.8%)
+      • AHCYL1: Z=-2.52, ΔStouffer=-0.32 (31.8%)
+      • GNAQ: Z=2.35, ΔStouffer=+0.31 (31.2%)
+      • VAMP2: Z=2.19, ΔStouffer=+0.29 (29.2%)
+      • PRKCA: Z=2.12, ΔStouffer=+0.29 (28.4%)
+      • KCNS3: Z=-1.89, ΔStouffer=-0.24 (23.6%)
+      • PLCB2: Z=1.69, ΔStouffer=+0.23 (22.7%)
+      • GNA11: Z=1.60, ΔStouffer=+0.22 (21.5%)
+      • PRKAR2A: Z=-1.73, ΔStouffer=-0.22 (21.5%)
+    [REACTOME_REGULATION_OF_INSULIN_SECRETION_ALL] migraine:
+      • STXBP1: Z=5.35, ΔStouffer=+0.68 (76.2%)
+      • PRKAR2A: Z=-4.53, ΔStouffer=-0.59 (66.1%)
+      • STX1A: Z=-4.45, ΔStouffer=-0.58 (65.0%)
+      • GNAQ: Z=-4.45, ΔStouffer=-0.58 (64.9%)
+      • GNG11: Z=4.32, ΔStouffer=+0.55 (61.4%)
+      • CACNB3: Z=-3.94, ΔStouffer=-0.51 (57.6%)
+      • IQGAP1: Z=3.76, ΔStouffer=+0.47 (53.4%)
+      • CACNA2D2: Z=-3.34, ΔStouffer=-0.43 (48.9%)
+      • PLCB1: Z=-3.33, ΔStouffer=-0.43 (48.8%)
+      • FFAR1: Z=3.39, ΔStouffer=+0.43 (48.1%)
+      • ABCC8: Z=3.34, ΔStouffer=+0.42 (47.3%)
+      • GNB5: Z=3.15, ΔStouffer=+0.40 (44.5%)
+      • CACNA1D: Z=2.61, ΔStouffer=+0.33 (36.8%)
+      • GNG10: Z=-2.32, ΔStouffer=-0.30 (34.3%)
+      • CHRM3: Z=2.34, ΔStouffer=+0.29 (32.9%)
+      • CACNB2: Z=-2.20, ΔStouffer=-0.29 (32.5%)
+      • PRKCA: Z=2.18, ΔStouffer=+0.27 (30.6%)
+      • PLCB2: Z=2.16, ΔStouffer=+0.27 (30.4%)
+      • ADCY6: Z=-1.89, ΔStouffer=-0.25 (28.1%)
+      • CACNA1E: Z=-1.57, ΔStouffer=-0.21 (23.5%)
+      • GNG7: Z=-1.55, ΔStouffer=-0.21 (23.2%)
+    [REACTOME_SENESCENCE_ALL] bip:
+      • MAPK3: Z=10.61, ΔStouffer=+1.06 (22.6%)
+    [REACTOME_SENESCENCE_ALL] migraine:
+      • RAD50: Z=-6.40, ΔStouffer=-0.62 (346.1%) (SIGN-FLIP)
+      • MAP2K4: Z=5.65, ΔStouffer=+0.55 (306.3%)
+      • CDC26: Z=5.40, ΔStouffer=+0.53 (292.7%)
+      • SCMH1: Z=4.42, ΔStouffer=+0.43 (239.7%)
+      • ERF: Z=-4.23, ΔStouffer=-0.41 (228.7%) (SIGN-FLIP)
+      • TXN: Z=4.19, ΔStouffer=+0.41 (227.5%)
+      • POT1: Z=3.96, ΔStouffer=+0.39 (215.1%)
+      • ANAPC7: Z=-3.97, ΔStouffer=-0.39 (214.6%) (SIGN-FLIP)
+      • UBE2D1: Z=3.70, ΔStouffer=+0.36 (200.9%)
+      • VENTX: Z=3.46, ΔStouffer=+0.34 (187.9%)
+      • ANAPC16: Z=3.37, ΔStouffer=+0.33 (182.8%)
+      • RPS6KA1: Z=-3.38, ΔStouffer=-0.33 (182.5%) (SIGN-FLIP)
+      • NBN: Z=3.34, ΔStouffer=+0.33 (181.4%)
+      • CDK2: Z=-3.36, ΔStouffer=-0.33 (181.2%) (SIGN-FLIP)
+      • RELA: Z=-3.30, ΔStouffer=-0.32 (178.4%) (SIGN-FLIP)
+      • UBA52: Z=-3.30, ΔStouffer=-0.32 (177.9%) (SIGN-FLIP)
+      • ANAPC5: Z=-3.26, ΔStouffer=-0.32 (175.8%) (SIGN-FLIP)
+      • CDKN2D: Z=-3.01, ΔStouffer=-0.29 (162.6%) (SIGN-FLIP)
+      • MDM4: Z=-2.87, ΔStouffer=-0.28 (154.9%) (SIGN-FLIP)
+      • CDK6: Z=2.69, ΔStouffer=+0.26 (145.8%)
+      • MRE11: Z=-2.67, ΔStouffer=-0.26 (144.1%) (SIGN-FLIP)
+      • E2F1: Z=2.49, ΔStouffer=+0.24 (135.3%)
+      • MDM2: Z=-2.39, ΔStouffer=-0.23 (128.8%) (SIGN-FLIP)
+      • RING1: Z=2.29, ΔStouffer=+0.22 (124.6%)
+      • MAPK14: Z=-2.28, ΔStouffer=-0.22 (122.8%) (SIGN-FLIP)
+      • ANAPC11: Z=-2.24, ΔStouffer=-0.22 (121.0%) (SIGN-FLIP)
+      • CDC16: Z=-2.24, ΔStouffer=-0.22 (120.7%) (SIGN-FLIP)
+      • PHC2: Z=2.07, ΔStouffer=+0.20 (112.5%)
+      • UBN1: Z=2.01, ΔStouffer=+0.20 (109.1%)
+      • MAP4K4: Z=-1.83, ΔStouffer=-0.18 (98.4%)
+      • MAPK9: Z=-1.82, ΔStouffer=-0.18 (98.1%)
+      • EZH2: Z=1.78, ΔStouffer=+0.17 (97.0%)
+      • MAPK1: Z=-1.78, ΔStouffer=-0.17 (95.9%)
+      • MAPKAPK2: Z=-1.70, ΔStouffer=-0.16 (91.3%)
+      • MAP2K3: Z=1.60, ΔStouffer=+0.16 (86.9%)
+      • CEBPB: Z=1.57, ΔStouffer=+0.15 (85.3%)
+      • RB1: Z=1.49, ΔStouffer=+0.15 (81.3%)
+      • ETS1: Z=1.48, ΔStouffer=+0.14 (80.5%)
+      • EHMT2: Z=-1.49, ΔStouffer=-0.14 (80.2%)
+      • MAP2K7: Z=1.45, ΔStouffer=+0.14 (79.0%)
+      • AGO1: Z=1.33, ΔStouffer=+0.13 (72.5%)
+      • CCNA1: Z=-1.32, ΔStouffer=-0.13 (70.8%)
+      • ID1: Z=-1.29, ΔStouffer=-0.12 (69.2%)
+      • ATM: Z=1.26, ΔStouffer=+0.12 (68.5%)
+      • MAPK7: Z=-1.26, ΔStouffer=-0.12 (67.6%)
+      • MINK1: Z=1.18, ΔStouffer=+0.12 (64.2%)
+      • CBX2: Z=1.14, ΔStouffer=+0.11 (62.0%)
+      • CCNE1: Z=-1.12, ΔStouffer=-0.11 (60.1%)
+      • UBC: Z=-1.09, ΔStouffer=-0.10 (58.3%)
+      • TNRC6A: Z=-1.07, ΔStouffer=-0.10 (57.5%)
+      • CCNE2: Z=1.04, ΔStouffer=+0.10 (57.0%)
+      • CDK4: Z=1.02, ΔStouffer=+0.10 (55.5%)
+      • ANAPC1: Z=0.97, ΔStouffer=+0.10 (53.0%)
+      • CDKN2A: Z=-0.98, ΔStouffer=-0.09 (52.4%)
+      • LMNB1: Z=-0.94, ΔStouffer=-0.09 (50.4%)
+      • ANAPC10: Z=-0.94, ΔStouffer=-0.09 (50.3%)
+      • MAPK10: Z=0.92, ΔStouffer=+0.09 (50.2%)
+      • CXCL8: Z=-0.91, ΔStouffer=-0.09 (48.9%)
+      • SP1: Z=-0.90, ΔStouffer=-0.09 (48.1%)
+      • CDC23: Z=0.87, ΔStouffer=+0.09 (47.6%)
+      • TP53: Z=0.87, ΔStouffer=+0.09 (47.5%)
+      • MAP3K5: Z=-0.87, ΔStouffer=-0.08 (46.4%)
+      • EP400: Z=0.74, ΔStouffer=+0.07 (40.5%)
+      • SUZ12: Z=-0.72, ΔStouffer=-0.07 (38.3%)
+      • MOV10: Z=0.69, ΔStouffer=+0.07 (37.8%)
+      • RNF2: Z=-0.68, ΔStouffer=-0.07 (36.2%)
+      • CDKN2B: Z=0.64, ΔStouffer=+0.06 (35.3%)
+      • IGFBP7: Z=-0.59, ΔStouffer=-0.06 (31.7%)
+      • CBX8: Z=-0.59, ΔStouffer=-0.06 (31.5%)
+      • NFKB1: Z=0.57, ΔStouffer=+0.06 (31.3%)
+      • TNIK: Z=0.57, ΔStouffer=+0.06 (31.1%)
+      • MAPK11: Z=-0.58, ΔStouffer=-0.06 (30.9%)
+      • FZR1: Z=0.53, ΔStouffer=+0.05 (28.9%)
+      • ETS2: Z=-0.54, ΔStouffer=-0.05 (28.7%)
+      • CABIN1: Z=0.48, ΔStouffer=+0.05 (26.5%)
+      • EED: Z=-0.50, ΔStouffer=-0.05 (26.5%)
+      • MAPKAPK3: Z=-0.50, ΔStouffer=-0.05 (26.4%)
+      • IL6: Z=-0.46, ΔStouffer=-0.04 (24.4%)
+      • RPS27A: Z=0.43, ΔStouffer=+0.04 (23.6%)
+      • CDKN1A: Z=-0.44, ΔStouffer=-0.04 (23.5%)
+      • RBBP4: Z=0.38, ΔStouffer=+0.04 (21.0%)
+      • CBX6: Z=0.38, ΔStouffer=+0.04 (20.9%)
+      • MAP2K6: Z=-0.39, ΔStouffer=-0.04 (20.8%)
+    [REACTOME_SIRT1_NEGATIVELY_REGULATES_RRNA_EXPRESSION_ALL] bip:
+      • SIRT1: Z=-3.91, ΔStouffer=-1.59 (15165.3%) (SIGN-FLIP)
+      • TAF1D: Z=3.82, ΔStouffer=+1.56 (14828.3%)
+      • TAF1B: Z=3.25, ΔStouffer=+1.33 (12646.0%)
+      • TAF1C: Z=-2.21, ΔStouffer=-0.90 (8559.9%) (SIGN-FLIP)
+      • RRP8: Z=-0.97, ΔStouffer=-0.39 (3744.7%) (SIGN-FLIP)
+      • TBP: Z=-0.57, ΔStouffer=-0.23 (2207.2%) (SIGN-FLIP)
+      • TAF1A: Z=0.55, ΔStouffer=+0.23 (2150.9%)
+    [REACTOME_SIRT1_NEGATIVELY_REGULATES_RRNA_EXPRESSION_ALL] migraine:
+      • TAF1A: Z=-3.73, ΔStouffer=-1.35 (61.4%)
+      • SIRT1: Z=-3.19, ΔStouffer=-1.13 (51.4%)
+      • TBP: Z=1.00, ΔStouffer=+0.58 (26.6%)
+    [REACTOME_SYNTHESIS_SECRETION_AND_INACTIVATION_OF_GLUCAGON_LIKE_PEPTIDE_1_GLP_1_ALL] bip:
+      • GNB3: Z=-7.71, ΔStouffer=-2.29 (315.0%) (SIGN-FLIP)
+      • SPCS1: Z=-7.70, ΔStouffer=-2.29 (314.6%) (SIGN-FLIP)
+      • CTNNB1: Z=5.20, ΔStouffer=+1.60 (219.8%)
+      • SEC11A: Z=4.44, ΔStouffer=+1.37 (188.4%)
+      • DPP4: Z=2.52, ΔStouffer=+0.79 (109.0%)
+      • FFAR1: Z=-1.57, ΔStouffer=-0.44 (60.5%)
+      • PAX6: Z=1.25, ΔStouffer=+0.41 (56.3%)
+      • PCSK1: Z=1.14, ΔStouffer=+0.37 (51.5%)
+      • SPCS3: Z=-0.63, ΔStouffer=-0.16 (21.7%)
+      • FFAR4: Z=0.41, ΔStouffer=+0.15 (21.3%)
+    [REACTOME_SYNTHESIS_SECRETION_AND_INACTIVATION_OF_GLUCAGON_LIKE_PEPTIDE_1_GLP_1_ALL] migraine:
+      • SEC11A: Z=-4.21, ΔStouffer=-1.20 (479.6%) (SIGN-FLIP)
+      • FFAR1: Z=3.39, ΔStouffer=+0.99 (394.1%)
+      • SPCS1: Z=-2.46, ΔStouffer=-0.70 (279.0%) (SIGN-FLIP)
+      • PCSK1: Z=1.18, ΔStouffer=+0.35 (139.5%)
+      • FFAR4: Z=1.13, ΔStouffer=+0.34 (133.7%)
+      • SPCS2: Z=-1.14, ΔStouffer=-0.32 (126.7%) (SIGN-FLIP)
+      • SEC11C: Z=0.91, ΔStouffer=+0.27 (108.8%)
+      • GNB1: Z=0.73, ΔStouffer=+0.22 (88.1%)
+      • DPP4: Z=0.59, ΔStouffer=+0.18 (71.8%)
+      • GNB3: Z=-0.48, ΔStouffer=-0.13 (51.2%)
+      • SPCS3: Z=-0.46, ΔStouffer=-0.12 (49.3%)
+      • CTNNB1: Z=-0.45, ΔStouffer=-0.12 (48.1%)
+      • PAX6: Z=0.37, ΔStouffer=+0.12 (46.8%)
+    [REACTOME_TELOMERE_ALL] migraine:
+      • DNA2: Z=7.24, ΔStouffer=+0.96 (311.8%) (SIGN-FLIP)
+      • DSCC1: Z=-5.91, ΔStouffer=-0.79 (256.3%)
+      • PRIM1: Z=5.73, ΔStouffer=+0.76 (246.9%) (SIGN-FLIP)
+      • PIF1: Z=-4.70, ΔStouffer=-0.63 (204.1%)
+      • POLD3: Z=-4.22, ΔStouffer=-0.57 (183.0%)
+      • POT1: Z=3.96, ΔStouffer=+0.53 (170.4%) (SIGN-FLIP)
+      • TEN1: Z=3.92, ΔStouffer=+0.52 (168.7%) (SIGN-FLIP)
+      • CDK2: Z=-3.36, ΔStouffer=-0.45 (145.9%)
+      • LIG1: Z=-3.07, ΔStouffer=-0.41 (133.4%)
+      • ANKRD28: Z=-2.99, ΔStouffer=-0.40 (130.1%)
+      • POLR2J: Z=-2.91, ΔStouffer=-0.39 (126.5%)
+      • RFC4: Z=2.95, ΔStouffer=+0.39 (126.5%) (SIGN-FLIP)
+      • RUVBL1: Z=-2.76, ΔStouffer=-0.37 (120.3%)
+      • POLR2G: Z=2.68, ΔStouffer=+0.36 (114.8%) (SIGN-FLIP)
+      • GAR1: Z=2.58, ΔStouffer=+0.34 (110.6%) (SIGN-FLIP)
+      • NOP10: Z=2.26, ΔStouffer=+0.30 (96.8%)
+      • RTEL1: Z=2.23, ΔStouffer=+0.30 (95.5%)
+      • PPP6C: Z=1.74, ΔStouffer=+0.23 (74.2%)
+      • CHTF18: Z=1.63, ΔStouffer=+0.21 (69.4%)
+      • PCNA: Z=1.62, ΔStouffer=+0.21 (69.0%)
+      • RFC3: Z=-1.53, ΔStouffer=-0.21 (67.1%)
+      • CTC1: Z=-1.52, ΔStouffer=-0.21 (66.6%)
+      • POLR2E: Z=-1.39, ΔStouffer=-0.19 (60.9%)
+      • CCNA1: Z=-1.32, ΔStouffer=-0.18 (57.8%)
+      • RFC2: Z=-1.31, ΔStouffer=-0.18 (57.5%)
+      • PRIM2: Z=1.30, ΔStouffer=+0.17 (55.2%)
+      • TERT: Z=-1.26, ΔStouffer=-0.17 (55.2%)
+      • POLR2B: Z=-1.09, ΔStouffer=-0.15 (48.0%)
+      • RPA2: Z=-1.04, ΔStouffer=-0.14 (45.7%)
+      • RFC5: Z=1.05, ΔStouffer=+0.14 (44.6%)
+      • CHTF8: Z=-0.97, ΔStouffer=-0.13 (42.6%)
+      • WRN: Z=-0.92, ΔStouffer=-0.13 (40.7%)
+      • FEN1: Z=0.95, ΔStouffer=+0.12 (40.0%)
+      • RPA3: Z=0.91, ΔStouffer=+0.12 (38.6%)
+      • PPP6R3: Z=0.85, ΔStouffer=+0.11 (35.9%)
+      • STN1: Z=0.76, ΔStouffer=+0.10 (32.0%)
+      • WRAP53: Z=-0.68, ΔStouffer=-0.09 (30.4%)
+      • POLA2: Z=0.68, ΔStouffer=+0.09 (28.6%)
+      • SHQ1: Z=0.60, ΔStouffer=+0.08 (24.9%)
+      • POLR2L: Z=0.52, ΔStouffer=+0.07 (21.7%)
+      • POLD2: Z=-0.46, ΔStouffer=-0.06 (20.6%)
+    [SAUL_SEN_MAYO_ALL] bip:
+      • SEMA3F: Z=-5.80, ΔStouffer=-0.60 (42.9%)
+      • CTNNB1: Z=5.20, ΔStouffer=+0.56 (39.5%)
+      • INHA: Z=4.87, ΔStouffer=+0.52 (37.0%)
+      • KITLG: Z=4.42, ΔStouffer=+0.47 (33.6%)
+      • IGFBP6: Z=4.39, ΔStouffer=+0.47 (33.5%)
+      • IQGAP2: Z=4.22, ΔStouffer=+0.45 (32.2%)
+      • ITPKA: Z=-4.04, ΔStouffer=-0.42 (29.7%)
+      • CCL8: Z=-3.81, ΔStouffer=-0.39 (27.9%)
+      • CXCL16: Z=-3.80, ΔStouffer=-0.39 (27.9%)
+      • TNFRSF1A: Z=-3.32, ΔStouffer=-0.34 (24.3%)
+      • IGFBP7: Z=-3.30, ΔStouffer=-0.34 (24.1%)
+      • MIF: Z=3.14, ΔStouffer=+0.34 (24.1%)
+      • SPP1: Z=-3.18, ΔStouffer=-0.33 (23.3%)
+      • CXCL1: Z=-3.12, ΔStouffer=-0.32 (22.8%)
+      • EGF: Z=-3.10, ΔStouffer=-0.32 (22.6%)
+      • VEGFA: Z=-2.76, ΔStouffer=-0.28 (20.1%)
+    [SAUL_SEN_MAYO_ALL] migraine:
+      • TNFRSF1A: Z=5.33, ΔStouffer=+0.55 (107.7%)
+      • CCL8: Z=4.60, ΔStouffer=+0.47 (93.1%)
+      • SPX: Z=4.36, ΔStouffer=+0.45 (88.3%)
+      • CXCL16: Z=-4.39, ΔStouffer=-0.45 (87.9%)
+      • MMP9: Z=-4.34, ΔStouffer=-0.44 (86.9%)
+      • INHA: Z=-4.03, ΔStouffer=-0.41 (80.6%)
+      • TNFRSF1B: Z=3.91, ΔStouffer=+0.40 (79.2%)
+      • ITPKA: Z=-3.74, ΔStouffer=-0.38 (74.7%)
+      • ANG: Z=-3.49, ΔStouffer=-0.35 (69.8%)
+      • CTSB: Z=3.20, ΔStouffer=+0.33 (64.8%)
+      • ICAM3: Z=-3.23, ΔStouffer=-0.33 (64.4%)
+      • VEGFA: Z=3.07, ΔStouffer=+0.32 (62.3%)
+      • IL15: Z=2.97, ΔStouffer=+0.31 (60.2%)
+      • SEMA3F: Z=-2.91, ΔStouffer=-0.29 (58.0%)
+      • CCL5: Z=2.82, ΔStouffer=+0.29 (57.2%)
+      • ANGPT1: Z=2.52, ΔStouffer=+0.26 (51.1%)
+      • AXL: Z=-2.47, ΔStouffer=-0.25 (49.2%)
+      • TUBGCP2: Z=-2.40, ΔStouffer=-0.24 (47.7%)
+      • MMP2: Z=-2.31, ΔStouffer=-0.23 (45.9%)
+      • PTBP1: Z=2.23, ΔStouffer=+0.23 (45.5%)
+      • RPS6KA5: Z=2.23, ΔStouffer=+0.23 (45.4%)
+      • PLAU: Z=2.20, ΔStouffer=+0.23 (44.8%)
+      • IL6ST: Z=-2.17, ΔStouffer=-0.22 (43.1%)
+      • NAP1L4: Z=2.09, ΔStouffer=+0.22 (42.7%)
+      • IL13: Z=2.03, ΔStouffer=+0.21 (41.4%)
+      • SCAMP4: Z=-2.03, ΔStouffer=-0.20 (40.3%)
+      • KITLG: Z=1.94, ΔStouffer=+0.20 (39.5%)
+      • WNT16: Z=1.92, ΔStouffer=+0.20 (39.1%)
+      • TNFRSF11B: Z=-1.94, ΔStouffer=-0.20 (38.5%)
+      • CD55: Z=-1.93, ΔStouffer=-0.19 (38.2%)
+      • CSF2RB: Z=-1.88, ΔStouffer=-0.19 (37.4%)
+      • EGFR: Z=1.80, ΔStouffer=+0.19 (36.8%)
+      • PLAT: Z=1.78, ΔStouffer=+0.18 (36.4%)
+      • SELPLG: Z=-1.80, ΔStouffer=-0.18 (35.7%)
+      • PTGER2: Z=-1.71, ΔStouffer=-0.17 (34.0%)
+      • IL32: Z=1.66, ΔStouffer=+0.17 (33.9%)
+      • MMP3: Z=-1.64, ΔStouffer=-0.16 (32.5%)
+      • NRG1: Z=-1.62, ΔStouffer=-0.16 (32.2%)
+      • IL7: Z=-1.62, ΔStouffer=-0.16 (32.0%)
+      • PIGF: Z=1.47, ΔStouffer=+0.15 (30.0%)
+      • ACVR1B: Z=1.44, ΔStouffer=+0.15 (29.5%)
+      • BMP2: Z=1.38, ΔStouffer=+0.14 (28.4%)
+      • MMP14: Z=1.35, ΔStouffer=+0.14 (27.8%)
+      • CCL4: Z=1.32, ΔStouffer=+0.14 (27.1%)
+      • SERPINE2: Z=1.29, ΔStouffer=+0.13 (26.4%)
+      • EGF: Z=-1.33, ΔStouffer=-0.13 (26.2%)
+      • CCL2: Z=-1.24, ΔStouffer=-0.12 (24.4%)
+      • EDN1: Z=-1.24, ΔStouffer=-0.12 (24.4%)
+      • FAS: Z=-1.23, ΔStouffer=-0.12 (24.2%)
+      • DKK1: Z=-1.23, ΔStouffer=-0.12 (24.1%)
+      • GEM: Z=1.17, ΔStouffer=+0.12 (24.0%)
+      • IGFBP1: Z=-1.22, ΔStouffer=-0.12 (24.0%)
+      • PTGES: Z=-1.18, ΔStouffer=-0.12 (23.3%)
+      • IGF1: Z=1.08, ΔStouffer=+0.11 (22.2%)
+      • IGFBP3: Z=-1.13, ΔStouffer=-0.11 (22.2%)
+      • CCL26: Z=-1.05, ΔStouffer=-0.10 (20.6%)
+      • CXCL2: Z=-1.03, ΔStouffer=-0.10 (20.2%)
+    [WANG_ADIPOGENIC_GENES_REPRESSED_BY_SIRT1_ALL] bip:
+      • KLB: Z=6.40, ΔStouffer=+1.45 (219.6%) (SIGN-FLIP)
+      • OLR1: Z=-5.32, ΔStouffer=-1.24 (187.5%)
+      • TPI1: Z=4.83, ΔStouffer=+1.09 (165.3%) (SIGN-FLIP)
+      • ERO1A: Z=-3.55, ΔStouffer=-0.83 (125.8%)
+      • ALDOA: Z=3.26, ΔStouffer=+0.73 (110.8%) (SIGN-FLIP)
+      • CHCHD10: Z=-2.89, ΔStouffer=-0.68 (102.9%)
+      • TRIB3: Z=2.93, ΔStouffer=+0.66 (99.3%)
+      • IGFBP4: Z=-2.53, ΔStouffer=-0.60 (90.4%)
+      • HIGD1A: Z=2.66, ΔStouffer=+0.59 (89.8%)
+      • GAPDH: Z=-2.34, ΔStouffer=-0.55 (83.9%)
+      • RBP4: Z=-1.14, ΔStouffer=-0.28 (42.0%)
+      • SLC2A1: Z=-1.08, ΔStouffer=-0.27 (40.3%)
+      • COX7A1: Z=0.84, ΔStouffer=+0.18 (26.7%)
+    [WANG_ADIPOGENIC_GENES_REPRESSED_BY_SIRT1_ALL] migraine:
+      • RBP4: Z=4.79, ΔStouffer=+1.00 (35.3%)
+      • GPI: Z=4.79, ΔStouffer=+1.00 (35.2%)
+      • TRIB3: Z=4.00, ΔStouffer=+0.82 (29.1%)
+      • OLR1: Z=3.68, ΔStouffer=+0.75 (26.6%)
+      • CHCHD10: Z=-2.87, ΔStouffer=-0.71 (25.1%)
+    [WP_GLP1_FROM_INTESTINE_AND_PANCREAS_AND_ROLE_IN_GLUCOSE_HOMEOSTASIS_ALL] bip:
+      • PCSK2: Z=5.64, ΔStouffer=+2.81 (96.3%)
+      • SLC2A1: Z=-1.08, ΔStouffer=-1.08 (36.9%)
+    [WP_GLP1_FROM_INTESTINE_AND_PANCREAS_AND_ROLE_IN_GLUCOSE_HOMEOSTASIS_ALL] migraine:
+      • PCSK2: Z=2.95, ΔStouffer=+1.37 (64.7%)
+      • SLC2A1: Z=-0.48, ΔStouffer=-0.61 (28.5%)
+    [WP_NAD_BIOSYNTHETIC_PATHWAYS_ALL] bip:
+      • TNKS: Z=-6.66, ΔStouffer=-1.53 (102.9%) (SIGN-FLIP)
+      • NADSYN1: Z=4.32, ΔStouffer=+1.06 (71.3%)
+      • SIRT1: Z=-3.91, ΔStouffer=-0.88 (59.2%)
+      • CD38: Z=-3.74, ΔStouffer=-0.84 (56.6%)
+      • SIRT6: Z=3.32, ΔStouffer=+0.82 (55.5%)
+      • NAMPT: Z=-3.44, ΔStouffer=-0.77 (51.9%)
+      • PARP1: Z=3.02, ΔStouffer=+0.75 (50.6%)
+      • SIRT5: Z=2.04, ΔStouffer=+0.52 (35.2%)
+      • TDO2: Z=-2.26, ΔStouffer=-0.49 (33.1%)
+      • TNKS2: Z=-2.18, ΔStouffer=-0.47 (31.8%)
+      • SIRT3: Z=-1.85, ΔStouffer=-0.40 (26.6%)
+      • SIRT4: Z=1.38, ΔStouffer=+0.37 (24.7%)
+      • NMNAT1: Z=1.30, ΔStouffer=+0.35 (23.3%)
+      • PARP2: Z=1.23, ΔStouffer=+0.33 (22.2%)
+      • BST1: Z=1.10, ΔStouffer=+0.30 (20.3%)
+    [WP_NAD_BIOSYNTHETIC_PATHWAYS_ALL] migraine:
+      • BST1: Z=-4.51, ΔStouffer=-1.07 (889.8%)
+      • SIRT5: Z=3.87, ΔStouffer=+0.91 (757.4%) (SIGN-FLIP)
+      • SIRT3: Z=3.25, ΔStouffer=+0.76 (637.1%) (SIGN-FLIP)
+      • SIRT1: Z=-3.19, ΔStouffer=-0.76 (630.4%)
+      • TNKS2: Z=-2.96, ΔStouffer=-0.70 (584.0%)
+      • TNKS: Z=1.76, ΔStouffer=+0.41 (343.8%) (SIGN-FLIP)
+      • SIRT2: Z=1.62, ΔStouffer=+0.38 (315.1%) (SIGN-FLIP)
+      • PARP4: Z=1.50, ΔStouffer=+0.35 (291.8%) (SIGN-FLIP)
+      • TDO2: Z=-1.38, ΔStouffer=-0.33 (274.1%)
+      • NAPRT: Z=1.19, ΔStouffer=+0.28 (230.9%) (SIGN-FLIP)
+      • CD38: Z=1.11, ΔStouffer=+0.26 (215.3%) (SIGN-FLIP)
+      • NADSYN1: Z=-1.00, ΔStouffer=-0.24 (200.1%)
+      • NMNAT1: Z=-0.91, ΔStouffer=-0.22 (182.0%)
+      • PARP2: Z=-0.67, ΔStouffer=-0.16 (135.1%)
+      • PARP1: Z=0.69, ΔStouffer=+0.16 (133.9%) (SIGN-FLIP)
+      • SIRT4: Z=-0.28, ΔStouffer=-0.07 (57.1%)
+      • SIRT6: Z=0.29, ΔStouffer=+0.07 (54.8%)
+    [WP_NAD_METABOLISM_ALL] bip:
+      • SIRT6: Z=3.32, ΔStouffer=+1.01 (41.2%)
+      • SIRT1: Z=-3.91, ΔStouffer=-0.99 (40.2%)
+      • CD38: Z=-3.74, ΔStouffer=-0.94 (38.3%)
+      • PARP1: Z=3.02, ΔStouffer=+0.93 (37.8%)
+      • NAMPT: Z=-3.44, ΔStouffer=-0.86 (35.0%)
+      • NT5E: Z=-3.17, ΔStouffer=-0.79 (31.9%)
+      • NADK: Z=-3.10, ΔStouffer=-0.77 (31.1%)
+      • SIRT5: Z=2.04, ΔStouffer=+0.66 (26.8%)
+      • NMNAT2: Z=1.45, ΔStouffer=+0.50 (20.1%)
+    [WP_NAD_METABOLISM_ALL] migraine:
+      • SIRT5: Z=3.87, ΔStouffer=+1.06 (301.8%) (SIGN-FLIP)
+      • NT5E: Z=-3.61, ΔStouffer=-1.02 (289.4%)
+      • SIRT1: Z=-3.19, ΔStouffer=-0.90 (256.0%)
+      • SIRT3: Z=3.25, ΔStouffer=+0.89 (253.4%) (SIGN-FLIP)
+      • NMNAT3: Z=-2.02, ΔStouffer=-0.57 (163.7%)
+      • SIRT2: Z=1.62, ΔStouffer=+0.44 (124.0%) (SIGN-FLIP)
+      • CD38: Z=1.11, ΔStouffer=+0.29 (83.9%)
+      • NMNAT1: Z=-0.91, ΔStouffer=-0.27 (75.8%)
+      • PARP1: Z=0.69, ΔStouffer=+0.18 (51.1%)
+      • SIRT4: Z=-0.28, ΔStouffer=-0.09 (25.6%)
+      • NMNAT2: Z=0.31, ΔStouffer=+0.07 (20.8%)
+    [WP_NAD_METABOLISM_SIRTUINS_AND_AGING_ALL] bip:
+      • PPARG: Z=5.06, ΔStouffer=+1.63 (150.0%) (SIGN-FLIP)
+      • SIRT1: Z=-3.91, ΔStouffer=-1.36 (125.4%)
+      • NAMPT: Z=-3.44, ΔStouffer=-1.21 (111.2%)
+      • TFAM: Z=3.46, ΔStouffer=+1.09 (100.8%) (SIGN-FLIP)
+      • ROS1: Z=-3.09, ΔStouffer=-1.09 (100.2%)
+      • PARP1: Z=3.02, ΔStouffer=+0.95 (87.4%)
+      • NFKB1: Z=2.81, ΔStouffer=+0.88 (80.9%)
+      • SIRT3: Z=-1.85, ΔStouffer=-0.67 (62.2%)
+    [WP_NAD_METABOLISM_SIRTUINS_AND_AGING_ALL] migraine:
+      • SIRT1: Z=-3.19, ΔStouffer=-1.14 (76.9%)
+      • SIRT3: Z=3.25, ΔStouffer=+1.00 (67.5%)
+      • FOXO3: Z=1.99, ΔStouffer=+0.58 (39.2%)
+      • PPARG: Z=1.35, ΔStouffer=+0.37 (24.9%)
+      • ROS1: Z=1.33, ΔStouffer=+0.36 (24.3%)
+      • TFAM: Z=-0.80, ΔStouffer=-0.35 (23.2%)
+
+==============================================================================
+  [7] FAMILY-WISE FDR (pooled across all in-run p-values)
+==============================================================================
+  19 family-wise FDR-significant entries:
+
+    • [GOBP_NAD_TRANSPORT_ALL]  proximity/Spearman_p  [bip__vs__migraine]  p=0  FDR=0
+    • [WP_GLP1_FROM_INTESTINE_AND_PANCREAS_AND_ROLE_IN_GLUCOSE_HOMEOSTASIS_ALL]  proximity/Spearman_p  [bip__vs__migraine]  p=0  FDR=0
+    • [MOOTHA_MITOCHONDRIA_ALL]  pairwise_stats/Levene_p  [bip__vs__migraine]  p=1e-06  FDR=1.9e-05
+    • [MOOTHA_PGC_ALL]  pairwise_stats/Levene_p  [bip__vs__migraine]  p=0.000144  FDR=0.002736
+    • [MOOTHA_PGC_ALL]  proximity/Pearson_p  [bip__vs__migraine]  p=0.000516  FDR=0.004902
+    • [KEGG_LTP_ALL]  enrichment/permutation_p  [bip]  p=0.0013  FDR=0.0247
+    • [KEGG_LTP_ALL]  enrichment/wilcoxon_p  [bip]  p=0.003339  FDR=0.02606
+    • [KEGG_LTP_ALL]  pairwise_stats/Paired_t_p  [bip__vs__migraine]  p=0.006773  FDR=0.02606
+    • [KEGG_LTP_ALL]  differential/Paired_Wilcoxon_p  [bip__vs__migraine]  p=0.007214  FDR=0.02606
+    • [KEGG_LTP_ALL]  pairwise_stats/Paired_Wilcoxon_p  [bip__vs__migraine]  p=0.007214  FDR=0.02606
+    • [KEGG_LTP_ALL]  pairwise_stats/Permutation_p  [bip__vs__migraine]  p=0.008499  FDR=0.02606
+    • [KEGG_LTP_ALL]  pairwise_stats/Welch_p  [bip__vs__migraine]  p=0.01149  FDR=0.02606
+    • [KEGG_LTP_ALL]  differential/kruskal_p  [all_diseases]  p=0.01223  FDR=0.02606
+    • [KEGG_LTP_ALL]  differential/MWU_p  [bip__vs__migraine]  p=0.01234  FDR=0.02606
+    • [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL]  pairwise_stats/Levene_p  [bip__vs__migraine]  p=0.001423  FDR=0.02704
+    • [KEGG_LTP_ALL]  pairwise_stats/BM_p  [bip__vs__migraine]  p=0.01531  FDR=0.02909
+    • [KEGG_LTP_ALL]  pairwise_stats/MWU_p  [bip__vs__migraine]  p=0.01804  FDR=0.03116
+    • [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL]  pairwise_stats/KS_p  [bip__vs__migraine]  p=0.00344  FDR=0.03268
+    • [REACTOME_INTRINSIC_PATHWAY_FOR_APOPTOSIS_ALL]  pairwise_stats/Levene_p  [bip__vs__migraine]  p=0.002164  FDR=0.04112
+
+==============================================================================
+  TOTAL HITS BY SECTION
+==============================================================================
+  1. Enrichment            : 144
+  2. Differential          : 7
+  3. Proximity             : 5
+  4. Pairwise stat tests   : 20
+  5. Concordance           : 2
+  6. Influential genes     : 1954
+  7. Family-wise FDR       : 19
+  ───────────────────────────────
+  GRAND TOTAL              : 2151
+
+==============================================================================

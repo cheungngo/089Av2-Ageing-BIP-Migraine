@@ -1,0 +1,196 @@
+============================================================================================
+  STAGE-4 ROBUSTNESS SUMMARY (results-only)  —  BIP vs migraine
+  Source : /content/089Av2_results
+  Diseases detected : bip, migraine
+============================================================================================
+
+  INPUT FILES (rows loaded):
+    all_genes_all_genesets.csv                  : 4107
+    multi_geneset_enrichment_summary.csv        : 714
+
+  D1=bip (Z_bip) | D2=migraine (Z_migraine)  |  BIP-label=bip  MIG-label=migraine
+
+  KNOBS:
+    headline rule : |Z|>=1.96, opposite in >= 2 set-rows
+    z grid        : [1.64, 1.96, 2.58, 3.0]
+    k grid        : [1, 2, 3]
+    repeater      : gene in >= 3 sets
+    KEEP fraction : 0.66 of headline must survive
+    bootstrap     : 2000
+
+  HEADLINE Layer-A (|Z|>=1.96, k>=2): 30 genes
+    ACADS, BAD, BCL2L1, BNIP3L, CRAT, DNAJA3, F2, FDX1, GCDH, GNAQ, GPX4, IQGAP1, MRE11, MRPL18, MRPS17, NDUFAB1, NLRP3, NOS2, OLR1, PAWR, PHC2, RETSAT, SCMH1, SLC25A3, STX1A, TLR2, TNFRSF1A, UBN1, VEGFA, VENTX
+
+============================================================================================
+  [R1] THRESHOLD GRID (does the 30-gene list survive its own knobs?)
+============================================================================================
+    headline kept @ (2.58,2) : 0.60
+    headline kept @ (1.96,3) : 0.27
+    Layer-A size @ (1.64,2)  : 51  (explode cut 80)
+    VERDICT                  : WEAKEN
+
+      z=1.64 k=1  n=153  ∩headline=30  (1.00)
+      z=1.64 k=2  n=51   ∩headline=30  (1.00)
+      z=1.64 k=3  n=16   ∩headline=8   (0.27)
+      z=1.96 k=1  n=106  ∩headline=30  (1.00)
+      z=1.96 k=2  n=30   ∩headline=30  (1.00)
+      z=1.96 k=3  n=8    ∩headline=8   (0.27)
+      z=2.58 k=1  n=66   ∩headline=18  (0.60)
+      z=2.58 k=2  n=18   ∩headline=18  (0.60)
+      z=2.58 k=3  n=6    ∩headline=6   (0.20)
+      z=3.0  k=1  n=42   ∩headline=12  (0.40)
+      z=3.0  k=2  n=12   ∩headline=12  (0.40)
+      z=3.0  k=3  n=5    ∩headline=5   (0.17)
+
+============================================================================================
+  [R2] DROP-ONE-SET JACKKNIFE (list-bleed detector)
+============================================================================================
+    worst single set : MOOTHA_PGC_ALL removes 7 headline genes
+    fragile genes    : 22  (ACADS, CRAT, DNAJA3, F2, GCDH, GNAQ, IQGAP1, MRE11, MRPL18, MRPS17, NLRP3, NOS2, OLR1, PAWR, PHC2, RETSAT, SCMH1, SLC25A3, TLR2, UBN1)
+    robust core      : 8  (BAD, BCL2L1, BNIP3L, FDX1, GPX4, NDUFAB1, STX1A, TNFRSF1A)
+    VERDICT          : WEAKEN
+
+      drop MOOTHA_PGC_ALL                                       lost 7
+      drop MOOTHA_MITOCHONDRIA_ALL                              lost 6
+      drop REACTOME_CELLULAR_SENESCENCE_ALL                     lost 5
+      drop REACTOME_SENESCENCE_ALL                              lost 5
+      drop HALLMARK_APOPTOSIS_ALL                               lost 2
+      drop REACTOME_ACTIVATION_OF_INNATE_IMMUNE_RESPONSE        lost 2
+      drop REACTOME_REGULATION_OF_INSULIN_SECRETION_ALL         lost 2
+      drop HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL               lost 2
+      drop GOBP_CELLULAR_SENESCENCE_ALL                         lost 2
+      drop GOBP_POSITIVE_REGULATION_OF_MICROGLIAL_ACTIVATION    lost 2
+      drop GOBP_REGULATION_OF_CELLULAR_SENESCENCE_ALL           lost 1
+      drop KEGG_LTP_ALL                                         lost 1
+
+============================================================================================
+  [R3] MAJORITY SIGN (is opposite the typical set-row?)
+============================================================================================
+    30/30 headline genes are majority-opposite across their rows
+    VERDICT : KEEP
+
+
+============================================================================================
+  [R4] DROP ANNOTATION HUBS (Layer A must not be only >=3-set genes)
+============================================================================================
+    Layer-A genes that are NON-hubs: 22/30
+    non-hub Layer-A: ACADS, CRAT, DNAJA3, F2, GCDH, GNAQ, IQGAP1, MRE11, MRPL18, MRPS17, NLRP3, NOS2, OLR1, PAWR, PHC2, RETSAT, SCMH1, SLC25A3, TLR2, UBN1, VEGFA, VENTX
+    key anchors:
+      TNFRSF1A     : in-Layer-A / hub
+      BAD          : in-Layer-A / hub
+      STX1A        : in-Layer-A / hub
+      NDUFAB1      : in-Layer-A / hub
+      BCL2L1       : in-Layer-A / hub
+      GPX4         : in-Layer-A / hub
+      BNIP3L       : in-Layer-A / hub
+    VERDICT : KEEP
+
+============================================================================================
+  [R5] APOPTOTIC RHEOSTAT LOO (BAD vs BCL2L1 ± support, not BAD alone)
+============================================================================================
+    genes present in TWAS: BAD, BCL2L1, BNIP3L, GPX4, BCL2L11, MCL1, BAX, PMAIP1
+    full paradox score   : +0.50 (n=8)
+      −BAD        score=+0.43
+      −BCL2L1     score=+0.43
+      −BNIP3L     score=+0.43
+      −GPX4       score=+0.43
+      −BCL2L11    score=+0.57
+      −MCL1       score=+0.57
+      −BAX        score=+0.57
+      −PMAIP1     score=+0.57
+    VERDICT : KEEP
+
+============================================================================================
+  [R6] OXPHOS GEOMETRY BOOTSTRAP (is 'mixed geometry' real?)
+============================================================================================
+    n unique OXPHOS genes bootstrapped (2000x):
+      opposite   obs=0.05 CI95=[0.02,0.09]  ✔ CI>0
+      mig_priv   obs=0.13 CI95=[0.08,0.18]  ✔ CI>0
+      conc_neg   obs=0.05 CI95=[0.02,0.09]  ✔ CI>0
+      bip_priv   obs=0.29 CI95=[0.22,0.36]  ✔ CI>0
+      weak       obs=0.45 CI95=[0.37,0.54]  ✔ CI>0
+    VERDICT : KEEP
+
+============================================================================================
+  [R7] PRIVATE-GENE COUNTS vs |Z| CUT
+============================================================================================
+      z=1.64 bip_private=458  migraine_private=329  ratio=1.39
+      z=1.96 bip_private=436  migraine_private=296  ratio=1.47
+      z=2.58 bip_private=342  migraine_private=214  ratio=1.60
+      z=3.0  bip_private=296  migraine_private=183  ratio=1.62
+    VERDICT : KEEP  (do NOT quote raw counts unless KEEP)
+
+============================================================================================
+  [R8] LTP CASSETTE (BIP-private plasticity, not a contrast)
+============================================================================================
+      EP300      : z1.64=bip_private  z1.96=bip_private  z2.58=bip_private  z3.0=bip_private
+      PLCB3      : z1.64=bip_private  z1.96=bip_private  z2.58=bip_private  z3.0=bip_private
+      MAP2K2     : z1.64=bip_private  z1.96=bip_private  z2.58=bip_private  z3.0=bip_private
+      CALML6     : z1.64=concordant_pos  z1.96=concordant_pos  z2.58=concordant_pos  z3.0=concordant_pos
+      GNAQ       : z1.64=opp_bippos_migraineneg  z1.96=opp_bippos_migraineneg  z2.58=migraine_private  z3.0=migraine_private
+      CREBBP     : z1.64=missing  z1.96=missing  z2.58=missing  z3.0=missing
+      PRKACA     : z1.64=bip_private  z1.96=bip_private  z2.58=bip_private  z3.0=bip_private
+      PRKCG      : z1.64=both_weak  z1.96=both_weak  z2.58=both_weak  z3.0=both_weak
+      CAMK2A     : z1.64=both_weak  z1.96=both_weak  z2.58=both_weak  z3.0=both_weak
+      PPP3CA     : z1.64=concordant_neg  z1.96=bip_private  z2.58=bip_private  z3.0=bip_private
+      RAF1       : z1.64=migraine_private  z1.96=migraine_private  z2.58=migraine_private  z3.0=migraine_private
+    stable bip-private (1.64 & 1.96): EP300, PLCB3, MAP2K2, PRKACA
+    VERDICT : KEEP
+
+============================================================================================
+  [R9] TWO-LAYER MODEL (GSK3B/ARNTL BIP-private, CLOCK migraine-private)
+============================================================================================
+      GSK3B      : z1.64=opp_bippos_migraineneg  z1.96=bip_private  z2.58=bip_private
+      ARNTL      : z1.64=bip_private  z1.96=bip_private  z2.58=bip_private
+      PER2       : z1.64=bip_private  z1.96=bip_private  z2.58=both_weak
+      CLOCK      : z1.64=migraine_private  z1.96=migraine_private  z2.58=migraine_private
+      CRY1       : z1.64=both_weak  z1.96=both_weak  z2.58=both_weak
+      GRIN2A     : z1.64=migraine_private  z1.96=migraine_private  z2.58=both_weak
+      MTOR       : z1.64=migraine_private  z1.96=both_weak  z2.58=both_weak
+      IMPA1      : absent
+      IMPA2      : absent
+      CACNA1C    : absent
+      ANK3       : absent
+    lithium/clock anchors stable-BIP-private: ARNTL
+    CLOCK migraine-private @1.96: True
+    VERDICT : KEEP
+
+============================================================================================
+  [R10] ROBUSTNESS SCORECARD (raise confidence only on KEEP)
+============================================================================================
+    ✗ R1_threshold_stability         [WEAKEN]
+        30 recurrent opposite genes survive their own |Z|/k knobs
+    ✗ R2_not_list_bleed              [WEAKEN]
+        Opposite core is not one-set annotation bleed
+    ✔ R3_majority_opposite           [KEEP]
+        Opposite is the typical set-row, not one lucky row
+    ✔ R4_not_only_hubs               [KEEP]
+        Layer A is not only >=3-set annotation hubs
+    ✔ R5_rheostat_is_panel           [KEEP]
+        Apoptotic rheostat is a panel (survives LOO), not BAD alone
+    ✔ R6_oxphos_mixed_geometry       [KEEP]
+        OXPHOS opposite + mig-private fractions have CI>0
+    ✔ R7_private_ratio_stable        [KEEP]
+        BIP/MIG private ratio stable across |Z| (not just power)
+    ✔ R8_ltp_cassette_bip_private    [KEEP]
+        LTP cassette stays BIP-private (plasticity, not contrast)
+    ✔ R9_two_layer_model             [KEEP]
+        Lithium/clock two-layer model survives threshold change
+
+    KEEP: 7/9 claims
+
+============================================================================================
+  ★ AUTO-DRAFT ROBUSTNESS PARAGRAPH (verify before use)
+============================================================================================
+  The headline opposite-sign gene set (30 genes at |Z|>=1.96, k>=2) was stress-tested on the four knobs available to results-only analysis. Claims passing (KEEP): R3_majority_opposite, R4_not_only_hubs, R5_rheostat_is_panel, R6_oxphos_mixed_geometry, R7_private_ratio_stable, R8_ltp_cassette_bip_private, R9_two_layer_model. Claims that weakened under re-thresholding or jackknife: R1_threshold_stability, R2_not_list_bleed. Robust-core opposite genes (surviving every drop-one-set jackknife): BAD, BCL2L1, BNIP3L, FDX1, GPX4, NDUFAB1, STX1A, TNFRSF1A. Fragile / likely list-bleed genes to footnote: ACADS, CRAT, DNAJA3, F2, GCDH, GNAQ, IQGAP1, MRE11, MRPL18, MRPS17, NLRP3, NOS2, OLR1, PAWR, PHC2. Confidence should move upward only for KEEP claims; all WEAKEN claims stay hypothesis-generating. No colocalization, eQTL R2, or MR claim is possible from these CSVs.
+
+============================================================================================
+  GUARDRAILS
+============================================================================================
+   - Only claims marked KEEP in R10 may have their rubric-robustness raised toward ~70.
+   - Publish Layer A as genes passing R1∩R3; footnote R2-fragile names.
+   - State the rheostat as BAD vs BCL2L1 (± GPX4/BNIP3L) only if R5 = KEEP.
+   - State OXPHOS as geometries-with-CIs (R6), not 'migraine OXPHOS-down'.
+   - Do NOT quote raw private counts (436 vs 296) unless R7 = KEEP.
+   - LTP cassette genes named only if R8 keeps them BIP-private.
+============================================================================================

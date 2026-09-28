@@ -1,0 +1,277 @@
+====================================================================================
+  STAGE-2 DOWNSTREAM SUMMARY (results-only)  —  BIP vs migraine
+  Source : /content/089Av2_results
+  Diseases detected : bip, migraine
+  Gene sets (meta rows) : 51
+====================================================================================
+
+  INPUT FILES (rows loaded):
+    multi_geneset_enrichment_summary.csv                : 714
+    multi_geneset_pairwise_disease_stats.csv            : 51
+    all_genes_all_genesets.csv                          : 4107
+    multi_geneset_gene_influence.csv                    : 5980
+
+  THRESHOLDS:
+    raw p < 0.05 | FDR < 0.05 | |Z| > 1.96
+    robust meta hit: n_genes>=10, coverage>=60.0%, CI excludes 0
+    Cohen's d > 0.5 | Jaccard cluster >= 0.5
+    concentration top3 fraction > 0.5 | |ΔStouffer| LOO > 0.5
+
+====================================================================================
+  [1] GLOBAL META ENRICHMENT (BH across all enrichment p-values)
+====================================================================================
+  0 robust meta findings (global FDR<0.05 & |Z|>1.96):
+
+    (none survived global FDR)
+
+====================================================================================
+  [24] PERM-ONLY FDR (primary family: one perm p per set x disease)
+====================================================================================
+  0 perm-only passers (FDR<0.05 & |Z|>1.96):
+
+    (none)
+
+====================================================================================
+  [17] CI + COVERAGE + N GATE (perm p<0.05, CI excludes 0, n>=10, cov>=60%)
+====================================================================================
+  4 rows pass the strict gate:
+
+    • [KEGG_LTP_ALL] bip: Z=8.190 CI95=[3.73,13.13], perm_p=0.0013, n=54, cov=77%
+    • [REACTOME_MITOPHAGY] bip: Z=5.926 CI95=[0.64,12.45], perm_p=0.0169, n=19, cov=100%
+    • [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL] migraine: Z=-4.619 CI95=[-8.38,-1.12], perm_p=0.0196, n=159, cov=80%
+    • [GOBP_INSULIN_SECRETION_INVOLVED_IN_CELLULAR_RESPONSE_TO_GLUCOSE_STIMULUS_ALL] migraine: Z=3.916 CI95=[0.06,7.89], perm_p=0.0484, n=55, cov=73%
+
+====================================================================================
+  [2/3] TISSUE-LEVEL SUPPORT & DIRECTION CONSISTENCY
+====================================================================================
+  (no robust multi-tissue support found or no tissue rows)
+
+  [23] Meta vs median-tissue sign calibration (mismatch = combination artifact):
+    13 set x disease with meta/median-tissue SIGN MISMATCH:
+      • [REACTOME_SYNTHESIS_SECRETION_AND_INACTIVATION_OF_GLUCAGON_LIKE_PEPTIDE_1_GLP_1_ALL] bip: metaZ=-0.75 vs medianTissueZ=0.32
+      • [WANG_ADIPOGENIC_GENES_REPRESSED_BY_SIRT1_ALL] bip: metaZ=0.67 vs medianTissueZ=-0.00
+      • [SAUL_SEN_MAYO_ALL] migraine: metaZ=-0.57 vs medianTissueZ=0.36
+      • [REACTOME_ACTIVATION_OF_INNATE_IMMUNE_RESPONSE] migraine: metaZ=0.56 vs medianTissueZ=-0.31
+      • [KEGG_APOPTOSIS_ALL] migraine: metaZ=-0.54 vs medianTissueZ=0.29
+      • [GOBP_GLUTAMATERGIC_ALL] bip: metaZ=-0.46 vs medianTissueZ=0.58
+      • [REACTOME_SYNTHESIS_SECRETION_AND_INACTIVATION_OF_GLUCAGON_LIKE_PEPTIDE_1_GLP_1_ALL] migraine: metaZ=-0.27 vs medianTissueZ=0.22
+      • [KEGG_LTP_ALL] migraine: metaZ=-0.23 vs medianTissueZ=0.35
+      • [KEGG_MEDICUS_REFERENCE_EP_NE_ADRB_CAMP_SIGNALING_PATHWAY_ALL] migraine: metaZ=-0.19 vs medianTissueZ=0.12
+      • [MOOTHA_MITOCHONDRIA_ALL] bip: metaZ=-0.18 vs medianTissueZ=0.06
+      • [REACTOME_SIRT1_NEGATIVELY_REGULATES_RRNA_EXPRESSION_ALL] bip: metaZ=0.02 vs medianTissueZ=-0.01
+      • [REACTOME_SENESCENCE_ALL] migraine: metaZ=-0.00 vs medianTissueZ=0.07
+      • [REACTOME_CELLULAR_SENESCENCE_ALL] migraine: metaZ=-0.00 vs medianTissueZ=0.07
+
+====================================================================================
+  [5/18] REDUNDANCY MODULES + COLLAPSE-THEN-FDR
+====================================================================================
+  49 clusters at Jaccard>=0.5 (2 multi-set clusters):
+    • rep=REACTOME_CELLULAR_SENESCENCE_ALL  <= {REACTOME_CELLULAR_SENESCENCE_ALL, REACTOME_SENESCENCE_ALL}
+    • rep=REACTOME_REGULATION_OF_INSULIN_SECRETION_ALL  <= {REACTOME_GLUCAGON_LIKE_PEPTIDE_1_GLP1_REGULATES_INSULIN_SECRETION_ALL, REACTOME_REGULATION_OF_INSULIN_SECRETION_ALL}
+
+  Collapsed (non-redundant) perm-FDR passers: 0
+
+    (none survive collapsed FDR)
+
+====================================================================================
+  [6/7/8] PAIRED GENE CONTRASTS (bip - migraine)
+====================================================================================
+  Top |paired Cohen's d| gene sets (direction-stable flag from robust check):
+
+    • [GOBP_NAD_TRANSPORT_ALL] n=3 d_paired=0.566 meanΔ=0.645 medΔ=0.001 BA_r=0.78 giniZ=0.35 [stable]
+    • [GOCC_BCL_2_FAMILY_PROTEIN_COMPLEX_ALL] n=10 d_paired=0.515 meanΔ=2.186 medΔ=3.168 BA_r=0.43 giniZ=0.51 [stable]
+    • [KEGG_DOPAMINERGIC_SYNAPSE] n=16 d_paired=0.470 meanΔ=1.376 medΔ=1.511 BA_r=0.34 giniZ=0.38 [stable]
+    • [HLA_COMPLEX_ALL] n=17 d_paired=-0.415 meanΔ=-2.085 medΔ=-0.807 BA_r=0.35 giniZ=0.57 [stable]
+    • [KEGG_LTP_ALL] n=53 d_paired=0.374 meanΔ=1.231 medΔ=0.997 BA_r=0.11 giniZ=0.52 [stable]
+    • [GOMF_NADPLUS_BINDING_ALL] n=17 d_paired=-0.321 meanΔ=-0.723 medΔ=-0.811 BA_r=0.17 giniZ=0.37 [stable]
+    • [GOBP_POSITIVE_REGULATION_OF_MICROGLIAL_ACTIVATION] n=15 d_paired=-0.321 meanΔ=-0.928 medΔ=0.123 BA_r=0.16 giniZ=0.46 [UNSTABLE]
+    • [REACTOME_SIRT1_NEGATIVELY_REGULATES_RRNA_EXPRESSION_ALL] n=7 d_paired=0.311 meanΔ=0.826 medΔ=-0.716 BA_r=0.42 giniZ=0.35 [UNSTABLE]
+    • [REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM] n=16 d_paired=-0.304 meanΔ=-1.199 medΔ=-0.228 BA_r=0.05 giniZ=0.55 [stable]
+    • [REACTOME_TELOMERE_ALL] n=55 d_paired=-0.302 meanΔ=-1.051 medΔ=-0.409 BA_r=0.06 giniZ=0.50 [stable]
+    • [REACTOME_COMPLEMENT_ALL] n=39 d_paired=0.302 meanΔ=1.053 medΔ=0.368 BA_r=0.31 giniZ=0.50 [stable]
+    • [GOBP_CAMKK_AMPK_SIGNALING_CASCADE_ALL] n=9 d_paired=-0.300 meanΔ=-0.738 medΔ=-0.356 BA_r=0.54 giniZ=0.63 [stable]
+    • [WP_NAD_METABOLISM_ALL] n=14 d_paired=-0.274 meanΔ=-0.753 medΔ=-0.169 BA_r=0.24 giniZ=0.23 [stable]
+    • [REACTOME_INTRINSIC_PATHWAY_FOR_APOPTOSIS_ALL] n=47 d_paired=0.270 meanΔ=0.967 medΔ=0.570 BA_r=0.63 giniZ=0.50 [stable]
+    • [WP_GLP1_FROM_INTESTINE_AND_PANCREAS_AND_ROLE_IN_GLUCOSE_HOMEOSTASIS_ALL] n=4 d_paired=0.255 meanΔ=0.396 medΔ=-0.254 BA_r=0.97 giniZ=0.52 [UNSTABLE]
+    • [GOBP_REGULATION_OF_CELLULAR_SENESCENCE_ALL] n=35 d_paired=-0.233 meanΔ=-0.730 medΔ=-0.207 BA_r=0.61 giniZ=0.53 [stable]
+    • [REACTOME_GLUCAGON_LIKE_PEPTIDE_1_GLP1_REGULATES_INSULIN_SECRETION_ALL] n=32 d_paired=-0.212 meanΔ=-0.733 medΔ=-0.862 BA_r=0.56 giniZ=0.58 [stable]
+    • [REACTOME_MITOPHAGY] n=19 d_paired=0.211 meanΔ=0.793 medΔ=0.531 BA_r=0.31 giniZ=0.71 [stable]
+    • [ADULT_MICRO_ALL] n=21 d_paired=-0.186 meanΔ=-0.569 medΔ=-0.909 BA_r=0.39 giniZ=0.48 [stable]
+    • [HALLMARK_INFLAMMATORY_RESPONSE] n=19 d_paired=0.184 meanΔ=0.524 medΔ=0.139 BA_r=0.32 giniZ=0.53 [stable]
+    • [KEGG_MEDICUS_REFERENCE_EP_NE_ADRB_CAMP_SIGNALING_PATHWAY_ALL] n=12 d_paired=0.160 meanΔ=0.501 medΔ=0.618 BA_r=0.09 giniZ=0.43 [stable]
+    • [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL] n=155 d_paired=0.159 meanΔ=0.489 medΔ=0.401 BA_r=0.33 giniZ=0.45 [stable]
+    • [REACTOME_ENERGY_DEPENDENT_REGULATION_OF_MTOR_BY_LKB1_AMPK_ALL] n=25 d_paired=-0.143 meanΔ=-0.579 medΔ=-0.611 BA_r=0.73 giniZ=0.52 [stable]
+    • [REACTOME_NEUROTRANSMITTER_RELEASE_CYCLE] n=12 d_paired=-0.142 meanΔ=-0.526 medΔ=-0.816 BA_r=-0.27 giniZ=0.24 [stable]
+    • [REACTOME_CELLULAR_SENESCENCE_ALL] n=103 d_paired=-0.141 meanΔ=-0.459 medΔ=-0.165 BA_r=0.32 giniZ=0.49 [stable]
+
+  Direction-UNSTABLE (mean vs median/trimmed/winsor disagree): 13
+    GOBP_GLUTAMATERGIC_ALL, GOBP_INSULIN_SECRETION_INVOLVED_IN_CELLULAR_RESPONSE_TO_GLUCOSE_STIMULUS_ALL, GOBP_INTRINSIC_APOPTOTIC_SIGNALING_PATHWAY_ALL, GOBP_POSITIVE_REGULATION_OF_MICROGLIAL_ACTIVATION, HALLMARK_TNFA_SIGNALING_VIA_NFKB, KEGG_NICOTINATE_AND_NICOTINAMIDE_METABOLISM_ALL, MONOAMINES_ALL, MOOTHA_MITOCHONDRIA_ALL, REACTOME_NICOTINATE_METABOLISM_ALL, REACTOME_SIRT1_NEGATIVELY_REGULATES_RRNA_EXPRESSION_ALL, SAUL_SEN_MAYO_ALL, WP_GLP1_FROM_INTESTINE_AND_PANCREAS_AND_ROLE_IN_GLUCOSE_HOMEOSTASIS_ALL, WP_NAD_METABOLISM_SIRTUINS_AND_AGING_ALL
+
+====================================================================================
+  [9] PROFILE GEOMETRY (BIP vs migraine correlation, drop-2 robustness)
+====================================================================================
+  Strongest profile correlations (sign stability after dropping top-2 genes):
+
+    • [WP_GLP1_FROM_INTESTINE_AND_PANCREAS_AND_ROLE_IN_GLUCOSE_HOMEOSTASIS_ALL] n=4 r=0.982 (drop2 r=NA, FLIP) cos=0.971 frac_opp=0.00
+    • [GOBP_NAD_TRANSPORT_ALL] n=3 r=0.876 (drop2 r=NA, FLIP) cos=0.729 frac_opp=0.00
+    • [GOMF_NADPLUS_BINDING_ALL] n=17 r=0.523 (drop2 r=0.511, stable) cos=0.490 frac_opp=0.41
+    • [REACTOME_ENERGY_DEPENDENT_REGULATION_OF_MTOR_BY_LKB1_AMPK_ALL] n=25 r=-0.494 (drop2 r=-0.292, stable) cos=-0.498 frac_opp=0.48
+    • [REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM] n=16 r=-0.448 (drop2 r=-0.197, stable) cos=-0.484 frac_opp=0.56
+    • [REACTOME_SIRT1_NEGATIVELY_REGULATES_RRNA_EXPRESSION_ALL] n=7 r=0.404 (drop2 r=-0.076, FLIP) cos=0.365 frac_opp=0.43
+    • [HLA_COMPLEX_ALL] n=17 r=-0.388 (drop2 r=-0.451, stable) cos=-0.453 frac_opp=0.47
+    • [GOBP_REGULATION_OF_CELLULAR_SENESCENCE_ALL] n=35 r=0.382 (drop2 r=0.234, stable) cos=0.352 frac_opp=0.40
+    • [WP_NAD_METABOLISM_ALL] n=14 r=0.353 (drop2 r=0.100, stable) cos=0.330 frac_opp=0.50
+    • [GOCC_BCL_2_FAMILY_PROTEIN_COMPLEX_ALL] n=10 r=-0.343 (drop2 r=-0.590, stable) cos=-0.416 frac_opp=0.90
+    • [HALLMARK_INFLAMMATORY_RESPONSE] n=19 r=-0.284 (drop2 r=0.126, FLIP) cos=-0.261 frac_opp=0.47
+    • [GOBP_CELLULAR_SENESCENCE_ALL] n=77 r=0.274 (drop2 r=0.204, stable) cos=0.268 frac_opp=0.36
+    • [REACTOME_INTRINSIC_PATHWAY_FOR_APOPTOSIS_ALL] n=47 r=-0.255 (drop2 r=-0.259, stable) cos=-0.273 frac_opp=0.62
+    • [GOBP_CAMKK_AMPK_SIGNALING_CASCADE_ALL] n=9 r=0.252 (drop2 r=-0.014, FLIP) cos=0.311 frac_opp=0.44
+    • [REACTOME_NEUROTRANSMITTER_RELEASE_CYCLE] n=12 r=-0.249 (drop2 r=0.273, FLIP) cos=-0.148 frac_opp=0.58
+    • [ADULT_OLIGO_ALL] n=25 r=0.239 (drop2 r=0.041, stable) cos=0.264 frac_opp=0.40
+    • [ADULT_MICRO_ALL] n=21 r=-0.230 (drop2 r=-0.247, stable) cos=-0.246 frac_opp=0.57
+    • [HALLMARK_APOPTOSIS_ALL] n=134 r=-0.213 (drop2 r=-0.186, stable) cos=-0.218 frac_opp=0.53
+    • [REACTOME_NICOTINATE_METABOLISM_ALL] n=27 r=0.210 (drop2 r=0.329, stable) cos=0.215 frac_opp=0.44
+    • [REACTOME_MITOPHAGY] n=19 r=0.201 (drop2 r=0.494, stable) cos=0.274 frac_opp=0.47
+    • [KEGG_MEDICUS_REFERENCE_EP_NE_ADRB_CAMP_SIGNALING_PATHWAY_ALL] n=12 r=0.195 (drop2 r=0.198, stable) cos=0.187 frac_opp=0.58
+    • [REACTOME_ACTIVATION_OF_INNATE_IMMUNE_RESPONSE] n=14 r=0.194 (drop2 r=0.031, stable) cos=0.202 frac_opp=0.29
+    • [MOOTHA_PGC_ALL] n=336 r=0.188 (drop2 r=0.161, stable) cos=0.184 frac_opp=0.46
+    • [REACTOME_COMPLEMENT_ALL] n=39 r=-0.188 (drop2 r=-0.194, stable) cos=-0.223 frac_opp=0.59
+    • [GOBP_SYNAPSE_PRUNING_ALL] n=17 r=-0.182 (drop2 r=-0.501, stable) cos=-0.178 frac_opp=0.76
+
+====================================================================================
+  [10] LABEL-PERMUTATION PROFILE PROXIMITY (secondary null)
+====================================================================================
+  0 sets with empirical proximity FDR<0.05 (perm=2000):
+
+    (none significant vs label-permutation null)
+
+====================================================================================
+  [11] MITOCHONDRIAL: LOCATION vs VARIANCE
+====================================================================================
+    • [MOOTHA_MITOCHONDRIA_ALL] bip vs migraine: meanΔ=-0.033 d_unpaired=-0.01 Welch_p=0.8903 PairedW_p=0.7388 Levene_p=1e-06 | loc_sig=False var_sig=True
+    • [HALLMARK_OXIDATIVE_PHOSPHORYLATION_ALL] bip vs migraine: meanΔ=0.489 d_unpaired=0.23 Welch_p=0.04003 PairedW_p=0.03248 Levene_p=0.001423 | loc_sig=True var_sig=True
+    • [MOOTHA_PGC_ALL] bip vs migraine: meanΔ=0.292 d_unpaired=0.14 Welch_p=0.07387 PairedW_p=0.04562 Levene_p=0.000144 | loc_sig=True var_sig=True
+
+====================================================================================
+  [22] PAIRWISE CONTRAST VOLCANO (paired Wilcoxon FDR)
+====================================================================================
+  0 sets with paired-Wilcoxon FDR<0.05:
+
+    (none survive paired-Wilcoxon FDR)
+
+====================================================================================
+  [13/14] INFLUENCE CONCENTRATION (outlier-driven detection)
+====================================================================================
+  22 set x disease are top-3 concentrated (>0.5 of |ΔStouffer|):
+
+    • [WP_GLP1_FROM_INTESTINE_AND_PANCREAS_AND_ROLE_IN_GLUCOSE_HOMEOSTASIS_ALL] migraine: top3=0.99 top1=0.59 n=4 sign_flips=0
+    • [WP_GLP1_FROM_INTESTINE_AND_PANCREAS_AND_ROLE_IN_GLUCOSE_HOMEOSTASIS_ALL] bip: top3=0.95 top1=0.63 n=4 sign_flips=0
+    • [GOBP_CAMKK_AMPK_SIGNALING_CASCADE_ALL] bip: top3=0.86 top1=0.62 n=9 sign_flips=0
+    • [REACTOME_SIRT1_NEGATIVELY_REGULATES_RRNA_EXPRESSION_ALL] migraine: top3=0.80 top1=0.35 n=7 sign_flips=0
+    • [REACTOME_SIRT1_NEGATIVELY_REGULATES_RRNA_EXPRESSION_ALL] bip: top3=0.72 top1=0.26 n=7 sign_flips=4
+    • [REACTOME_CIRCADIAN_CLOCK] migraine: top3=0.66 top1=0.33 n=12 sign_flips=0
+    • [GOCC_BCL_2_FAMILY_PROTEIN_COMPLEX_ALL] bip: top3=0.66 top1=0.29 n=10 sign_flips=0
+    • [REACTOME_MITOPHAGY] bip: top3=0.65 top1=0.36 n=19 sign_flips=0
+    • [REACTOME_CIRCADIAN_CLOCK] bip: top3=0.63 top1=0.26 n=10 sign_flips=2
+    • [WP_NAD_METABOLISM_SIRTUINS_AND_AGING_ALL] migraine: top3=0.62 top1=0.26 n=10 sign_flips=0
+    • [GOBP_CAMKK_AMPK_SIGNALING_CASCADE_ALL] migraine: top3=0.62 top1=0.30 n=10 sign_flips=0
+    • [REACTOME_SYNTHESIS_SECRETION_AND_INACTIVATION_OF_GLUCAGON_LIKE_PEPTIDE_1_GLP_1_ALL] bip: top3=0.62 top1=0.23 n=12 sign_flips=2
+    • [REACTOME_NEUROTRANSMITTER_RELEASE_CYCLE] migraine: top3=0.60 top1=0.22 n=12 sign_flips=0
+    • [REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM] bip: top3=0.58 top1=0.28 n=16 sign_flips=0
+    • [REACTOME_SYNTHESIS_SECRETION_AND_INACTIVATION_OF_GLUCAGON_LIKE_PEPTIDE_1_GLP_1_ALL] migraine: top3=0.57 top1=0.24 n=13 sign_flips=3
+    • [KEGG_MEDICUS_REFERENCE_EP_NE_ADRB_CAMP_SIGNALING_PATHWAY_ALL] bip: top3=0.53 top1=0.24 n=12 sign_flips=0
+    • [HLA_COMPLEX_ALL] bip: top3=0.52 top1=0.23 n=17 sign_flips=0
+    • [GOCC_BCL_2_FAMILY_PROTEIN_COMPLEX_ALL] migraine: top3=0.52 top1=0.22 n=10 sign_flips=0
+    • [HALLMARK_TNFA_SIGNALING_VIA_NFKB] bip: top3=0.51 top1=0.22 n=18 sign_flips=1
+    • [WP_NAD_METABOLISM_ALL] migraine: top3=0.51 top1=0.18 n=14 sign_flips=3
+    • [KEGG_MEDICUS_REFERENCE_EP_NE_ADRB_CAMP_SIGNALING_PATHWAY_ALL] migraine: top3=0.51 top1=0.19 n=12 sign_flips=6
+    • [GOBP_SYNAPSE_PRUNING_ALL] bip: top3=0.51 top1=0.21 n=17 sign_flips=5
+
+====================================================================================
+  [19] RECURRENT DRIVER GENES (same gene inflating many sets)
+====================================================================================
+  bip: 89 genes with |Z|>=1.96 in >=3 sets
+    • SIRT1: 8 sets, medZ=-3.91
+    • NFKB1: 7 sets, medZ=2.81
+    • CD38: 6 sets, medZ=-3.74
+    • BCL2L1: 6 sets, medZ=-3.21
+    • BID: 6 sets, medZ=2.46
+    • MAPK8: 6 sets, medZ=3.32
+    • MAPK1: 6 sets, medZ=5.36
+    • BAD: 5 sets, medZ=7.47
+    • PRKACA: 5 sets, medZ=4.04
+    • TNFRSF1A: 5 sets, medZ=-3.32
+    • NAMPT: 5 sets, medZ=-3.44
+    • SIRT6: 5 sets, medZ=3.32
+    • TERF2: 5 sets, medZ=-7.65
+    • VAMP2: 5 sets, medZ=2.19
+    • MAPK3: 4 sets, medZ=10.61
+  migraine: 65 genes with |Z|>=1.96 in >=3 sets
+    • SIRT1: 8 sets, medZ=-3.19
+    • RELA: 7 sets, medZ=-3.30
+    • BCL2L1: 6 sets, medZ=2.57
+    • CDK2: 6 sets, medZ=-3.36
+    • BAD: 5 sets, medZ=-2.21
+    • E2F1: 5 sets, medZ=2.49
+    • TNFRSF1A: 5 sets, medZ=5.33
+    • STX1A: 4 sets, medZ=-4.45
+    • CDK6: 4 sets, medZ=2.69
+    • GPX4: 4 sets, medZ=-3.49
+    • MAP2K4: 4 sets, medZ=5.65
+    • CDKN2D: 4 sets, medZ=-3.01
+    • RPS6KA1: 4 sets, medZ=-3.38
+    • NBN: 4 sets, medZ=3.34
+    • CCL5: 4 sets, medZ=2.82
+
+  Recurrent OPPOSITE-SIGN genes (colocalization shortlist): 30
+    • BCL2L1: 6 sets | bipZ=-3.21 migraineZ=2.57
+    • BAD: 5 sets | bipZ=7.47 migraineZ=-2.21
+    • TNFRSF1A: 5 sets | bipZ=-3.32 migraineZ=5.33
+    • GPX4: 4 sets | bipZ=2.89 migraineZ=-3.49
+    • STX1A: 4 sets | bipZ=3.29 migraineZ=-4.45
+    • BNIP3L: 3 sets | bipZ=4.54 migraineZ=-3.05
+    • FDX1: 3 sets | bipZ=-3.65 migraineZ=3.63
+    • NDUFAB1: 3 sets | bipZ=-4.35 migraineZ=3.52
+    • DNAJA3: 2 sets | bipZ=-5.89 migraineZ=2.89
+    • F2: 2 sets | bipZ=2.08 migraineZ=-3.72
+    • GNAQ: 2 sets | bipZ=2.35 migraineZ=-4.45
+    • CRAT: 2 sets | bipZ=-5.80 migraineZ=2.04
+    • GCDH: 2 sets | bipZ=-4.75 migraineZ=3.24
+    • ACADS: 2 sets | bipZ=-3.70 migraineZ=3.62
+    • MRPL18: 2 sets | bipZ=-2.33 migraineZ=3.01
+    • MRE11: 2 sets | bipZ=6.52 migraineZ=-2.67
+    • IQGAP1: 2 sets | bipZ=-3.55 migraineZ=3.76
+    • MRPS17: 2 sets | bipZ=-3.78 migraineZ=3.20
+    • OLR1: 2 sets | bipZ=-5.32 migraineZ=3.68
+    • PAWR: 2 sets | bipZ=-3.44 migraineZ=2.84
+
+====================================================================================
+  [15/16] EVIDENCE CLASSIFICATION
+====================================================================================
+  (no meta hits to classify)
+
+====================================================================================
+  ★ REPORTABLE SETS (perm-only OR collapsed FDR pass, CI excludes 0,
+     not top-3 concentrated, AND multi-tissue OR stable paired contrast)
+====================================================================================
+    (none clear the full reporting bar — treat all hits as hypothesis-generating)
+
+====================================================================================
+  TALLY
+====================================================================================
+    ci_gated                    : 4
+    collapsed                   : 0
+    concentrated                : 22
+    contrast_sets               : 51
+    global_enrichment           : 0
+    perm_only                   : 0
+    perm_proximity              : 0
+    reportable                  : 0
+    volcano                     : 0
+====================================================================================
+  Interpretation guardrails:
+   - Do NOT count tissue rows and meta rows together.
+   - Do NOT treat every 'Influential' flag as a gene list (near-zero Stouffer inflates %change).
+   - Ignore CCC / Spearman p on n<=4 sets (NAD transport, WP GLP-1).
+   - Colocalization / PrediXcan R2 / correlation-aware set tests require the original S-PrediXcan files.
+====================================================================================
